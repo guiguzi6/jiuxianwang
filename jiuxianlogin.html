@@ -34,7 +34,7 @@
                                 <a href="#" target="_blank">支付方式</a>
                             </li>
                             <li>
-                                <a href="#" target="_blank">售后服务/a>
+                                <a href="#" target="_blank">售后服务</a>
                             </li>
                             <li>
                                 <a href="#" target="_blank">企业客户</a>
@@ -48,6 +48,228 @@
                 </div>
             </div>
         </div>
+        <!-- 内容 -->
+        <form id="loginForm" method="POST" action="">
+            <div class="main-bg">
+                <div class="main">
+                    <div class="jx-content loginbd clearfix">
+                        <a class="picFoucs" href="#" target="_blank"></a>
+                        <div class="content">
+                            <a class="ewmLoginLink" >
+                                <i></i>
+                            </a>
+                            <a class="pcLoginLink">
+                                <i></i>
+                            </a>
+                            <div class="loginCon">
+                                <div class="loginTit clearfix">
+                                    <a href="javascript:;" class="userLogin on">账号登录</a>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="mobileLogin">手机动态密码登录</a>
+                                </div>
+                                <div class="loginType loginUser">
+                                    <div class="frame enterFrame">
+                                        <div class="filter">
+                                            <em class="userIconBox">
+                                                <i class="userIcon"></i>
+                                            </em>
+                                            <p>手机/邮箱/手机号</p>
+                                            <i class="judge"></i>
+                                            <i class="judgeDel"></i>
+                                        </div>
+                                        <input id="userName" class="text" type="text" name="uname" value autocomplete="off">
+                                        <div class="mistakeTip">请输入用户名/邮箱/手机号</div>
+                                        <div class="mistakeTip02">请输入用户名/邮箱/手机号</div>
+                                    </div>
+                                    <div class="frame enterFrame">
+                                        <div class="filter">
+                                            <em class="userIconBox">
+                                                <i class="pwdIcon"></i>
+                                            </em>
+                                            <p>密码</p>
+                                            <i class="judge"></i>
+                                            <i class="judgeDel"></i>
+                                        </div>
+                                        <input maxlength="20" id="password" class="text" type="password" name="_pwd">
+                                        <div class="mistakeTip">请输入密码</div>
+                                        <div class="mistakeTip02">请输入密码</div>
+                                    </div>
+                                    <div class="frame yzFrame" id="validcaptcha">
+                                        <div class="filter">
+                                            <em class="userIconBox">
+                                                <i class="yzIcon"></i>
+                                            </em>
+                                            <p>验证码</p>
+                                            <img class="yzm" id="captchaImage" src="https://login.jiuxian.com/public/captchaimg.htm?t=1539604998029" alt="">
+                                        </div>
+                                        <input id="verification" class="text" type="text" name="j_captcha" maxlength="5" size="8" autocomplete="off">
+                                        <a class="refresh" id="_captchaImage" href="javascript:;">
+                                            <i></i>
+                                        </a>
+                                        <div class="mistakeTip">请输入验证码</div>
+                                    </div>
+                                    <div class="loginBtn">
+                                        <input name="bi_Usuallogin" type="button" id="save" value="登&nbsp;&nbsp;录">
+                                    </div>
+                                    <div class="moreChoice clearfix">
+                                        <div class="auto">
+                                            <input type="checkbox" class="check" id="auto" name="remeber" value="yes">
+                                            <label for="auto">自动登录</label>
+                                        </div>
+                                        <a class="freeReg" href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/gerenregister.html">免费注册</a>
+                                        <a class="forgetPwd" id="forget" href="#">忘记密码</a>
+                                    </div>
+                                </div>
+                                <div class="loginType loginMobile">
+                                    <div class="Frame enterFrame enterFramePhone">
+                                        <div class="filter">
+                                            <em class="userIconBox">
+                                                <i class="userIcon"></i>
+                                            </em>
+                                            <p>手机号</p>
+                                            <i class="judge"></i>
+                                        </div>
+                                        <input id="iphone" class="text" type="text" name="phone" autocomplete="off">
+                                        <div class="mistakeTip">请输入手机号</div>
+                                        <div class="mistakeTip02">请输入正确手机号</div>
+                                    </div>
+                                    <div class="Frame yzFrame" id="validcaptchaTwe">
+                                        <div class="filter">
+                                            <em class="userIconBox">
+                                                <i class="yzIcon"></i>
+                                            </em>
+                                            <p>验证码</p>
+                                            <img class="yzm" id="captchaImageTwe" src(unknow) alt="">
+                                        </div>
+                                        <input id="verificationTwe" class="text" type="text" name="j_captcha" size="8" maxlength="5" autocomplete="off">
+                                        <a class="refresh" id="_captchaImageTwe" href="javascript:void(0)">
+                                            <i></i>
+                                        </a>
+                                        <div class="mistakeTip">请输入验证码</div>
+                                    </div>
+                                    <div class="regAccInforBom clearfix">
+                                        <div class="regInputBox">
+                                            <div class="mistakeTip">
+                                                请输入验证码
+                                            </div>
+                                            <div class="checkButBox loginRegbd">
+                                                <span class="regCheckBut logregCheckBtn" id="idenCodePhone"></span>
+                                                <span class="regCheckBut logregCheckBtn" id="idenCodePhoneNum">
+                                                    <em>59</em>
+                                                    秒后重新获取
+                                                </span>
+                                            </div>
+                                            <div class="regCheck">
+                                                <input class="regInputLogin text" id="phoneverification" type="text" name="mobileCheck" autocomplete="off" maxlength="6">
+                                                <em class="userIconBox">
+                                                    <i class="regIcon accCheck"></i>
+                                                </em>
+                                                <span class="regValue">校验码</span>
+                                                <i class="regPointIcon regFalse"></i>
+                                                <span class="regPoint poiFalse">请输入校验码</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="loginBtn">
+                                        <input name="bi_phoneDylogin" id="saveLogin" type="button" value="登&nbsp;&nbsp;录">
+                                    </div>
+                                </div>
+                                <div class="cooperate">
+                                    <p>使用合作账号登录</p>
+                                    <div class="cooperateWay clearfix">
+                                        <a class="qq" href="#">
+                                            <i></i>
+                                        </a>
+                                        <a class="sina" href="#">
+                                            <i></i>
+                                        </a>
+                                        <a class="alipay" href="#">
+                                            <i></i>
+                                        </a>
+                                        <a class="baidu" href="#">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ewmCon">
+                                <h2>扫码登录</h2>
+                                <!-- 扫描失败 -->
+                                <div class="scanError">
+                                    <div class="scanErrorEwm">
+                                        <img id="ewmImgId" src="https://login.jiuxian.com/scancode.htm?timestamp1539608961552" alt="">
+                                        <div id="createCode">
+                                            <div class="bj"></div>
+                                            <div class="info">
+                                                <p>二维码已失效</p>
+                                                <a href="javascript:void(0)">刷新</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tipImg">
+                                        <img src="https://login.jiuxian.com/img/reg/tip1.png" alt="">
+                                    </div>
+                                    <div class="scanErrorTip clearfix">
+                                        <i></i>
+                                        <p>
+                                            打开
+                                            <em>手机酒仙APP</em>
+                                            <br>
+                                            扫二维码
+                                        </p>
+                                    </div>
+                                    <div class="sCanErroLink">
+                                        <span>
+                                            <a href>账户密码登录</a>
+                                            <a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/gerenregister.html">免费注册</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- 扫码成功 -->
+                                <div class="scanSuccess">
+                                    <div class="sCanSIcon">
+                                        <i></i>
+                                    </div>
+                                    <h4>扫描成功</h4>
+                                    <p>请在手机上确认登录</p>
+                                    <div class="sCanLink">
+                                        <span>
+                                            <a href>账号密码登录</a>
+                                            <a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/gerenregister.html">免费注册</a>
+                                        </span>
+                                        <a href="javascript:;" id="backewm">返回二维码登录</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>
+<script src="js/jquery.js"></script>
+<script>
+    $(function(){
+        var head = $(".head_icon");
+        var pop = $(".head_pop")
+        head[0].onmouseover = function(){
+            pop[0].style.display = "block";
+        }
+        var timer = null;
+        head[0].onmouseout =function(){
+            timer = setTimeout(function(){
+                pop[0].style.display = "none";
+            },3000)   
+        }
+        pop[0].onmouseover = function(){
+            clearTimeout(timer)
+            pop[0].style.display = "block";
+        }
+        pop[0].onmouseout =function(){
+            pop[0].style.display = "none";  
+        }
+    })
+    
+</script>

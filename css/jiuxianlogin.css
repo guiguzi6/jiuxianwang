@@ -1,24 +1,189 @@
+/* 头部 */
 .wrap{
     width: 100%;background: #fafafa;min-width: 1000px;
+}
+.wrap i{
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat 0 0;
 }
 .wrap .topHeader{
     width: 100%;background: #fff;height: 88px;box-shadow: 1px 2px 6px #e1e1e1;z-index: 1;position: relative;
 }
-.wrap .topHeade .header{
+.wrap .topHeader .header{
     width: 1000px;height: 88px;margin: 0 auto;
 }
-.wrap .topHeade .header .logo{
+.wrap .topHeader .header .logo{
     float: left;height: 63px;width: 257px;margin-top: 15px;
 }
-.wrap .topHeade .header .logo .logo_con{
+.wrap .topHeader .header .logo .logo_con{
     background: url(https://login.jiuxian.com/img/header/left.jpg?version=20160401) no-repeat;width: 140px;height: 63px;float: left;
 }
-.wrap .topHeade .header .logo .logo_con a {
+.wrap .topHeader .header .logo .logo_con a {
     display: block;height: 63px;width: 140px;
 }
-.wrap .topHeade .header .logo .topic{
+.wrap .topHeader .header .logo .topic{
     width: 117px;
 }
+.wrap .topHeader .header .logo .topic img{border:0;}
+.wrap .topHeader .header .head_nav{
+    width: 77px;height: 14px;line-height: 14px;float: right;display: inline;margin: 48px 0 0 20px;position: relative;cursor: pointer;z-index: 10;
+}
+.wrap .topHeader .header .head_nav .head_icon{
+    height: 14px;position: relative;z-index: 2;
+}
+.wrap .topHeader .header .head_nav .head_icon span{
+    float: left;display: inline-block;color: #666;margin-right: 6px;font-size: 12px;
+}
+.wrap .topHeader .header .head_nav  .jx{
+    float: left;display: inline-block;background-position: -23px 0;width: 15px;height: 14px;
+}
+.wrap .topHeader .header .head_pop{
+    position: absolute;border: 1px solid #ccc;top: -6px;left: -10px;width: 85px;z-index: 1;padding-top: 26px; display: none;
+} 
+.wrap .topHeader .header .head_pop li{
+    border-top: 1px dashed #ccc;padding-left: 10px;height: 24px;line-height: 24px;background: #fff;
+}
+.wrap .topHeader .header .head_pop li a{
+    color: #999;font-size: 12px;
+}
+.wrap .topHeader .header .reg{
+    float: right;margin-top: 48px;color: #999;height: 14px;line-height: 14px;font-size: 12px;
+}
+.wrap .topHeader .header .reg a{
+    color: #0066cc;margin-left: 20px
+}
+/* 内容 */
+.wrap .main-bg{
+    background: url(https://img10.jiuxian.com/bill/2018/1010/aad78a361aa740d6913949c8d97da3fc.jpg) no-repeat center top;width: 100%;padding: 0 0 50px;height: 600px;
+}
+.wrap .main-bg .main{
+    width: 1000px;margin: 0 auto;
+}
+.wrap .main-bg  .jx-content{
+    background: #fff;border: 3px solid #eaeaea;border-radius: 5px;box-shadow: 1px 6px 11px #e4e4e4;height: 500px;position: relative; 
+}
+.wrap .main-bg .main .loginbd{
+    background: transparent;border: 0;box-shadow: 0 0 0 0;
+}
+.wrap .main-bg  .jx-content .picFoucs{
+    display: block;position: absolute;width: 650px;height: 600px;z-index: 1;
+}
+.wrap .main-bg  .jx-content .content{
+    background: #fff;overflow: hidden;width: 350px;height: 405px;top: 100px;left: 650px;position: relative;
+}
+.wrap .main-bg  .jx-content .content .ewmLoginLink{
+    width: 65px;height: 65px;position: absolute;top: 0;right: 0;z-index: 99;cursor: pointer;
+}
+.wrap .main-bg  .jx-content .content .ewmLoginLink i{
+    background-position: 0 -230px;width: 65px;height: 65px;display: block;
+}
+.wrap .main-bg  .jx-content .content .pcLoginLink{
+    width: 65px;height: 65px;position: absolute;right: 0;top: 0;z-index: 99;cursor: pointer;
+}
+.wrap .main-bg  .jx-content .content .pcLoginLink i{
+    background-position: -80px -230px;width: 65px;height: 65px;display: block;
+}
+.wrap .main-bg  .jx-content .content .loginCon{
+    width: 270px;margin-left: 40px;
+}
+.wrap .main-bg  .jx-content .content .loginTit{
+    margin: 14px 0  19px;height: 40px;overflow: hidden;line-height: 40px;border-bottom: 1px solid #e9e9e9;
+}
+.wrap .main-bg  .jx-content .content .loginTit a {
+    float: left;display: inline-block;color: #999;font-size: 16px;
+}
+.wrap .main-bg  .jx-content .content .loginTit a.on{
+    color: #e4393c;font-weight: bold;
+}
+.wrap .main-bg  .jx-content .content .loginTit span{
+    float: left;display: inline-block;font-size: 12px;color: #999;padding: 0 18px;
+}
+.wrap .main-bg  .jx-content .content .loginType{
+    width: 270px;border-bottom: 1px dotted #ccc;overflow: hidden;
+}
+.wrap .main-bg  .jx-content .content .frame{
+    width: 270px;height: 42px;position: relative;left: 0;top: 0;margin-bottom: 20px;
+}
+.wrap .main-bg  .jx-content .content .frame .filter{
+    width: 43px;height: 42px;position: absolute;top: 0;left: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .userIconBox{
+    display: inline-block;width: 43px;height: 40px;background: #f3f3f3;position: absolute;top: 1px;left: 1px;z-index: 3;border-right: 1px solid #dcdcdc;
+}
+.wrap .main-bg  .jx-content .content .frame .filter i{
+    float: left;display: inline-block;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .userIcon{
+    width: 20px;height: 20px;background-position: -51px 0;margin: 10px 10px 0 11px;
+}
+.wrap .main-bg  .jx-content .content .frame .filter p{
+    display: inline-block;font-size: 16px;margin-top: 11px;color: #ccc;position: absolute;left: 0;top: 0;width: 200px;padding-left: 55px;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .judge{
+    float: none;display: inline-block;position: absolute;left: 246px;top: 15px;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .judgeDel{
+    float: left;width: 16px;height: 16px;background-position: -486px -42px;cursor: pointer;position: absolute;top: 14px;left: 248px;z-index: 5;display: none;
+}
+.wrap input{
+    height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;vertical-align: middle;
+}
+.wrap .main-bg  .jx-content .content .frame .text{
+    position: absolute;top: 0;left: 0;z-index: 5;background: none;font-weight: bold;outline: none;
+}
+.wrap .main-bg  .jx-content .content .enterFrame .text{
+    width: 173px;padding: 0 45px 0 50px;
+}
+.wrap .main-bg  .jx-content .content .frame .mistakeTip{
+    background: #ed787f;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content .frame .mistakeTip02{
+    background: #ccc;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .pwdIcon{
+    width: 16px;height: 22px;background-position: -83px 0;margin: 10px 11px auto 13px;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .yzIcon{
+    width: 18px;height: 24px;background-position:-426px 0;margin: 10px 11px auto 13px;
+}
+.wrap .main-bg  .jx-content .content .frame .filter .yzm{
+    position: absolute;left: 189px;top: 1px;border: 0;
+}
+.wrap .main-bg  .jx-content .content  .yzFrame .text{
+    padding-left: 50px;width: 84px;padding-right: 134px;
+}
+.wrap .main-bg  .jx-content .content .yzFrame .refresh i{
+    width: 80px;height: 40px;z-index: 5;position: absolute;top: 0;right: 0;background-position: 188px 188px;
+}
+.wrap .main-bg  .jx-content .content .loginBtn{
+    margin-bottom: 11px;
+}
+.wrap .main-bg  .jx-content .content .loginBtn input{
+    width: 270px;background: #e10303;color: #fff;border-radius: 2px;border: 0;cursor: pointer;font-family: "Microsoft Yahei";
+}
+.wrap .main-bg  .jx-content .content .moreChoice{
+    margin-bottom: 16px;
+}
+.wrap .main-bg  .jx-content .content .moreChoice .auto{
+    float: left;color: #999;display: inline-block;
+}
+.wrap .main-bg  .jx-content .content .moreChoice .auto input{
+    height: auto;border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
