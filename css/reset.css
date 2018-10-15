@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0;}
+html,body{height: 100%;width: 100%;}
+body{box-sizing: border-box;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+ul,ol,li,dl{list-style: none;}
+a{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix:after{content: ""; height: 0;clear: both;overflow: hidden;display: block;visibility: hidden;}

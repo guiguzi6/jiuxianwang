@@ -1,0 +1,1 @@
+var aItem = document.querySelectorAll(".bigUl li");

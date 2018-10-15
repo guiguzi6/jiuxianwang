@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/qiyeregister.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="topHeader">
+        <div class="header">
+            <div class="logo">
+                <div class="index">
+                    <a href="#" target="_blank"></a>
+                </div>  
+                <a class="topic">
+                    <img src="https://login.jiuxian.com/img/reg/slogan.jpg" alt="">
+                </a>
+            </div>
+            <div class="head-nav">
+                <div class="head-icon" id="head-icon">
+                    <span>帮助中心</span>
+                    <i class="sj"></i>
+                </div>
+                <div class="head-pop" id="head-pop">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">配送说明</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">支付方式</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">售后服务</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">企业客户</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="reg">
+                欢迎来到酒仙网
+                <a href="#" id="redOrLogin">请登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div class="regBg">
+        <div class="main">
+            <div class="content">
+                <div class="regBox">
+                    <div class="regTitBox">
+                        <a class="regTit" href="#" target="_blank" >企业用户注册</a>
+                        <a class=" regTit on" href="#" target="_blank">个人用户注册</a>
+                    </div>
+                    <div class="regConWrap">
+                        <ul class="clearfix">
+                            <form method="post" name="ajaxForm" id="ajaxForm" onsubmit="javascript:return false"> 
+                                <li class="regCon">
+                                    <div class="accountInfo">
+                                        <span class="impotFont">账户信息</span>
+                                        <span class="tipFont">（*为必填项，请确认填写正确。）</span>
+                                    </div>
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">用户名</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmAccount"></div>
+                                            <input type="text" id="firmAccount" class="qjwSubmit4" value="" name="userName" autocomplete="off" maxlength="20">
+                                            <div class="errorIcon st"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip" id="accTS">4-20个字符，由中英文字母、数字、”-”、”_”组成</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">邮箱</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmEmail"></div>
+                                            <input type="text" id="firmEmail" class="qjwSubmit4" value="" name="email" autocomplete="off" maxlength="50">
+                                            <div class="errorIcon pass"></div>
+                                        <!--<div class="firmTipFont">密码</div>-->
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请设置常用邮箱</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>        
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">设置密码</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmPassword"></div>
+                                            <input type="password" id="firmPassword" class="qjwSubmit4" value="" maxlength="20" name="password" onpaste="return false" autocomplete="off">
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip"> 8-20字符，数字、字母、字符至少包含两种</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                        <div class="strength">
+                                            <b>弱</b>
+                                            <i class="strength1"></i>
+                                            <b>强</b>
+                                        </div>
+                                    </div>
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">确认密码</span>
+                                        <div class="firmBox">
+                                        <div class="firmRegIcon firmPassword"></div>
+                                            <input type="password" id="refirmPassword" class="qjwSubmit4" value="" maxlength="20" name="pwd2" onpaste="return false" autocomplete="off">
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请再次输入密码</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>        
+                                    <div class="accountInfo">
+                                        <span class="impotFont">公司信息</span><span class="tipFont">（*为必填项，请确认填写正确。）</span>
+                                    </div>
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">联系人姓名</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmAccount"></div>
+                                            <input type="text" id="firmUserName" class="qjwSubmit4" value="" maxlength="5" name="realName" autocomplete="off" >
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入联系人姓名</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>  
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">手机号</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmIphone"></div>
+                                            <input type="text" id="firmUserPhone" class="qjwSubmit4" value="" autocomplete="off" name="mobile" maxlength="11">
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入手机号</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div> 
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">联系电话</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmTel"></div>
+                                            <input type="text" id="firmUserTel" class="qjwSubmit4" value="" name="phone" autocomplete="off" maxlength="13">
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入固定电话</div>
+                                        </div>
+                                    </div> 
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">公司名称</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmCompany"></div>
+                                            <input type="text" id="firmCompanyName" class="qjwSubmit4" value="" name="companyName" maxlength="30" autocomplete="off">
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入公司名称</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">公司所在地</span>
+                                        <div class="firmBox">
+                                            <select class="drop_text" name=rgnRegionID id="province" onchange="setCity(this);">
+                                                <option value="0">请选择</option>
+                                            </select>
+                                            <select class="drop_text" name="city" id="city" onchange="setReg(this);">
+                                                <option value=''>请选择</option>
+                                            </select>
+                                            <select class="drop_text" name="district" id="area" style="margin-right:0px;">
+                                                <option value=''>请选择</option>
+                                            </select>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入公司所在地</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>  
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">详细地址</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmAddress"></div>
+                                            <input type="text" id="firmDetailAdd" class="qjwSubmit4 borderRed" value="" maxlength="50" name="adressDetail" autocomplete="off">
+                                            <div class="errorIcon"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入公司详细地址</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>  
+                                    <div class="ln_addressTr">
+                                        <span class="ln_addressTrTit">验证码</span>
+                                        <div class="firmBox">
+                                            <div class="firmRegIcon firmCheckIt"></div>
+                                            <input type="text" id="firmCodes" name="captcha" class="ifrmCheckCode" value="" maxlength="5" name="cap" autocomplete="off">
+                                            <div class="firmCheckImg">
+                                                <img src="https://login.jiuxian.com/public/captchaimg.htm" id="_captchaImage"/>
+                                            </div>
+                                            <div class="firmCheckMore"></div>
+                                            <div class="clear"></div>
+                                            <div class="errorFontTip">请输入验证码</div>
+                                        </div>
+                                        <div class="commonTip">*</div>
+                                    </div>
+                                    <div class="firmAgreement">
+                                        <input type="checkbox" class="regAgrInput" checked="checked" /><span>我已阅读并同意<a href="http://help.jiuxian.com/view-1-112.htm" target="_blank">《酒仙网用户注册协议》</a></span>
+                                        <div class="errorFontTip" id="error_agm" style="display:none;">请接受服务协议！</div>
+                                    </div>
+                                    <div class="firmSubmit">
+                                        <input name="bi_comp_register" type="button" class="nowSubmit" value="立&nbsp;即&nbsp;注&nbsp;册" id="subFirm" />
+                                    </div> 
+                                </li>   	 
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reg-confirm-bg reg-confirm-verify-code">
+        <div class="reg-confirm">
+            <div class="reg-confirm-tit">
+                <p>提示</p>
+                <i class="cartIcon reg-close"></i>
+            </div>
+            <div class="reg-confirm-body">
+                <div class="reg-confirm-prompt">
+                    <i class="cartIcon"></i>
+                    <span>该手机号已注册过</span>
+                </div>
+                <div class="reg-confirm-text">
+                    请用其他手机号注册或直接登录
+                </div>
+                <div class="reg-confirm-btn">
+                    <a href="#" class="sure">换号注册</a>
+                    <a href="#" class="cancel" id="login-go">直接登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 结尾部分 -->
+    <div class="footer">
+        <div class="foot">
+            <p>&copy;&nbsp;酒仙网&nbsp;2011  jiuxian.com  All  Rights  Reserved
+                <a href="#" target="_blank">京ICP证110141号</a>
+                &nbsp;&nbsp;京公网安备1101050188221
+            </p>
+            <p class="bottom">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精的产品给18岁以下人士！</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/jiuxianwangregister.js"></script>
