@@ -53,80 +53,155 @@ body{
     color: #0066cc;margin-left: 20px;
 }
 /* 内容区 */
-.regBg{
-    background: url(https://login.jiuxian.com/img/reg/bg.jpg) repeat-x scroll left top;width: 100%;padding: 70px 0 50px;height: 600px;font-size: 12px;
+.main-bg{
+    width: 100%;padding: 0 0 50px;height: auto;
 }
-.regBg .main{
-    width: 1000px;margin: 0 auto;
+.main-bg .firmPersonalBox{
+    width: 1000px;margin: 0 auto;height: 34px;position: relative;
 }
-.regBg .main .content{
-    background: #fff;border: 3px solid #eaeaea;border-radius: 5px;box-shadow: 1px 6px 11px #e4e4e4;height: 500px;position: relative;
+.main-bg .firmPersonalBox .regTitBox{
+    top: 0;width: 280px;height: 34px;position: absolute;right: 15px;
 }
-.regBg .main .content .regBox{
-    height: 450px;width: 994px;position: relative;
+.main-bg .firmPersonalBox .regTitBox .regTit{
+    float: right;cursor: pointer;display: inline-block;height: 34px;line-height: 34px;color: #fff;font-size: 14px;border: 2px solid #ff9999; border-top-left-radius: 5px;border-top-right-radius: 5px;background: #ff9900;margin-left: 6px;vertical-align: top;border-bottom: none;padding: 0 15px;
 }
-.regBg .main .content .regBox .regTitBox{
-    width: 280px;height: 34px;position: absolute;right: 15px;top: -37px;
+.main-bg .firmPersonalBox .regTitBox .on{
+    height: 35px;border:2px solid #eaeaea; background: #fff;margin-bottom: -3px;position: relative;border-bottom: none;color: #ff9900; 
 }
-.regBg .main .content .regBox .regTitBox .regTit{
-    float: right;cursor: pointer;display: inline-block;height: 34px;line-height: 34px;color: #fff;font-size: 14px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #ff9900;margin-left: 6px;vertical-align: top;border-bottom: none;padding: 0 15px;
+.main-bg  .main{
+    margin: 0 auto; width: 1000px
 }
-.regBg .main .content .regBox .regTitBox .on{
-    height: 35px;border:2px solid #eaeaea; background: #fff;margin-bottom: 3px;position: relative;border-bottom: none;color: #ff9900; 
+.main-bg  .main .firmRegMain{
+    width: 994px;margin: 0 auto;border: 3px solid #eaeaea;box-shadow: 2px 5px 10px -4px #eaeaea;color: #000;
 }
-.regBg .main .content .regBox .regConWrap{
-    height: 500px;width:994px; overflow: hidden;position: relative;
+.main-bg .main .firmRegMain .mainBox{
+    padding: 70px 50px;background: #fff;
 }
-.regBg .main .content .regBox .regConWrap ul{
-    height: 450px;width: 2000px
-}
-.regBg .main .content .regBox .regConWrap .regCon{
-    width: 784px;padding: 26px 0 0 125px;float: left;
-}
-.regBg .main .content .regBox .regConWrap .regCon .accountInfo{
+.main-bg .main .firmRegMain .mainBox .accountInfo{
     border-bottom: 1px dashed #eaeaea;margin-bottom: 35px;
 }
-.regBg .main .content .regBox .regConWrap .regCon .accountInfo .impotFont{
+.main-bg .main .firmRegMain .mainBox .accountInfo .impotFont{
     font-size: 18px;color: #333;margin-left: 35px;font-weight: bold;
 }
-.regBg .main .content .regBox .regConWrap .regCon .accountInfo .tipFont{
+.main-bg .main .firmRegMain .mainBox .accountInfo .tipFont{
     color: #ff9800;font-size: 12px;height: 60px;line-height: 60px;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr{
+.main-bg .main .firmRegMain .mainBox .ln_addressTr{
     height: 42px;margin-bottom: 15px;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr span{
+.main-bg .main .firmRegMain .mainBox .ln_addressTr span{
     display: inline-block;color: #666;float: left;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .ln_addressTrTit{
+.main-bg .main .firmRegMain .mainBox .ln_addressTr .ln_addressTrTit{
     font-size: 16px;width: 84px;text-align: right;height: 40px;line-height: 40px;display: inline-block;margin-right: 17px;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .firmBox{
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox{
     border: 1px solid #e4e4e4;display: inline-block;width: 380px;position: relative;background: #fff;height: 40px;float: left;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .firmRegIcon{
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .borderReds{
+    border: 1px solid #ff6666;
+}
+.main-bg .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmRegIcon{
     background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat;width: 20px;height: 20px;display: inline;margin: 10px 10px 0 20px;float: left;overflow: hidden;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .firmAccount{
+.main-bg .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmAccount{
     background-position: -51px 0;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr input{
-    height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;vertical-align: middle;
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr input{
+    height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;vertical-align: middle; outline: none;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .qjwSubmit4{
-    position: absolute;z-index: 2;background: none;border: none;float: left;width: 297px;font-weight: bold;
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .qjwSubmit4{
+    position: relative;z-index: 2;background: none;border: none;float: left;width: 297px;font-weight: bold;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .errorIcon{
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .errorIcon{
     float: left;width: 18px;height: 40px;margin-right: 15px;background-position: 0 8px;background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .st{
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr  .st{
     background-position: -160px 13px;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .clear{
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .clear{
     clear: both;font-size: 0;line-height: 0;height: 0;
 }
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .errorFontTip{
-    z-index: 4;position: absolute;bottom: -16px;right: -1px;height: 20px;line-height: 20px;color: #fff;padding: 0 12px;
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .errorFontTip{
+    z-index: 4;position: absolute;bottom: -16px;right: -1px;height: 20px;line-height: 20px;color: #fff;padding: 0 12px;font-size: 12px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .commonTip{
+    color: #ff9800;display: inline-block;height: 40px;line-height: 55px;font-size: 24px;vertical-align: top;margin-left: 15px;float: left;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmEmail{
+    background-position: -230px 4px ;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .errorBgPea{
+    background: #ed787f;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmPassword{
+    background-position: -81px 0
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .strength{
+    float: left;padding: 10px 0 0 10px;height: 32px;width: 100px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .strength b{
+    float: left;display: inline-block;font-size: 12px;margin-top: 8px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .strength i{
+    float: left;display: inline-block;margin: 0 5px;width: 44px;height: 22px;overflow: hidden;background: url(https://login.jiuxian.com/img/reg/regLogin-8.png)no-repeat 0 0;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .strength .strength1{
+    background-position: -222px -99px 
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmIphone{
+    height: 27px;background-position: -263px 1px;margin-bottom: 4px;margin-top: 8px;
+} 
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmTel{
+    background-position: -298px 1px;height: 23px;margin-bottom: 7px;margin-top: 8px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmCompany{
+    background-position: -326px 0;margin-right: 4px;width: 26px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .drop_text{
+    margin-top: 7px;margin-right: 14px;width: 114px;border: 1px solid #e4e4e4;padding: 4px 5px; vertical-align:middle;overflow: visible !important
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .drop_text option{
+    font-weight: normal;display: block;white-space: pre;min-height: 1.2rem;padding: 0 2px 1px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmAddress{
+    background-position: -363px 0;height: 25px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmBox .firmCheckIt{
+    background-position: -425px 0;height: 25px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .ifrmCheckCode{
+    border: none;outline: none;float: left;font-size: 14px;font-weight: bold;color: #999;height: 40px;line-height: 40px;width: 200px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmCheckImg{
+    float: left;display: inline-block;padding-top: 4px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmCheckImg img{
+    width: 74px;height: 34px;
+}
+.main-bg  .main .firmRegMain .mainBox .ln_addressTr .firmCheckMore{
+    width: 29px;height: 29px;background-position: -187px 0;float: left;display: inline;margin-top: 8px;cursor: pointer;margin-left: 16px;background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat;
+}
+.main-bg  .main .firmRegMain .mainBox .firmAgreement{
+    padding-left: 101px;
+}
+.main-bg  .main .firmRegMain .mainBox .firmAgreement input{
+    border: none;
+}
+.main-bg  .main .firmRegMain .mainBox .firmAgreement span{
+    margin-left: 10px;color: #999;font-size: 12px 
+}
+.main-bg  .main .firmRegMain .mainBox .firmAgreement span a{
+    color: #0066cc;
+} 
+.main-bg  .main .firmRegMain .mainBox .firmAgreement .errorFontTip{
+    color: rgb(204, 0, 0);font-size: 12px;
+}
+.main-bg  .main .firmRegMain .mainBox .firmSubmit{
+    padding-left: 101px;
+}
+.main-bg  .main .firmRegMain .mainBox .firmSubmit input{
+    width: 305px;height: 42px;background: #e10303;border: medium none;border-radius: 2px;color: #fff;cursor: pointer;font-size: 18px;
 }
 /* 结尾部分 */
 .footer{

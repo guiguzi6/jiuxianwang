@@ -93,7 +93,7 @@ body{
     height: 42px;width: 302px;float: left;position: relative;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox input{
-    height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;
+    height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;outline: none;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox .regInput{
     width: 255px;padding-left: 45px;background: none;position: relative;z-index: 3;font-weight: bold;
@@ -111,16 +111,16 @@ body{
     width: 15px;height: 15px;position: absolute;top: 14px;right: 10px;z-index: 4;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox .regFalse{
-    background-position:  -162px 0;
+    background-position:  -162px 0; display: none;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox .regPoint{
     height: 20px;line-height: 20px;color: #fff;padding: 0 8px;position: absolute;top: 37px;right: 0;z-index: 5;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox .poiFalse{
-    background: #ed787f;
+    background: #ed787f;display: none;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox .poiTrue{
-    background: #ccc;
+    background: #ccc;display: none;
 }
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox .accCap{
     background-position: -422px 2px;
@@ -166,7 +166,7 @@ body{
     float: left;padding: 10px 0 0 10px; height: 32px;width: 100px;
 }
 .regBg .main .content .regBox .regConWrap .strength b{
-    float: left;display: inline-block;font-size: 12px;color: 12px;font-weight: normal;margin-top: 8px;
+    float: left;display: inline-block;font-size: 12px;color: 12px;font-weight: normal;margin-top: 8px;display: none;
 }
 .regBg .main .content .regBox .regConWrap .strength .strength1{
     background-position: -222px -99px;
@@ -241,57 +241,6 @@ body{
 .reg-confirm-bg .reg-confirm .reg-confirm-btn .cancel{
     width: 58px;height: 28px;line-height: 28px;background: #f7f7f7;border: 1px solid #ccc;color: #666;
 }
-
-
-/* 企业部分 */
-.regBg .main .content .regBox .regConWrap .regCon{
-    width: 784px;padding: 26px 0 0 125px;float: left;
-}
-.regBg .main .content .regBox .regConWrap .regCon .accountInfo{
-    border-bottom: 1px dashed #eaeaea;margin-bottom: 35px;
-}
-.regBg .main .content .regBox .regConWrap .regCon .accountInfo .impotFont{
-    font-size: 18px;color: #333;margin-left: 35px;font-weight: bold;
-}
-.regBg .main .content .regBox .regConWrap .regCon .accountInfo .tipFont{
-    color: #ff9800;font-size: 12px;height: 60px;line-height: 60px;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr{
-    height: 42px;margin-bottom: 15px;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr span{
-    display: inline-block;color: #666;float: left;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .ln_addressTrTit{
-    font-size: 16px;width: 84px;text-align: right;height: 40px;line-height: 40px;display: inline-block;margin-right: 17px;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .firmBox{
-    border: 1px solid #e4e4e4;display: inline-block;width: 380px;position: relative;background: #fff;height: 40px;float: left;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .firmRegIcon{
-    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat;width: 20px;height: 20px;display: inline;margin: 10px 10px 0 20px;float: left;overflow: hidden;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .firmAccount{
-    background-position: -51px 0;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr input{
-    height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;vertical-align: middle;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .qjwSubmit4{
-    position: absolute;z-index: 2;background: none;border: none;float: left;width: 297px;font-weight: bold;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .errorIcon{
-    float: left;width: 18px;height: 40px;margin-right: 15px;background-position: 0 8px;background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .st{
-    background-position: -160px 13px;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .clear{
-    clear: both;font-size: 0;line-height: 0;height: 0;
-}
-.regBg .main .content .regBox .regConWrap .regCon .ln_addressTr .errorFontTip{
-    z-index: 4;position: absolute;bottom: -16px;right: -1px;height: 20px;line-height: 20px;color: #fff;padding: 0 12px;
-}
 /* 结尾部分 */
 .footer{
     height: 90px;width: 100%;padding: 10px 0 0 ;
@@ -308,6 +257,6 @@ body{
 .footer .foot .bottom{
     color: #f00;
 }
-
+ 
 
 

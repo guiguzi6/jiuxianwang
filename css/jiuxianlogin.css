@@ -1,0 +1,28 @@
+.wrap{
+    width: 100%;background: #fafafa;min-width: 1000px;
+}
+.wrap .topHeader{
+    width: 100%;background: #fff;height: 88px;box-shadow: 1px 2px 6px #e1e1e1;z-index: 1;position: relative;
+}
+.wrap .topHeade .header{
+    width: 1000px;height: 88px;margin: 0 auto;
+}
+.wrap .topHeade .header .logo{
+    float: left;height: 63px;width: 257px;margin-top: 15px;
+}
+.wrap .topHeade .header .logo .logo_con{
+    background: url(https://login.jiuxian.com/img/header/left.jpg?version=20160401) no-repeat;width: 140px;height: 63px;float: left;
+}
+.wrap .topHeade .header .logo .logo_con a {
+    display: block;height: 63px;width: 140px;
+}
+.wrap .topHeade .header .logo .topic{
+    width: 117px;
+}
+
+
+
+
+
+
+
