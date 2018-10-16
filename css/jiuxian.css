@@ -368,12 +368,12 @@
 .contentFirst .indexTabBox .indexTabNav li{
     width: 184px;height: 35px;position: absolute;top: 0;cursor: pointer;text-align: center;font-size: 16px;color: #666;border: 1px solid #ececec;border-top: 2px solid #ececec;background: #f9f9f9;line-height: 35px;
 }
-.contentFirst .indexTabBox .indexTabNav .n1{left: 0;}
-.contentFirst .indexTabBox .indexTabNav .n2{left: 185px;}
-.contentFirst .indexTabBox .indexTabNav .n3{left: 370px;}
-.contentFirst .indexTabBox .indexTabNav .n4{left: 555px;}
-.contentFirst .indexTabBox .indexTabNav .n5{left: 740px;}
-.contentFirst .indexTabBox .indexTabNav li.on{
+.contentFirst .indexTabBox .indexTabNav li:nth-child(1){left: 0;}
+.contentFirst .indexTabBox .indexTabNav li:nth-child(2){left: 185px;}
+.contentFirst .indexTabBox .indexTabNav li:nth-child(3){left: 370px;}
+.contentFirst .indexTabBox .indexTabNav li:nth-child(4){left: 555px;}
+.contentFirst .indexTabBox .indexTabNav li:nth-child(5){left: 740px;}
+.contentFirst .indexTabBox .indexTabNav .on{
     width: 183px;height: 35px;border-top: 2px solid #cc0000;border-bottom: 1px solid #fff;color: #cc0000;background: #fff;
 }
 .contentFirst .indexTabBox .indexTabConWrap{
@@ -389,7 +389,78 @@
     width: 169px;padding: 0 7px;position: relative;z-index: 1;
 }
 .contentFirst .indexTabBox .indexTabCon li img{
-    position: relative;z-index: 1;
-    
+    position: relative;z-index: 1;  
 }
+.contentFirst .indexTabBox .indexTabCon li .indexTabTit{
+    width: 175px;padding: 0 2px;height: 18px;line-height: 18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-size: 12px
+}
+.contentFirst .indexTabBox .indexTabCon li .indexTabTit a{
+    color: #666;
+}
+.contentFirst .indexTabBox .indexTabCon li .indexTabPrice{
+    width: 170px;padding: 0 2px;height: 18px;line-height: 18px;overflow: hidden;white-space: nowrap;
+} 
+.contentFirst .indexTabBox .indexTabCon li .indexTabPrice strong{
+    font-size: 12px;font-weight: normal;line-height: 18px;color: #cd0100;display: inline;vertical-align: middle;
+}
+.contentFirst .indexTabBox .indexTabCon li .indexTabTit a:hover{color: #cc0001;text-decoration: underline}
+.contentFirst .indexTabRight{
+    width: 270px;float: right;height: 500px;
+}
+.contentFirst .indexTabRight .indexTabNew{
+    width: 270px;height: 140px;background: #fff;overflow: hidden;
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewNav{
+    height: 35px;position: relative;
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewNav li{
+    color: #666;text-align: center;width: 134px;height: 35px;line-height: 35px;position: absolute;top: 0;cursor: pointer;border:1px solid #ececec;border-image:initial;background: #f9f9f9;
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewNav .s1{
+    left: 0;
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewNav .s2{
+    left: 135px;width: 133px;
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewNav .on{
+    border-top: 2px solid #c41921;border-bottom: 1px solid #fff;height: 34px;color: #cc0000;line-height: 33px;background: #fff;
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewCon{
+    border: 1px solid #ececec;border-top: none;height: 94px;padding-top: 10px;
+}
+}
+.contentFirst .indexTabRight .indexTabNew .indexTabNewCon .indexTabNewList{
+    width: 258px;margin: 0 auto;
+}
+.contentFirst .indexTabRight .indexTabNew  .indexTabNewList li{
+    float: left;width: 114px;margin-left: 10px;display: inline;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 28px;
+}
+.contentFirst .indexTabRight .indexTabNew  .indexTabNewList li a{color: #666;font-size: 12px}
+.contentFirst .indexTabRight .mt10{
+    margin-top: 10px;
+}
+.contentFirst .indexTabRight .indexTuanBox{
+    width: 268px;height: 157px;border: 1px solid #ececec;overflow: hidden;position: relative;z-index: 1;
+}
+.contentFirst .indexTabRight .indexTuanList{
+    width: 268px;height: 157px;overflow: hidden;position: relative;
+}
+.contentFirst .indexTabRight .indexTuanList ul{
+    width: 1000px;height: 157px;
+}
+.contentFirst .indexTabRight .indexTuanList ul li{
+    float: left;width: 268px;height: 157px;position: relative;
+}
+.contentFirst .indexTabRight .indexTuanList ul li img{
+    border: 0;width: 268px;height: 157px;
+}
+.contentFirst .indexTabRight .indexTuanBox .btnBox{
+    position: absolute;bottom: 10px;left: 15px;width: 100%;height: 12px;overflow: hidden;z-index: 2;font-size: 0;
+} 
+.contentFirst .indexTabRight .indexTuanBox .btnBox em{
+    display: inline-block;width: 12px;height: 12px;background: #ccc;border-radius: 50%;margin: 0 5px;overflow: hidden;cursor: pointer;
+}
+
+.contentFirst .indexTabRight .indexTuanBox .btnBox .on{background: #6d81ae;}
+
 
