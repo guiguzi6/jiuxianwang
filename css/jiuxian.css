@@ -200,7 +200,13 @@
 .navWrap .nav .left .categoryBox .catItem2 i{
     background-position: 2px -100px;width: 14px;height: 20px;margin-right: 10px;left: 0;top: 8px;
 }
-
+.navWrap .nav .left .categoryBox .catItem2 .menuBox{
+    left: 190px;position: absolute;top:-82px;z-index: 301;box-shadow: 0 0 4px 0 #ccc;font-size: 12px;width: 615px;height: 470px;display:none; 
+}
+.navWrap .nav .left .categoryBox .catItem2 .menuCon-list1{
+    float: left; height: 78px;margin: 0 15px 0 15px;    margin: 0 15px 0 15px;padding: 10px 0 10px 0;
+    overflow: hidden;width: 495px;
+ }
 .navWrap .nav .left .categoryBox .catItem3 i{
     background-position: -16px -102px;width: 14px;height: 20px;margin-right: 10px;left: 0;top: 8px;
 }
@@ -350,7 +356,7 @@
 }
 /* 疯狂抢购 */
 .contentFirst{
-    width: 100%;position: relative;z-index: 1;
+    width: 1200px;position: relative;z-index: 1;margin: 0 auto;
 }
 
 .contentFirst .indexTabBox{
@@ -360,12 +366,27 @@
     width: 920px;overflow: hidden;height: 38px;position: relative;
 }
 .contentFirst .indexTabBox .indexTabNav li{
-    width: 183px;height: 35px;position: absolute;top: 0;cursor: pointer;text-align: center;font-size: 16px;color: #666;border: 1px solid #ececec;border-top: 2px solid #ececec;background: #f9f9f9;
+    width: 184px;height: 35px;position: absolute;top: 0;cursor: pointer;text-align: center;font-size: 16px;color: #666;border: 1px solid #ececec;border-top: 2px solid #ececec;background: #f9f9f9;line-height: 35px;
 }
-
-
-
-
-
+.contentFirst .indexTabBox .indexTabNav .n1{left: 0;}
+.contentFirst .indexTabBox .indexTabNav .n2{left: 185px;}
+.contentFirst .indexTabBox .indexTabNav .n3{left: 370px;}
+.contentFirst .indexTabBox .indexTabNav .n4{left: 555px;}
+.contentFirst .indexTabBox .indexTabNav .n5{left: 740px;}
+.contentFirst .indexTabBox .indexTabNav li.on{
+    width: 183px;height: 35px;border-top: 2px solid #cc0000;border-bottom: 1px solid #fff;color: #cc0000;background: #fff;
+}
+.contentFirst .indexTabBox .indexTabConWrap{
+    border: 1px solid #ececec;border-top: none;height: 460px;overflow: hidden;
+}
+.contentFirst .indexTabBox .indexTabConWrap .indexTabCon{
+    width: 917px;height: 442px;margin: 0 auto;padding: 0 10px;overflow: hidden;position: relative;
+}
+.contentFirst .indexTabBox .indexTabConWrap .indexTabCon li{
+    float: left;width: 229px;margin-top: 20px;
+}
+.contentFirst .indexTabBox .indexTabCon li .indexTabPic{
+    width: 215px;padding: 0 7px;position: relative;z-index: 1;
+}
 
 
