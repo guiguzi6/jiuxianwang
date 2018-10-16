@@ -63,7 +63,7 @@
                                     <div class="regAccInfor clearfix">
                                         <div class="regLabel">手机号</div>
                                         <div class="regInputBox">
-                                            <input class="regInput userAccountNameByPhone" type="text" id="phone" name="uname" autocomplete="off" maxlength="11">
+                                            <input class="regInput userAccountNameByPhone" type="text" id="username" name="uname" autocomplete="off" maxlength="11">
                                             <i class="regIcon accName"></i>
                                             <i class="regPointIcon regFalse"></i>
                                             <span class="regPoint poiFalse">请输入手机号</span>
@@ -76,7 +76,7 @@
                                             <input class="regInput yzCode" type="text" name="j_captcha" id="phone_verification" autocomplete="off" maxlength="5" size="8">
                                             <i class="regIcon accCap"></i>
                                             <span class="regCap">
-                                                <img src="/public/captchaimg.htm?timestamp1539563791389" id="phone_captchaImage" />
+                                                <img src="https://login.jiuxian.com/public/captchaimg.htm?timestamp1539677455505" id="phone_captchaImage" />
                                             </span>
                                             <i class="regCapIcon"></i>
                                             <span class="regPoint poiFalse" >
@@ -108,8 +108,8 @@
                                     <div class="regAccInfor clearfix">
                                         <div class="regLabel">设置密码</div>
                                         <div class="regInputBox">
-                                            <input class="regInput userPassWord" type="password" id="phonePwd" maxlength="20" autocomplete="off">
-                                            <input type="hidden" id="ppwd" name="pwd"/>
+                                            <input class="regInput userPassWord" type="password" id="password" maxlength="20" autocomplete="off">
+                                            <input type="hidden" id="pwd" name="pwd"/>
                                             <i class="regIcon accPass"></i>
                                             <span class="regValue">密码</span>
                                             <i class="regPointIcon regFalse"></i>
@@ -125,7 +125,7 @@
                                     <div class="regAccInfor clearfix">
                                         <div class="regLabel">确认密码</div>
                                         <div class="regInputBox">
-                                            <input class="regInput userPassWord2" type="password" id="phoneRePwd" maxlength="20" autocomplete="off">
+                                            <input class="regInput userPassWord2" type="password" id="password1" maxlength="20" autocomplete="off">
                                             <input type="hidden" id="reppwd" name="pwdtwo"/>
                                             <i class="regIcon accPass"></i>
                                             <span class="regValue">密码</span>
@@ -191,21 +191,96 @@
     </div>
 </body>
 </html>
+<script src="js/ajax.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jiuxianwangregister.js"></script>
 <script>
-    $("#phone").click(function(){
-        $("#phone").siblings(".poiTrue").show();
-        // $("#phone").siblings(".poiFalse")
+
+    $("#username").bind('focus',function(){
+        $(this).siblings(".poiTrue").show();
+        $(this).siblings(".poiFalse").hide();
+        $(this).siblings(".regFalse").hide();
+        $(this).removeClass("on");
     })
-    
-        var value = $("#phone").val();
-        console.log(value)
-        var phoneReg = /^1[3-9][0-9]{9}$/
-        if(value = ""){
-            $obj.addClass("on");
-            $obj.siblings(".poiTrue").hide();
-            $obj.siblings(".poiFalse").show();
+    $("#username").bind('blur',function(){
+        var phoneReg = /^1[3-9][0-9]{9}$/;
+        var value = jQuery.trim($(this).val());
+        if(value == ""){
+            $(this).siblings(".poiTrue").hide();
+            $(this).siblings(".poiFalse").show();
+            $(this).siblings(".regFalse").show();
+            $(this).addClass("on");
+        }else if(!phoneReg.test(value)){
+            $(this).siblings(".poiTrue").hide();
+            $(this).siblings(".poiFalse").text("请输入正确的手机号").show();
+            $(this).siblings(".regFalse").show();
+            $(this).addClass("on");
+        }else{
+            $(this).siblings(".poiTrue").hide();
+            $(this).siblings(".poiFalse").hide();
+            $(this).siblings(".regFalse").hide();
+            $(this).removeClass("on");
         }
-   
+    })
+    $("#password").bind('focus',function(){
+        $(this).siblings(".poiTrue").show();
+        $(this).siblings(".poiFalse").hide();
+        $(this).siblings(".regFalse").hide();
+        $(this).removeClass("on");
+    })
+    $("#password").bind('blur',function(){
+        var pwdReg = /^[a-zA-Z0-9\,\;\'\'\?]{8,20}$/;
+        var name = jQuery.trim($(this).val());
+        if(name == ""){
+            $(this).siblings(".poiTrue").hide();
+            $(this).siblings(".poiFalse").show();
+            $(this).siblings(".regFalse").show();
+            $(this).addClass("on");
+        }else if(!pwdReg.test(name)){
+            $(this).siblings(".poiTrue").hide();
+            $(this).siblings(".poiFalse").text("密码长度为8-20位").show();
+            $(this).siblings(".regFalse").show();
+            $(this).addClass("on");
+        }else{
+            $(this).siblings(".poiTrue").hide();
+            $(this).siblings(".poiFalse").hide();
+            $(this).siblings(".regFalse").hide();
+            $(this).removeClass("on");
+        }
+    })
+
+    $("#password1").bind('blur',function(){
+        var name = jQuery.trim($("#password").val())
+        var name2 = jQuery.trim($(this).val());
+        if(name2 == ""){
+            $(this).siblings(".poiFalse").text("请再次输入密码").show();
+            $(this).siblings(".regFalse").show();
+            $(this).addClass("on");
+        }else if(name2 != name){
+            $(this).siblings(".poiFalse").text("两次输入密码不一致").show();
+            $(this).siblings(".regFalse").show();
+            $(this).addClass("on");
+        }else{
+            $(this).siblings(".poiFalse").hide();
+            $(this).siblings(".regFalse").hide();
+            $(this).removeClass("on");
+        }
+    })
+</script>
+<script type="text/javascript">
+    var oUser = $("#username");
+    var oPwd = $("#password");
+    var oPwd1 = $("#password1");
+    var oBtn = $("#phoneSubit")
+    oBtn.click(function(){
+        var url = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/php/register.php";
+        ajaxPost(url,`username=${oUser.val()}&password=${oPwd.val()}&password1=${oPwd1.val()}`)
+        .then((res)=>{
+            if(res == "注册成功"){
+                location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html"
+            }else{
+                location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/gerenregister.html"
+            }
+        })
+    })
 </script>

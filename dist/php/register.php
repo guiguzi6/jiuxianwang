@@ -4,8 +4,9 @@
     #1. 从前端拿来数据
     $username = @$_POST["username"];
     $password = @$_POST["password"];
+    $password1 = @$_POST["password1"];
     # 判断是否为空
-    if ($username == "" || $password == ""){
+    if ($username == "" || $password == "" || $password1 == ""){
         die("参数不全");
     }
     #2.把数据放入到数据库之中；
@@ -39,8 +40,9 @@
      }
     #2.  写sql语句 加密密码
     $password = md5($password);
-    mysql_query("INSERT INTO detaillist (password,username)
-     VALUES('$password','$username')");
+    $password1 = md5($password1);
+    mysql_query("INSERT INTO detaillist (password,password1,username)
+     VALUES('$password','$password1',,'$username')");
      #检测数据类型
      #echo mysql_error();
      if(mysql_error()){

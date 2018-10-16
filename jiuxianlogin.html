@@ -335,5 +335,74 @@
     })
 </script>
 <script type="text/javascript">
-    $("#username").bind('')
+    $("#username").bind('focus',function(){
+        $(this).siblings(".filter").find("p").hide();
+        $(this).siblings("filter").find(".judge").hide();
+        $(this).siblings(".filter").find(".judgeDel").show();
+        $(this).siblings(".mistakeTip").hide();
+        $(this).removeClass("on")
+    })
+    $("#username").bind('blur',function(){
+        var userReg1 = /\s{1,20}/g;
+        var userReg2 = /[a-zA-Z0-9_-]/g;
+        var userReg3 = /^[^\s]{4,50}$/;
+        var name = jQuery.trim($(this).val());
+        if(name == ""){
+            $(this).siblings(".filter").find("p").show();
+            $(this).siblings(".filter").find(".judge").show();
+            $(this).siblings(".filter").find(".judgeDel").hide();
+            $(this).siblings(".mistakeTip").text("请输入用户名/邮箱/手机号").show();
+            $(this).addClass("on");
+            $(".username").val("")
+        }else{
+            $(this).siblings(".filter").find("p").hide();
+            $(this).siblings(".filter").find(".judge").hide();
+            $(this).siblings(".filter").find(".judgeDel").show();
+            $(this).siblings(".mistakeTip").hide();
+            $(this).removeClass("on")
+        }
+    })
+    $("#password").bind('focus',function(){
+        $(this).siblings(".filter").find("p").hide();
+        $(this).siblings("filter").find(".judge").hide();
+        $(this).siblings(".mistakeTip").hide();
+        $(this).removeClass("on")
+    })
+    $("#password").bind('blur',function(){
+        if($(this).val()== ""){
+            $(this).siblings(".filter").find("p").show();
+            $(this).siblings(".filter").find(".judeg").show();
+            $(this).siblings(".mistakeTip").text("请输入密码").show();
+            $(this).addClass("on");
+        }else{
+            $(this).siblings('.filter').find('p').hide();
+			$(this).siblings('.filter').find('.judge').show();
+			$(this).siblings('.mistakeTip').hide();
+			$(this).removeClass('on');
+			var pwd = $("#password").val();
+        	$('#pwd').val(pwd);
+        }
+    })
+    $('#verification').bind('focus',function(){
+		$(this).siblings('.filter').find('p').hide();
+		$(this).siblings('.filter').find('.judge').hide();
+		$(this).siblings('.mistakeTip').hide();
+		$(this).removeClass('on');
+	})
+	$('#verification').bind('blur',function(){
+		if(jQuery.trim($(this).val())=='')
+		{
+			$(this).siblings('.filter').find('p').show();
+			$(this).siblings('.filter').find('.judge').show();
+			$(this).addClass('on');
+			$(this).siblings('.mistakeTip').text('请输入验证码').show();
+			$(this).val('');
+		}else{
+			$(this).siblings('.filter').find('p').hide();
+			$(this).siblings('.filter').find('.judge').show();
+			$(this).removeClass('on');
+			$(this).siblings('.mistakeTip').hide();
+		}
+	})
+
 </script>

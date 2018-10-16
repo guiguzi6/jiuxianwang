@@ -92,6 +92,8 @@ body{
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox{
     height: 42px;width: 302px;float: left;position: relative;
 }
+.regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox input.on{border: 1px solid #ff6666;}
+
 .regBg .main .content .regBox .regConWrap .regAccInfor .regInputBox input{
     height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;outline: none;
 }
