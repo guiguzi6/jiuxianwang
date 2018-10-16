@@ -383,10 +383,13 @@
     width: 917px;height: 442px;margin: 0 auto;padding: 0 10px;overflow: hidden;position: relative;
 }
 .contentFirst .indexTabBox .indexTabConWrap .indexTabCon li{
-    float: left;width: 229px;margin-top: 20px;
+    float: left;width: 183px;margin-top: 20px;
 }
 .contentFirst .indexTabBox .indexTabCon li .indexTabPic{
-    width: 215px;padding: 0 7px;position: relative;z-index: 1;
+    width: 169px;padding: 0 7px;position: relative;z-index: 1;
 }
-
+.contentFirst .indexTabBox .indexTabCon li img{
+    position: relative;z-index: 1;
+    
+}
 
