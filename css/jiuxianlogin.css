@@ -77,7 +77,7 @@
     background-position: 0 -230px;width: 65px;height: 65px;display: block;
 }
 .wrap .main-bg  .jx-content .content .pcLoginLink{
-    width: 65px;height: 65px;position: absolute;right: 0;top: 0;z-index: 99;cursor: pointer;
+    width: 65px;height: 65px;position: absolute;right: 0;top: 0;z-index: 99;cursor: pointer;display: none;
 }
 .wrap .main-bg  .jx-content .content .pcLoginLink i{
     background-position: -80px -230px;width: 65px;height: 65px;display: block;
@@ -94,12 +94,16 @@
 .wrap .main-bg  .jx-content .content .loginTit a.on{
     color: #e4393c;font-weight: bold;
 }
+.wrap .main-bg  .jx-content .content .loginTit a:hover{text-decoration: underline;color: #0066cc}
+.wrap .main-bg  .jx-content .content .loginTit .on:hover{color:#e4393c }
 .wrap .main-bg  .jx-content .content .loginTit span{
     float: left;display: inline-block;font-size: 12px;color: #999;padding: 0 18px;
 }
 .wrap .main-bg  .jx-content .content .loginType{
     width: 270px;border-bottom: 1px dotted #ccc;overflow: hidden;
 }
+
+
 .wrap .main-bg  .jx-content .content .frame{
     width: 270px;height: 42px;position: relative;left: 0;top: 0;margin-bottom: 20px;
 }
@@ -127,17 +131,21 @@
 .wrap input{
     height: 40px;line-height: 40px;color: #999;border: 1px solid #dcdcdc;font-size: 16px;vertical-align: middle;
 }
+.wrap input.on{
+    height: 40px;line-height: 40px;color: #999;border: 1px solid #ff6666;font-size: 16px;
+}
 .wrap .main-bg  .jx-content .content .frame .text{
     position: absolute;top: 0;left: 0;z-index: 5;background: none;font-weight: bold;outline: none;
 }
 .wrap .main-bg  .jx-content .content .enterFrame .text{
     width: 173px;padding: 0 45px 0 50px;
 }
+.wrap .main-bg  .jx-content .content .loginMobile{display: none;}
 .wrap .main-bg  .jx-content .content .frame .mistakeTip{
-    background: #ed787f;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;
+    background: #ed787f;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;display: none;
 }
 .wrap .main-bg  .jx-content .content .frame .mistakeTip02{
-    background: #ccc;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;
+    background: #ccc;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;display: none;
 }
 .wrap .main-bg  .jx-content .content .frame .filter .pwdIcon{
     width: 16px;height: 22px;background-position: -83px 0;margin: 10px 11px auto 13px;
@@ -169,15 +177,204 @@
 .wrap .main-bg  .jx-content .content .moreChoice .auto input{
     height: auto;border: 0;
 }
-
-
-
-
-
-
-
-
-
+.wrap .main-bg  .jx-content .content .moreChoice .auto label{
+    cursor: pointer;font-size: 12px;color: #999;
+}
+.wrap .main-bg  .jx-content .content .moreChoice .freeReg{
+    color: #0066cc;display: inline-block;float: right;padding-left: 13px;font-size: 12px;
+}
+.wrap .main-bg  .jx-content .content .moreChoice .forgetPwd{
+    float: right;color: #999;display: inline-block;font-size: 12px;
+}
+.wrap .main-bg  .jx-content .content .moreChoice a:hover{text-decoration: underline}
+.wrap .main-bg  .jx-content .content .loginType{
+    height: 267px;border-bottom: 1px dotted #ccc;overflow: hidden;font-size: 12px;
+}
+.wrap .main-bg  .jx-content .content .loginType .Frame{
+    width: 270px;height: 42px;position: relative;left: 0;top: 0;margin-bottom: 20px;font-size: 12px ;color: #666;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter{
+    width: 43px;height: 42px;position: absolute;top: 0;left: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter .userIconBox{
+    display: inline-block;width: 43px;height: 40px;background: #f3f3f3;position: absolute;top: 1px;left: 1px;z-index: 3;border-right: 1px solid #dcdcdc;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter i{
+    float: left;display: inline-block;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter .userIcon{
+    width: 20px;height: 20px;background-position: -51px 0;margin: 10px 10px 0 11px;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter p{
+    display: inline-block;font-size: 16px;margin-top: 11px;color: #ccc;position: absolute;left: 0;top: 0;width: 200px;padding-left: 55px;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter .judge{
+    width: 15px;height: 15px;background-position: -162px 0;float: none;position: absolute;display: inline-block;left: 246px;top: 15px;
+}
+.wrap .main-bg  .jx-content .content  .Frame .text{
+    position: absolute;left: 0;top: 0;z-index: 5;background: none;font-weight: bold;outline: none;
+}
+.wrap .main-bg  .jx-content .content  .Frame .mistakeTip{
+    background: #ed787f;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content  .Frame .mistakeTip02{
+    background: #ccc;padding: 0 10px;height: 20px;color: #fff;line-height: 20px;position: absolute;bottom: -15px;right: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content  .Frame .filter .yzIcon{
+    width: 18px;height: 24px;background-position: -426px 0;margin: 10px 11px auto 13px;
+}
+.wrap .main-bg  .jx-content .content .yzFrame .yzm{
+    position: absolute;left: 189px;top: 1px;
+}
+.wrap .main-bg  .jx-content .content .regAccInforBom{
+    margin: 0 0 20px;
+}
+.wrap .main-bg  .jx-content .content .regInputBox{
+    height: 42px;width: 270px;float: left;position: relative;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .checkButBox{
+    width: 148px;height: 42px;position: absolute;top: 0;right: 0;z-index: 3;
+}
+.wrap .main-bg  .jx-content .content .regAccInforBom .regInputBox .loginRegbd{
+    width: 116px;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .checkButBox .regCheckBut{
+    display: inline-block;width: 146px;height: 40px;line-height: 40px;font-size: 12px;text-align: center;font-weight: normal;border: 1px solid #ccc;background: #eaeaea;cursor: pointer;border-radius: 3px;
+} 
+.wrap .main-bg  .jx-content .content .regAccInforBom .regInputBox .checkButBox .logregCheckBtn{
+    width: 114px;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .regInputLogin{
+    width: 95px;padding-left: 54px;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .userIconBox{
+    display: inline-block;width: 43px;height: 40px;background: #f3f3f3;position: absolute;top: 1px;left: 1px;z-index: 3;border-right: 1px solid #dcdcdc;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .regIcon{
+    display: inline-block;height: 26px;width: 26px;position: absolute;left: 12px;top: 9px;background-position: -259px 1px;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .regValue{
+    height: 26px;line-height: 26px;font-size: 16px;color: #ccc;font-size: 16px;color: #ccc;position: absolute;top: 9px;left: 45px;z-index: 2;display: none;
+}
+.wrap .main-bg  .jx-content .content .regInputBox .poiFalse{
+    display: none;background: #ed787f;height: 20px;line-height: 20px;color: #fff;padding: 0 8px;position: absolute;top: 37px;right: 0;z-index: 5;
+}
+.wrap .main-bg  .jx-content .content .loginBtn{
+    margin-bottom: 11px;
+}
+.wrap .main-bg  .jx-content .content .cooperate{
+    width: 320px;
+}
+.wrap .main-bg  .jx-content .content .cooperate p{
+    margin: 22px 15px 0 0;float: left;color: #999;font-size: 12px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .cooperateWay{
+    width: 243px;height: 42px;margin: 0 auto;
+}
+.wrap .main-bg  .jx-content .content .cooperate a i{
+    display: inline-block;float: left;width: 30px;height: 30px;margin-left: 12px;margin-top: 16px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .qq i{
+    background-position: 0 -35px;margin-left: 0;
+}
+.wrap .main-bg  .jx-content .content .cooperate .qq i:hover{
+    background-position: 0 -86px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .sina i{
+    background-position: -51px -35px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .sina i:hover{
+    background-position: -51px -86px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .alipay i{
+    background-position: -102px -35px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .alipay i:hover{
+    background-position: -102px -86px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .baidu i{
+    background-position: -153px -35px;
+}
+.wrap .main-bg  .jx-content .content .cooperate .baidu i:hover{
+    background-position: -153px -86px;
+}
+.wrap .main-bg  .jx-content .content .ewmCon{
+    width: 270px;margin-left: 40px; display: none;
+}
+.wrap .main-bg  .jx-content .content .ewmCon h2{
+    height: 70px;line-height: 70px;font-size: 16px;color: #666;display: block; -webkit-margin-before: 0.83em;-webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;-webkit-margin-end: 0px;font-weight: bold;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError{
+    text-align: center;position: relative;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .scanErrorEwm{
+    width: 150px;height: 150px;margin: 20px auto 40px;position: relative;overflow: hidden;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .scanErrorEwm img{
+    width: 100%;height: 100%;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .tipImg{
+    width: 167px;height: 200px;position: absolute;top: -25px;right: -30px;display: none;
+} 
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .scanErrorTip i{
+    display: block;float: left;background-position: -270px -150px;width: 33px;height: 33px;margin: 1px 10px 0 65px;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .scanErrorTip p {
+    float: left;color: #999;line-height: 16px;text-align: left;font-size: 12px;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .scanErrorTip p em{
+    color: #e4393c;
+}
+.wrap .main-bg  .jx-content .content .ewmCon .scanError .sCanErroLink{
+    padding-top: 50px;text-align: right;font-size: 12px;
+}
+.wrap .main-bg  .jx-content .content .scanError .sCanErroLink span{
+    text-align: right;
+}
+.wrap .main-bg  .jx-content .content .scanError .sCanErroLink a {
+    padding-left: 10px;color: #333;
+}
+.wrap .main-bg  .jx-content .content .scanError .sCanErroLink a:hover{text-decoration: underline}
+.wrap .main-bg  .jx-content .content .scanSuccess{
+    text-align-last: center;display: none;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess .sCanSIcon{
+    padding: 30px 0 20px;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess .sCanSIcon i{
+    display: inline-block;width: 78px;height: 76px;background: -170px -150px;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess h4{
+    line-height: 40px;font-size: 18px;color: #333;font-weight: normal;display: block;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess p{
+    font-size: 12px;color: #999;line-height: 45px;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess .sCanLink{
+    text-align: center;padding-top: 70px;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess .sCanLink span{
+    float: right;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess .sCanLink span a {
+    padding-left: 10px;color: #333;float: left;
+}
+.wrap .main-bg  .jx-content .content .scanSuccess .sCanLink a{color: #ff6633;}
+/* 结尾部分 */
+.wrap .footer{
+    height: 90px;width: 100%;padding: 10px 0 0;
+}
+.wrap .footer .foot{
+    width: 1000px;margin: 0 auto;text-align: center;
+}
+.wrap .footer .foot p{
+    line-height: 30px;color: #333;font-size: 12px;
+}
+.wrap .footer .foot p a{
+    color: #666;
+}
+.wrap .footer .foot p a:hover{color: #cc0001;text-decoration: underline;}
 
 
 

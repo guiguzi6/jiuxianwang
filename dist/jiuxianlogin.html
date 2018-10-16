@@ -139,7 +139,7 @@
                                                 <i class="yzIcon"></i>
                                             </em>
                                             <p>验证码</p>
-                                            <img class="yzm" id="captchaImageTwe" src(unknow) alt="">
+                                            <img class="yzm" id="captchaImageTwe" src="https://login.jiuxian.com/public/captchaimg.htm?timestamp1539650770081" alt="">
                                         </div>
                                         <input id="verificationTwe" class="text" type="text" name="j_captcha" size="8" maxlength="5" autocomplete="off">
                                         <a class="refresh" id="_captchaImageTwe" href="javascript:void(0)">
@@ -149,12 +149,9 @@
                                     </div>
                                     <div class="regAccInforBom clearfix">
                                         <div class="regInputBox">
-                                            <div class="mistakeTip">
-                                                请输入验证码
-                                            </div>
                                             <div class="checkButBox loginRegbd">
-                                                <span class="regCheckBut logregCheckBtn" id="idenCodePhone"></span>
-                                                <span class="regCheckBut logregCheckBtn" id="idenCodePhoneNum">
+                                                <span class="regCheckBut logregCheckBtn" id="idenCodePhone">获取短信验证码</span>
+                                                <span class="regCheckBut logregCheckBtn" id="idenCodePhoneNum" style="display:none;">
                                                     <em>59</em>
                                                     秒后重新获取
                                                 </span>
@@ -198,13 +195,6 @@
                                 <div class="scanError">
                                     <div class="scanErrorEwm">
                                         <img id="ewmImgId" src="https://login.jiuxian.com/scancode.htm?timestamp1539608961552" alt="">
-                                        <div id="createCode">
-                                            <div class="bj"></div>
-                                            <div class="info">
-                                                <p>二维码已失效</p>
-                                                <a href="javascript:void(0)">刷新</a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="tipImg">
                                         <img src="https://login.jiuxian.com/img/reg/tip1.png" alt="">
@@ -246,30 +236,103 @@
                 </div>
             </div>
         </form>
+        <!-- 结尾部分 -->
+        <div class="footer">
+            <div class="foot">
+                <p>© &nbsp;酒仙网&nbsp; 2011 jiuxian.com All &nbsp;Rights Reserved&nbsp;&nbsp;<a target="_blank" href="#">京ICP证110141号</a>&nbsp;&nbsp;京公网安备1101050188221</p>
+                <p class="red">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>  
+            </div>
+        </div>
     </div>
+    
 </body>
 </html>
+<script src="js/ajax.js"></script>
 <script src="js/jquery.js"></script>
-<script>
+<script type="text/javascript">
     $(function(){
-        var head = $(".head_icon");
-        var pop = $(".head_pop")
-        head[0].onmouseover = function(){
-            pop[0].style.display = "block";
-        }
-        var timer = null;
-        head[0].onmouseout =function(){
-            timer = setTimeout(function(){
-                pop[0].style.display = "none";
-            },3000)   
-        }
-        pop[0].onmouseover = function(){
-            clearTimeout(timer)
-            pop[0].style.display = "block";
-        }
-        pop[0].onmouseout =function(){
-            pop[0].style.display = "none";  
-        }
+        $(".head_nav").hover(function(){
+            $(this).find(".head_pop").show();
+        },function(){
+            $(this).find(".head_pop").hide();
+        })
     })
+</script>
+<script type="text/javascript">
+    var oUser = document.querySelector(".userLogin");
+    var oMobile = document.querySelector(".mobileLogin");
     
+    var oLoginUser = document.querySelector(".loginUser");
+    var oLoginMobile =document.querySelector(".loginMobile");
+
+    oUser.onclick = function(){
+        oUser.className = "on"
+        oMobile.className = ""
+        oLoginUser.style.display = "block";
+        oLoginMobile.style.display = "none";
+    }
+    oMobile.onclick = function(){
+        oUser.className = ""
+        oMobile.className = "on"
+        oLoginMobile.style.display = "block";
+        oLoginUser.style.display = "none";
+    }
+</script>
+<script type="text/javascript">
+    $(function(){
+        $(".ewmLoginLink").click(function(){
+            $(this).hide();
+            $(".pcLoginLink").show(); 
+            $(".loginCon").hide(); 
+            $(".ewmCon").show();      
+        })
+        $(".pcLoginLink").click(function(){
+            $(this).hide();
+            $(".ewmLoginLink").show(); 
+            $(".ewmCon").hide(); 
+            $(".loginCon").show();      
+        })
+    })
+</script>
+<script type="text/javascript">
+    $(function(){
+        $(".scanErrorEwm").hover(function(){
+          $(this)
+          .stop(true)
+          .animate({
+              left:"-80"
+          },1000)
+          $(".tipImg").show();
+        },function(){
+            $(this)
+            .stop(true)
+            .animate({
+                left:"0"
+            },1000)
+            $(".tipImg").hide();
+        })
+        $(".text").click(function(){
+            $(this).find(".judgeDel").show();
+        })
+    })    
+</script>
+<script type="text/javascript">
+    $(function(){
+        var oSave = $("#save");
+        console.log(oSave)
+        var oUser = $("#username");
+        var oPwd = $("#password");
+        oSave.click(function(){
+            var url = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/php/login.php";
+            ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
+            .then(function(res){
+                if(res == "登录成功"){
+                    location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/jiuxian.html"
+                }else{
+                    location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html#"
+                    console.log("cuowu")
+                }
+            })
+        })
+    })
 </script>
