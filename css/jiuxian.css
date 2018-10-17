@@ -428,7 +428,6 @@
 .contentFirst .indexTabRight .indexTabNew .indexTabNewCon{
     border: 1px solid #ececec;border-top: none;height: 94px;padding-top: 10px;
 }
-}
 .contentFirst .indexTabRight .indexTabNew .indexTabNewCon .indexTabNewList{
     width: 258px;margin: 0 auto;
 }
@@ -436,17 +435,20 @@
     float: left;width: 114px;margin-left: 10px;display: inline;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 28px;
 }
 .contentFirst .indexTabRight .indexTabNew  .indexTabNewList li a{color: #666;font-size: 12px}
+
 .contentFirst .indexTabRight .mt10{
     margin-top: 10px;
 }
 .contentFirst .indexTabRight .indexTuanBox{
     width: 268px;height: 157px;border: 1px solid #ececec;overflow: hidden;position: relative;z-index: 1;
 }
-.contentFirst .indexTabRight .indexTuanList{
+ .indexTuanList{
     width: 268px;height: 157px;overflow: hidden;position: relative;
 }
 .contentFirst .indexTabRight .indexTuanList ul{
-    width: 1000px;height: 157px;
+    width: 804px;height: 157px;padding: 0;
+    position: absolute;
+
 }
 .contentFirst .indexTabRight .indexTuanList ul li{
     float: left;width: 268px;height: 157px;position: relative;
@@ -460,7 +462,173 @@
 .contentFirst .indexTabRight .indexTuanBox .btnBox em{
     display: inline-block;width: 12px;height: 12px;background: #ccc;border-radius: 50%;margin: 0 5px;overflow: hidden;cursor: pointer;
 }
-
 .contentFirst .indexTabRight .indexTuanBox .btnBox .on{background: #6d81ae;}
+.contentFirst  .indexAdFocus{
+    width: 268px;height: 178px;border: 1px solid #ececec;overflow: hidden;position: relative;z-index: 1;
+}
+.contentFirst  .indexAdFocus .indexAdFocusList{
+    width: 268px;height: 178px;overflow: hidden;position: relative;
+}
+.contentFirst  .indexAdFocus .indexAdFocusList .indexAdFocusWrap{
+    width: 804px;position: absolute;left: 0;top: 0;
+}
+.contentFirst  .indexAdFocus  .indexAdFocusWrap li{
+    float: left;width: 268px;height: 178px;
+}
+.contentFirst  .indexAdFocus  .indexAdFocusWrap li img{
+    border: 0;width: 268px;height: 178px;
+}
+.contentFirst  .indexAdFocus .btnBox{
+    position: absolute;bottom: 10px;height: 12px;left: 15px;width: 100%;overflow: hidden;z-index: 2;font-size: 0;
+}
+.contentFirst  .indexAdFocus .btnBox .btnBg{
+    display: inline-block;height: 12px;font-size: 0;
+}
+.contentFirst  .indexAdFocus .btnBox .btnBg em{
+    display: inline-block;width: 12px;height: 12px;background: #ccc;border-radius: 50%;margin: 0 5px;overflow: hidden;cursor: pointer;
+}
+.contentFirst  .indexAdFocus .btnBox .btnBg .on{background: #6d81ae;}
+
+.loadFirst{
+    height: 1159px;overflow: hidden;
+}
+.loadFirst .indexAdBox{
+    height: 130px;position: relative;z-index: 0;width: 100%;overflow: hidden;background: url(http://img08.jiuxian.com/bill/2017/0913/cf6df668bfe74abdaa596e3e0c2ae3f5.jpg) no-repeat top center scroll;
+}
+.loadFirst .mt30{margin-top: 20px;}
+.loadFirst .indexAdBox p{
+    width: 290px;height: 126px;float: left;margin: 0 100px; 
+}
+.loadFirst .indexAdBox p img{
+    width: 290px;height: 126px;
+}
+.loadFirst .mt10{margin-top: 10px;}
+.loadFirst .Lay_4{background: #fff;z-index: 1;position: relative;width: 1200px;margin: 0 auto;}
+  .titlebox{
+    height: 40px;line-height: 40px;background: #f9f9f9;padding: 0 3px;
+}
+.loadFirst .Lay_4 .titlebox .title_2{
+    margin: 10px 0 0 ;float: left;display: inline;height: 20px;line-height: 20px;
+}
+.newIndexIcon{
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
+}
+.comTitle i{}
+.loadFirst .Lay_4 .titlebox .title_2 i{
+    background-position: 0 0;width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+}
+.loadFirst .Lay_4 .titlebox .title_2 span{
+    display: inline-block;vertical-align: middle;font-size: 17px;color: #333;margin-left: 10px;
+}
+.loadFirst .Lay_4 .titlebox .rightNavBox{
+    float: right;height: 9px;
+}
+.loadFirst .Lay_4 .titlebox .rightNavBox span{
+    display: inline-block;vertical-align: middle;width: 9px;height: 9px;overflow: hidden;background: #ccc;margin-left: 14px;cursor: pointer;
+}
+.loadFirst .Lay_4 .titlebox .rightNavBox .on{
+    background: #cc0000;
+}
+.loadFirst .Lay_4 .raceListWrap{
+    border: 1px solid #ececec;position: relative;overflow: hidden;width: 1198px;
+}
+.loadFirst .Lay_4 .raceListWrap .newIndexIcon{
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
+}
+.loadFirst .Lay_4 .raceListWrap .raceArrow{
+    width: 27px;height: 56px;display: block;position: absolute;top: 100px;z-index: 100;cursor: pointer;
+}
+.loadFirst .Lay_4 .raceListWrap .raceLeft{
+    left: 0; background-position: 0 -28px;
+}
+.loadFirst .Lay_4 .raceListWrap .raceRight{
+    right: 0;background-position: -28px -28px;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs{
+    width: 10000px;position: relative;height: 257px;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList{
+    width: 1190px;padding: 0 4px;float: left;overflow: hidden;height: 257px;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li{
+    float: left;width: 198px;padding: 20px 0 10px 0;display: inline;position: relative;z-index: 1;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li .raceListPic{
+    width: 160px;padding: 0 19px;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li img{
+    position: relative;z-index: 1;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li .raceListTit{
+    width: 190px;height: 18px;padding: 0 4px;line-height: 18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-size: 12px;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li .raceListTit a{
+    color: #666;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li .raceListPrice{
+    width: 190px;padding: 0 4px;height: 18px;line-height: 18px;overflow: hidden;
+}
+.loadFirst .Lay_4 .raceListWrap .receBoxs .raceList li  strong{
+    font-weight: normal;color: #cd0100;
+}
+.loadFirst .Lay_5{
+    background: #fff;position: relative;z-index: 1;
+}
+ .comTitle{
+    float: left;
+}
+.comTitle i{
+    width: 28px;height: 29px;display: inline-block;vertical-align: middle;overflow: hidden;color: #fff;font-size: 18px;text-align: center;line-height: 29px;
+}
+.loadFirst .Lay_5 .titlebox .comTitle .comIcon1{
+    background-position: 0 -95px;
+}
+.comTitle  span{
+    display: inline-block;vertical-align: middle;color: #333;font-size: 17px;margin-left: 10px;
+}
+.rightMenu{
+    float: right;margin-left: 50px;display: inline;color: #999;
+}
+.rightMenu a{
+    padding:  0 7px;color: #999;font-size: 12px;
+}
+.rightMenu .goBlank{
+    padding: 4px 7px;color: #fff;background: #d43d4e;height: 21px;border-radius: 2px;
+}
+.rightMenu .goBlank span{
+    padding-left: 5px;
+}
+.spiritWrap{
+    border: 1px solid #c94b56; border-top-width: 2px;height: 485px;overflow: hidden;width: 1198px;
+}
+.bannerSlier{
+    height: 485px;width: 210px;position: relative;overflow: hidden;float: left;
+}
+.bannerSlier .imgBox{
+    height: 485px;overflow: hidden;
+}
+.bannerSlier .imgBox ul{
+    width: 5000px;
+}
+.bannerSlier .imgBox li{
+    float: left;width: 210px;height: 485px;
+}
+.bannerSlier .imgBox li img{
+    position: relative;z-index: 1;
+}
+.bannerSlier .btnBox{
+    bottom: 10px;height: 13px;left: 0;width: 100%;overflow: hidden;position: absolute;text-align: center;z-index: 2;
+}
+.bannerSlier .btnBg {
+    display: inline-block;height: 13px;font-size: 0;
+}
+.bannerSlier .btnBg em{
+    background: #fff;border-radius: 50%;display: inline-block;height: 13px;margin: 0 4px;overflow: hidden;width: 13px;cursor: pointer;
+}
+.bannerSlier .btnBg .on{
+    background: #fc5422;
+}
+
+
 
 
