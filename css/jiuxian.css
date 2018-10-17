@@ -599,7 +599,7 @@
     padding-left: 5px;
 }
 .spiritWrap{
-    border: 1px solid #c94b56; border-top-width: 2px;height: 485px;overflow: hidden;width: 1198px;
+    border-left: 1px solid #ececec;border-right: 1px solid #ececec;border-bottom: 1px solid #ececec;border-top: 2px solid #c94b56;height: 485px;overflow: hidden;width: 1198px;
 }
 .bannerSlier{
     height: 485px;width: 210px;position: relative;overflow: hidden;float: left;
@@ -617,7 +617,7 @@
     position: relative;z-index: 1;
 }
 .bannerSlier .btnBox{
-    bottom: 10px;height: 13px;left: 0;width: 100%;overflow: hidden;position: absolute;text-align: center;z-index: 2;
+    bottom: 10px;left: 0;width: 100%;overflow: hidden;position: absolute;text-align: center;z-index: 2;
 }
 .bannerSlier .btnBg {
     display: inline-block;height: 13px;font-size: 0;
@@ -628,6 +628,230 @@
 .bannerSlier .btnBg .on{
     background: #fc5422;
 }
+.spiritList{
+    width: 988px;float: right;height: 485px;overflow: hidden;position: relative;
+}
+.spiritList li{
+    float: left;width: 196px;height: 232px;border-bottom: 1px solid #ececec;border-left: 1px solid #ececec;position: relative;padding-top: 10px;z-index: 1;
+}
+.spiritListPic{
+    width: 160px;margin: 0 auto;position: relative;z-index: 1;
+}
+.spiritListTit{
+    width: 160px;padding: 0 18px;height: 36px;overflow: hidden;margin-top: 5px;
+}
+.spiritListTit a {
+    display: block;width: 100%;height: 18px;font-size: 12px;line-height: 18px;color: #666;
+}
+.spiritListPrice{
+    width: 178px;padding-left: 18px;height: 18px;overflow: hidden;line-height: 18px;white-space: nowrap;
+}
+.spiritListPrice strong{
+    font-size: 12px;font-weight: normal;color: #cd014f;display: inline;vertical-align: middle;
+}
+.spiritListPrice span{
+    font-size: 18px;margin-left: 3px;height: 18px;line-height: 18px;display: inline;vertical-align: middle;white-space: nowrap;
+}
+.spiritListPrice span em{
+    font-size: 12px;color: #252525;font-style: normal;
+}
+.spiritListPrice span i{
+    background: url(http://misc.jiuxian.com/images/clubIcon.png) no-repeat;width: 40px;height: 14px;overflow: hidden;margin-left: 2px;display: none
+}
+.topTenWrap{
+    height: 161px;border: 1px solid #ececec;border-top: none;
+}
+.hotWordBox{
+    float: left;width: 186px;border-right: 1px solid #ececec;background: #f9f9f9;height: 131px;padding: 20px 10px 10px 14px; 
+}
+.hotWordBox li{
+    width: 210px;
+}
+.hotWordBox li h3{
+    color: #cc0000;font-weight: bold;padding-right: 5px;font-size: 0;
+}
+.hotWordBox li h3 i{
+    width: 3px;height: 3px;display: inline-block;vertical-align: middle;background: #d02229;overflow: hidden;
+}
+.hotWordBox li h3 span{
+    display: inline-block;vertical-align: middle;font-size: 14px;margin-left: 5px;
+}
+.hotWordBox li p{
+    padding-left: 8px;width: 178px;height: 36px;line-height: 18px;overflow: hidden;margin-top: 5px; 
+}
+.hotWordBox li p a{
+    float: left;padding-right: 10px;display: inline-block;color: #666;
+}
+.hotWordBox li p a span{
+    font-size: 12px;display: block;width: 48px;height: 18px;line-height: 18px;overflow: hidden;
+}
+.hotWordBox li p a:hover{text-decoration: underline;color: #cc0001}
+.topTenBox{
+    width: 987px;float: right;height: 162px;
+}
+.topTenNavBox{
+    height: 32px;line-height: 32px;padding: 0 12px;
+}
+.topTenNavBox h3{
+    float: left;
+}
+.newIndexIcon{
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
+}
+.topTenNavBox h3 i{
+    display: inline-block;vertical-align: middle;width: 11px;height: 13px;overflow: hidden;
+}
+.topTenNavBox h3 .topTen1{
+    background-position: -38px 0;
+}
+.topTenNavBox h3 span{
+    font-size: 12px;color: #bd7833;display: inline-block;vertical-align: middle;margin-left: 5px;
+}
+.Lay_5 .topTenNavBox h3 span{color: #d43d4e;}
+.topTenNav{
+    float: right;height: 32px;
+}
+.topTenNav a{
+    font-size: 12px;height: 32px;padding: 0 10px;display: block;float: left;color: #666;
+}
+.topTenNav .on{
+    color: #cc0000;
+}
+.topTenNav span{
+    float: left;display: block;color: #ccc;
+}
+.topTenConWrap{
+    width: 987px;height: 102px;padding: 10px 0 15px 0;overflow: hidden;position: relative;
+}
+.topTenCon{
+    width: 987px;height: 102px;overflow: hidden;
+}
+.topTenCon li{
+    float: left;width: 190px;margin-top: 10px;padding-right: 7px;
+}
+.topTenCon li .topTenOne{
+    background-position: -150px -164px;width: 20px;display: block;float: left;height: 89px;
+}
+.topTenCon li .topTenPic{
+    float: left;
+}
+a{color: #666;}
+.topTenCon li .topTenPic a img{
+    width: 90px;height: 90px;
+}
+.topTenCon li .topTenTitBox{
+    float: left;width: 80px;padding-top: 5px;
+}
+.topTenCon li .topTenTitBox .topTenTit{
+    width: 80px;height: 36px;line-height: 18px;overflow: hidden;
+}
+.topTenCon li .topTenTitBox .topTenTit a {
+    width: 80px;height: 36px;display: block;font-size: 12px;
+}
+.topTenCon li .topTenTitBox .topTenPrice{
+    height: 18px;line-height: 18px;margin-top: 5px;color: #cd0100;width: 80px;overflow: hidden;background: #fff;
+}
+.topTenCon li .topTenTitBox .topTenPrice strong{
+    font-weight: normal;color: #cd0100;font-size: 15px;
+}
+.loadSecond {
+    height: 700px;overflow: hidden;
+}
+.loadSecond .Lay_6{
+    background: #fff;position: relative;z-index: 1;width: 1200px;margin: 0 auto;
+}
+.loadSecond .mt10{margin-top: 10px;}
+.comTitle .comIcon2 {
+    background-position: -30px -95px;
+}
+.Lay_6 .rightMenu .goBlank {
+    background: #c2782f;
+}
+.Lay_6 .spiritWrap {
+    border-top: 2px solid #c37632;
+}
+.topTenNavBox h3 .topTen2 {
+    background-position: -24px 0;
+}
+.loadThird {
+    height: 1200px;overflow: hidden;
+}
+.loadThird .Lay_7{
+    background: #fff;position: relative;z-index: 1;width: 1200px;margin: 0 auto;height: 529px;
+}
+.loadThird .mt10{margin-top: 10px;}
+.comTitle .comIcon3 {
+    background-position: -61px -95px;
+}
+.Lay_7 .rightMenu .goBlank {
+    background: #c2782f;
+}
+.topTenNavBox h3 .topTen2 {
+    background-position: -24px 0;
+}
+.wineFocusWrap {
+    width: 210px;
+    height: 485px;
+    float: left;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+.Lay_7 .bannerSlier {
+    float: none;
+    height: 320px;
+}
+.Lay_7 .spiritWrap {
+    border-top: 2px solid #276594;
+}
+.Lay_7 .rightMenu .goBlank {
+    background: #296693;
+}
+
+
+.loadThird .Lay_8{
+    background: #fff;position: relative;z-index: 1;width: 1200px;margin: 10px auto 0;height: 528px;
+}
+.comTitle .comIcon4 {
+    background-position: -94px -95px;
+}
+.Lay_8 .rightMenu .goBlank {
+    background: #c2782f;
+}
+.topTenNavBox h3 .topTen2 {
+    background-position: -24px 0;
+}
+.wineFocusWrap {
+    width: 210px;
+    height: 488px;
+    float: left;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+.Lay_8 .bannerSlier {
+    float: none;
+    height: 488px;
+}
+.Lay_8 .spiritWrap {
+    border-top: 2px solid #276594;
+}
+.Lay_8 .spiritWrap {
+    border-top: 2px solid #6c9d0e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
