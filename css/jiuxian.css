@@ -774,7 +774,7 @@ a{color: #666;}
     background-position: -24px 0;
 }
 .loadThird {
-    height: 1200px;overflow: hidden;
+    height: 1076px;overflow: hidden;
 }
 .loadThird .Lay_7{
     background: #fff;position: relative;z-index: 1;width: 1200px;margin: 0 auto;height: 529px;
@@ -839,10 +839,39 @@ a{color: #666;}
 }
 
 
+.loadFourth   {
+    height: 1081px;overflow: hidden;
+}
 
-
-
-
+.loadFourth .Lay_9{
+    background: #fff;position: relative;z-index: 1;width: 1200px;margin: 10px auto 0;height: 528px;
+}
+.comTitle .comIcon5 {
+    background-position: 0 -207px;
+}
+.Lay_9 .rightMenu .goBlank {
+    background: #c2782f;
+}
+.topTenNavBox h3 .topTen2 {
+    background-position: -24px 0;
+}
+.wineFocusWrap {
+    width: 210px;
+    height: 488px;
+    float: left;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+.Lay_9 .bannerSlier {
+    float: none;
+    height: 488px;
+}
+.Lay_9 .spiritWrap {
+    border-top: 2px solid #276594;
+}
+.Lay_9 .spiritWrap {
+    border-top: 2px solid #fe7a65;
+}
 
 
 
