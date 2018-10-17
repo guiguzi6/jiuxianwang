@@ -872,16 +872,255 @@ a{color: #666;}
 .Lay_9 .spiritWrap {
     border-top: 2px solid #fe7a65;
 }
+.mt10 a:hover{text-decoration: underline;color: #cc0001; }
+.raceListWrap .receBoxs a:hover{text-decoration: underline;color: #cc0001; }
+/* logo墙 */
+.Lay_2{
+    position: relative;margin: 10px auto 0;width: 1200px;
+} 
+.Lay_2 .titieBox ul {
+    float: left;
+}
+.Lay_2 .titieBox li {
+    float: left; font-size: 16px; width: 90px;height: 43px; line-height: 43px;text-align: center;margin-right: 15px;cursor: pointer;font-family: 微软雅黑;overflow: hidden;
+}
+.Lay_2 .titleSlider {
+    border-bottom: 2px solid #dd102e; height: 7px; position: absolute; left: 0;width: 90px;top: 36px;text-align: center;z-index: 1;overflow: hidden;
+}
+.Lay_2 .titleSlider b {
+    font-weight: bold;  border-bottom: 10px solid #dd102e; border-left: 10px solid transparent; border-right: 10px solid transparent; display: inline-block;overflow: hidden;font-size: 0;height: 0;width: 0;margin-top: -8px;
+}
+.Lay_2 .logoBox {
+    position: relative;width: 1168px;height: 274px; border: 1px solid #ededed;background: #fff;padding: 15px;overflow: hidden;
+}
+.newIndexIcon {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
+}
+.Lay_2 .logoBox .arrow {
+    position: absolute;top: 130px;width: 50px; height: 50px;z-index: 1;cursor: pointer;display: block;
+}
+.Lay_2 .logoBox .prevPage {
+    background-position: 0 -130px;left: 8px;
+}
+.Lay_2 .logoBox .nextPage {
+    background-position: -56px -130px; right: 8px;
+}
+.Lay_2 .logoAll {
+    position: relative;height: 274px;
+}
+.Lay_2 .logoFirst {
+    width: 1170px;height: 274px;overflow: hidden;
+}
+.Lay_2 .logoFirstbd {
+    width: 5000px;
+}
+.Lay_2 .logoAll ul {
+    float: left;width: 985px;height: 274px;position: relative;
+}
+.Lay_2 .logoFirstbd ul {
+    width: 1170px;position: relative;margin-left: 0;
+}
+.Lay_2 .logoAll li {
+    float: left;width: 180px;height: 80px;position: relative;margin: 0 15px 17px 0;overflow: hidden;
+}
+/* 精品店 */
+.Lay_3{
+    background: #fff;margin: 10px auto 0;width: 1200px;
+}
+.titlebox{
+    height: 40px;line-height: 40px;background: #f9f9f9;padding: 0 3px;
+}
+.jpTitle{
+    float: left;padding-left: 2px;
+}
+.jpTitle i {
+    display: inline-block;width: 7px;height: 18px;background: #ff9000;overflow: hidden;vertical-align: middle;
+}
+.jpTitle span{
+    display: inline-block;vertical-align: middle;font-size: 17px;color:rgb(51, 51, 51);margin-left: 10px;
+}
+.rightNavBox{
+    float: left;display: inline;height: 9px;margin-top: 20px;font-size: 0;line-height: 0;
+}
+.rightNavBox ul li.on {
+    background: #cc0000;
+}
+.goods_menu{
+    border: 1px solid #ececec;background: #fff;padding: 4px 4px 0 4px;
+}
+.goods_mnudl{
+    overflow: hidden;zoom: 1;width: 1100px;
+}
+.goods_mnudl dt{
+    float: left;border-bottom: 4px solid #fff; overflow: hidden;width: 92px;height: 60px;    background: url(http://misc.jiuxian.com/images/newHomePageImg/2.jpg) no-repeat center;
+}
 
+.goods_mnudl dd{
+    float: left;padding: 15px 2px 15px 3px;line-height: 25px;height: 50px;width: 453px;color: #afafaf;overflow: hidden;border-bottom: 4px solid #fff;position: relative;
+}
+.goods_mnudl dd.goods_mnudd1{
+    padding: 5px 2px 5px 3px;height: 50px;
+}
+.goods_mnudl .goodLinkbd {
+    position: relative;
+}
+.goods_mnudl dd.goods_mnudd1 p, .goods_mnudl dd.goods_mnudd2 p {
+    height: 25px;line-height: 25px;overflow: hidden;font-size: 12px;
+}
+.goods_mnudl dd p a {
+    background: #fff; display: inline-block; height: 25px;vertical-align: middle;line-height: 25px;padding: 0 3px;color: #666;text-decoration: none;
+}
+.goods_menu a:hover{color: #666;text-decoration:none;}
 
-
-
-
-
-
-
-
-
-
-
-
+/* 页脚 */
+.loadFifth{
+    height: 490px;margin-top: 20px
+}
+.footer{
+    width: 100%;background: #f9f9f9;min-width: 1200px;
+}
+.footer .footerTopBox{
+    width: 100%;background: #333;
+}
+.footerTop{
+    width: 1200px;margin: 0 auto;height: 84px;border-bottom: 1px solid #494949;
+}
+.footerTop .footerContact{
+    float: left;height: 40px;line-height: 40px;padding: 22px 0;
+}
+.publicIcon{
+    background: url(http://misc.jiuxian.com/img/newIndexImg/public-24.png) no-repeat;
+}
+.footerContact i{
+    width: 40px;height: 40px;background-position: -144px -22px;margin-right: 18px;display: inline-block;
+}
+.footerContact b{
+    font-size: 24px;color: #c00;margin-right: 25px
+}
+.footerContact span{
+    font-size: 14px;color: #fff;margin-right: 8px;
+}
+.footerTop .footerTopRight{
+    float: right;height: 32px;padding: 26px 0;
+}
+.footerTopRight .ftRight-tit{
+    float: left;line-height: 32px;color: #fff;padding-right: 10px;font-size: 12px;
+}
+.footerTopRight .ftRight-form{
+    float: left;width: 240px;height: 30px;border: 1px solid #494949;position: relative;z-index: 99;
+}
+.footerTopRight .ftRight-form input{
+    width: 190px;height: 30px;line-height: 30px;padding: 0 6px;background: 0;border: 0;float: left;color: #fff;outline: 0;
+}
+.footerTopRight .ftRight-form span{
+    display: inline-block;height: 30px;line-height: 30px;color: #999;font-size: 12px;position: absolute;left: 6px;top: 0;
+}
+.footerTopRight .ftRight-form i {
+    display: inline-block; width: 22px; height: 18px; background-position: -133px 0;margin: 6px 0 0 10px;cursor: pointer;float: left;
+}
+.footerServices {
+    width: 1200px;margin: 0 auto;overflow: hidden;padding: 30px 0 60px;
+}
+.footerServices ul li{
+    width: 130px;float: left;display: inline;margin-right: 15px;
+}
+.footerServices ul li h3{
+    font-weight: normal;height: 26px;line-height: 26px;padding: 5px 0;
+}
+.footerServices ul li h3 i {
+    background-position: 0 -131px; display: inline-block;width: 26px;height: 26px;margin-right: 9px;float: left;
+}
+.footerServices ul li h3 span {
+    display: inline-block;width: 95px;font-size: 14px; color: rgb(255, 255, 255);float: left;white-space: nowrap;overflow: hidden;
+}
+.footerServices ul li p {
+    width: 95px; height: 26px;line-height: 26px; padding-left: 35px; overflow: hidden;white-space: nowrap;
+}
+.footerServices ul li p a{font-size: 12px;}
+.footerServices ul li.jxMicroblogging {
+    margin-right: 0;
+}
+.jxMicroblogging .item{
+    width: 130px;height: 28px;line-height: 28px;padding: 5px 0 13px;position: relative;font-size: 12px
+}
+.jxMicroblogging .item a {
+    display: inline-block;color: rgb(255, 255, 255);float: left;
+}
+.jxMicroblogging .item i {
+    display: inline-block; width: 28px; height: 28px; margin-right: 9px;float: left;cursor: pointer;
+}
+.jxMicroblogging .sinaMb i {
+    background-position: -140px -74px;
+}
+.jxMicroblogging .item {
+    width: 130px; height: 28px;line-height: 28px; padding: 5px 0 13px;position: relative;
+}
+.jxMicroblogging .weixin i {
+    background-position: -103px -74px;
+}
+.jxMicroblogging .item a {
+    display: inline-block;color: rgb(255, 255, 255);float: left;
+}
+.jxMicroblogging .weixin .weixinCode {
+    width: 84px;height: 84px;position: absolute;left: 37px;top: 35px;display: none;
+}
+.footerBotBox {
+    width: 100%;
+}
+.footerBot {
+    width: 1200px;margin: 0 auto;padding: 20px 0 40px;
+}
+.footerBotLeft {
+    float: left;width: 845px;overflow: hidden;
+}
+.footerBotLeft .footerInfo {
+    height: 16px; padding: 4px 0; overflow: hidden; position: relative;left: -8px; margin-left: 0;
+}
+.footerBotLeft .footerInfo a {
+    display: inline-table; height: 16px; line-height: 16px; padding: 0 8px; overflow: hidden; position: relative;font-size: 12px;
+}
+.footerBotLeft .footerInfo a i {
+    width: 1px; height: 12px; background: #999; font-size: 0; position: absolute; left: 0;top: 2px;overflow: hidden;display: block;
+}
+.footerBotLeft p {
+    line-height: 20px;text-align: left;font-size: 12px;color: #666;
+}
+.footerBotLeft .friendLink {
+    padding: 17px 0 3px 0;height: 20px; width: 740px;color: #999;
+}
+.footerBotLeft .friendLink a{
+    color: #999;
+}
+.footerBotLeft .footerAddr{
+    color: #999;line-height: 22px;
+}
+.footerBotLeft .copybot{
+    height: 47px;
+}
+.footerBotLeft .copybot span{
+    float: left;padding-right: 6px;height: 47px;width: 128px;position: relative;display: inline-block;
+}
+.footerBotLeft .copybot a {
+    display: inline-table;margin-right: 5px;
+}
+.footerBotLeft .copybot img{
+    border: 0;position: absolute;top: 0;left: 0;
+}
+.footerBotLeft .footerPro {
+    color: #cc0000;padding: 11px 0 6px;
+}
+.footerBotCode {
+    width: 240px;float: left;text-align: center;padding-top: 20px;
+}
+.footerBotCode div {
+    float: left;width: 80px;display: inline;margin-left: 40px;
+}
+.footerBotCode div .codePic {
+    width: 80px;height: 80px;
+}
+.footerBotCode div img {
+    width: 80px;height: 80px;
+}
+.footerBotCode div .codeText {
+    width: 80px; height: 24px;line-height: 24px; overflow: hidden; white-space: nowrap;padding-top: 5px;font-size: 12px;
+}
