@@ -277,9 +277,11 @@
         ajaxPost(url,`username=${oUser.val()}&password=${oPwd.val()}&password1=${oPwd1.val()}`)
         .then((res)=>{
             if(res == "注册成功"){
-                location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html"
+                console.log("chnegg")
+                // location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html"
             }else{
-                location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/gerenregister.html"
+                console.log("shibai")
+                // location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/gerenregister.html"
             }
         })
     })

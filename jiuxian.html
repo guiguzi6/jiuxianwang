@@ -21,8 +21,7 @@
                     <div class="sidebarClose"></div>
                     <div class="sidebarUserPho clearfix">
                         <div class="sidUser-pho">
-                            <span></span>
-                            <img id="headerImg" src="http://misc.jiuxian.com/img/newIndexImg/sbbgg.jpg" alt="">
+                           <img src="images/jiuxianwang_04.jpg" alt="">
                         </div>
                         <div class="sidUser-name suLoginNot" id="sidUserLoginNot">
                             <p>
@@ -30,13 +29,90 @@
                             </p>
                             <p></p>
                         </div>
-                        <div class="sidUser-name suLogin" id="sidUserLogin">
-                            <p>
-                                <em id="userName"></em>
-                                您好
-                            </p>
+                    </div>
+                    <div class="sidebarUserOpe">
+                        <div class="userOpe frist clearfix">
+                            <div class="ope-con opeOrder">
+                                <p class="ope-icon">
+                                    <i class="publicIcon"></i>
+                                </p>
+                                <p class="ope-name">我的订单</p>
+                            </div>
+                            <div class="ope-con opeNews">
+                                <p class="ope-icon">
+                                    <i class="publicIcon" id="myCounpon"></i>
+                                </p>
+                                <p class="ope-name">我的优惠券</p>
+                            </div>
+                        </div>
+                        <div class="userOpe clearfix">
+                            <div class="ope-con opeTrack">
+                                <p class="ope-icon">
+                                    <i class="publicIcon"></i>
+                                </p>
+                                <p class="ope-name">订单跟踪</p>
+                            </div>
+                            <div class="ope-con opeMember">
+                                <p class="ope-icon">
+                                    <i class="publicIcon"></i>
+                                </p>
+                                <p class="ope-name">会员俱乐部</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="rSidebarItem collectSidebar">
+                <div class="rsItemName">
+                    <i class="publicIcon collect-i"></i>
+                    <span>收藏</span>
+                </div>
+                <div class="sidebarUserPho shoucang clearfix">
+                    <div class="sidUser-pho">
+                        <img src="images/jiuxianwang_04.jpg" alt="">
+                    </div>
+                    <div class="sidUser-name suLoginNot" id="sidUserLoginNot">
+                        <p>
+                            您好！请<a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html">登录</a>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="rSidebarItem cart" id="rSidebarCart">
+                <div class="rsItemName">
+                    <i class="publicIcon cart-i" id="cartNnd"></i>
+                    <span class="cart-n">购物车</span>
+                    <u class="rsItemPointer"></u>
+                </div>
+            </div>
+            <div id="kefusidebar" class="rSidebarItem onlineService">
+                <div class="rsItemName">
+                    <i class="publicIcon online-i"></i>
+                    <span class="online-n">客服</span>
+                </div>
+            </div>
+        </div>
+        <div class="rightSidebarBot">
+            <div class="rSidebarItem feedback">
+                <div class="rsItemName">
+                    <i class="publicIcon feedback-i"></i>
+                </div>
+                <div class="rsItemCon feedbackBox">用户反馈</div>
+            </div>
+            <div class="rSidebarItem code">
+                <div class="rsItemName">
+                    <i class="publicIcon code-i"></i>
+                </div>
+                <div class="rsItemCon codeBox">
+                    <img src="http://misc.jiuxian.com/img/newIndexImg/jxPho-code.jpg">
+                </div>
+            </div>
+            <div class="rSidebarItem backTop">
+                <div class="rsItemName">
+                    <a class="nameLink gotoTop" href="javascript:;">
+                        <i class="publicIcon backTop-i"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1278,23 +1354,13 @@
             </ul>
         </div>
     </div>
-    <!-- 两侧背景图 -->
-    <div class="mainWrap">
-        <div class="mainBox">
-            <div class="bgLeft">
-                <a href="#" target="_blank"></a>
-            </div>
-            <div class="bgRight">
-                <a href="#" target="_blank"></a>
-            </div>
-        </div>
-    </div>
+
     <!-- 疯狂抢购 -->
     <div class="contentFirst clearfix">
         <div class="indexTabBox">
             <div class="indexTabNav">
                 <ul>
-                    <li class="n1">疯狂抢购</li>
+                    <li class="n1 on">疯狂抢购</li>
                     <li class="n2">婚庆喜宴</li>
                     <li class="n3">爆款精选</li>
                     <li class="n4">整箱特惠</li>
@@ -2081,7 +2147,7 @@
             <div class="indexTabNew">
                 <div class="indexTabNewNav" id="indexTabNewNav">
                     <ul>
-                        <li class="s1">公告信息</li>
+                        <li class="s1 on">公告信息</li>
                         <li class="s2">促销信息</li>
                     </ul>
                 </div>
@@ -2148,6 +2214,11 @@
                         </li>
                         <li>
                             <a href="#" target="_blank" rel="nofollow">
+                                <img src="http://img09.jiuxian.com/bill/2018/0913/80bafb82629f44ec9a5d14d00ff6ddc8.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="nofollow">
                                 <img src="http://img08.jiuxian.com/bill/2018/1008/3dd95870e354471dac132d57b26a293e.jpg" alt="">
                             </a>
                         </li>
@@ -2156,6 +2227,7 @@
                 <div class="btnBox smallUl">
                     <span class="btnBg">
                         <em class="on"></em>
+                        <em></em>
                         <em></em>
                     </span>
                 </div>
@@ -2907,7 +2979,7 @@
                                 <span>本周热销榜</span>
                             </h3>
                             <div class="topTenNav">
-                                <a href="javascript:;" target="_blank">酱香型</a>
+                                <a class="on" href="javascript:;" target="_blank">酱香型</a>
                                 <span>|</span>
                                 <a href="javascript:;" target="_blank">浓香型</a>
                                 <span>|</span>
@@ -3590,7 +3662,7 @@
                                 <span>本周热销榜</span>
                             </h3>
                             <div class="topTenNav">
-                                <a href="javascript:;" target="_blank">法国</a>
+                                <a class="on" href="javascript:;" target="_blank">法国</a>
                                 <span>|</span>
                                 <a href="javascript:;" target="_blank">澳大利亚</a>
                                 <span>|</span>
@@ -5878,3 +5950,10 @@
 <script src="js/mainlunbotu.js"></script>
 <script src="js/xuanxiangka.js"></script>
 <script src="js/lunbotu.js"></script>
+<script>
+    var goTop = document.querySelector(".backTop")
+    goTop.onclick = function(){
+        document.body.scrollTop =0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>

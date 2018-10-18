@@ -1,3 +1,162 @@
+/* 右侧栏 */
+.rightSidebar{
+    width: 35px;height: 715px;background: #fff;border-left:  1px solid #e2e2e2;position: fixed;right: 0;top: 0;z-index: 100; color: #666;font-size: 12px;
+}
+.rightSidebarCon{
+    width: 35px;position: absolute;top: 50%;left: 0;text-align: center;height: 365px;margin-top: -220px;z-index: 311;
+}
+.rightSidebarCon .rSidebarItem{
+    width: 35px;position: relative;z-index: 350;
+}
+.rSidebarItem .rsItemName{
+    width: 35px;padding: 10px 0;position: relative;z-index: 350;
+}
+
+.publicIcon {
+    background: url(../../img/newIndexImg/public-24.png) no-repeat;
+}
+.rSidebarItem .rsItemName i {
+    display: inline-block; width: 19px; height: 19px;
+}
+.rSidebarItem .rsItemName .user-i {
+    background-position: 0 -163px;
+}
+.rSidebarItem .rsItemName span {
+    display: block;font-size: 12px; line-height: 16px;color: #333333;padding: 2px 0 0;
+}
+.sidebarUser {
+    width: 270px;
+}
+.rSidebarItem .rsItemCon {
+     background: #fff;box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);position: absolute;top: 0; right: 35px; z-index: 320;border: 1px solid #ddd;border-right: 0;display: none;
+}
+.rSidebarItem:hover .rsItemCon{display: block}
+.rSidebarItem:hover{background: #cf1c23;}
+.sidebarClose {
+    display: block; width: 11px; height: 11px;background-position: -157px 0; position: absolute; right: 15px; top: 12px; cursor: pointer;
+}
+.sidebarUserPho {
+    width: 270px;padding: 18px 0 16px;
+}
+.sidebarUserPho .sidUser-pho {
+    display: inline; width: 80px; height: 80px; position: relative; float: left;margin-left: 32px;
+}
+.sidebarUserPho .sidUser-pho span {
+    display: inline-block;width: 80px; height: 80px;background: url(../../img/newIndexImg/mask.png) no-repeat center center; position: absolute; left: 0;top: 0; z-index: 330;
+}
+.sidebarUserPho .sidUser-pho img {
+    position: absolute; left: 0;top: 0;z-index: 320;height: 80px;width: 80px;
+}
+.sidebarUserPho .sidUser-name {
+    padding-left: 12px;text-align: left; float: left;padding-top: 30px
+}
+.sidebarUserPho .suLoginNot a {
+    color: #cc0000;padding-left: 5px;
+}
+.sidebarUserPho .sidUser-name p {
+    line-height: 24px;
+}
+.sidebarUserPho .suLogin {
+    padding-top: 5px;
+}
+.sidebarUserOpe {
+    background: #f9f9f9; border-top: 1px solid #e5e5e5;padding-bottom: 5px;
+}
+.sidebarUserOpe .userOpe {
+    margin: 0 15px;
+}
+.sidebarUserOpe .userOpe.frist {
+    border-bottom: 1px dotted #ccc;
+}
+.sidebarUserOpe .ope-con {
+    width: 50%;float: left;padding: 16px 0 10px; position: relative; cursor: pointer;
+}
+.sidebarUserOpe .ope-con p {
+    text-align: center;
+}
+.sidebarUserOpe .ope-con .ope-icon i {
+    display: inline-block; width: 26px; height: 26px; position: relative;
+}
+.sidebarUserOpe .opeOrder .ope-icon i {
+    background-position: -64px -190px;
+}
+.sidebarUserOpe .ope-con .ope-name {
+    line-height: 18px; padding-top: 10px;
+}
+.sidebarUserOpe .opeNews .ope-icon i {
+    background-position: -96px -189px;
+}
+.sidebarUserOpe .opeTrack .ope-icon i {
+    background-position: -158px -185px;
+}
+.sidebarUserOpe .opeMember .ope-icon i {
+    background-position: -158px -219px;
+}
+.rightSidebarCon .rSidebarItem {
+    width: 35px;position: relative;
+}
+.rSidebarItem .rsItemName {
+    width: 35px; padding: 10px 0; position: relative;z-index: 350;cursor: pointer; background: none;
+}
+.rSidebarItem .rsItemName .collect-i {
+    background-position: -40px -163px;
+}
+.rSidebarItem .rsItemName span {
+    display: block;line-height: 16px;color: #333333;padding: 2px 0 0;
+}
+.rSidebarItem .shoucang{
+    background: #fff;box-shadow: 0 0 6px rgba(0,0,0,.2);position: absolute;top: 0;right: 35px;z-index: 320;border: 1px solid #ddd;border-right: 0;display: none;
+}
+.rSidebarItem:hover .shoucang{display: block}
+
+.rightSidebarCon .rSidebarItem {
+    width: 35px; position: relative;
+}
+.rSidebarItem.cart .rsItemName {
+    padding: 10px 0;
+}
+.rSidebarItem .rsItemName .cart-i {
+    background-position: -120px -163px;
+}
+.rSidebarItem .rsItemName .cart-n, .rSidebarItem .rsItemName .coupons-n {
+    width: 14px; font-size: 14px; margin: 0 10px 0 11px; padding: 6px 0 4px;
+}
+.rSidebarItem .rsItemName .rsItemPointer {
+    display: none; width: 6px; height: 11px; position: absolute;left: 0;top: 30px;background-position: -178px -73px;
+}
+.rightSidebarCon .rSidebarItem {
+    width: 35px; position: relative;
+}
+.rSidebarItem .rsItemName .online-i {
+    background-position: -45px -331px;
+}
+.rightSidebarBot {
+    width: 35px; position: absolute; bottom: 90px; right: 0;text-align: center;
+}
+.rightSidebarBot .rSidebarItem .rsItemName {
+    padding: 8px 0;
+}
+.rSidebarItem .rsItemName i {
+    display: inline-block; width: 19px;height: 19px;
+}
+.rSidebarItem .rsItemName i {
+    display: inline-block; width: 19px; height: 19px;
+}
+.feedbackBox {
+    cursor: pointer; width: 88px; height: 35px; line-height: 35px;background: #fff;
+}
+.rightSidebarBot .rSidebarItem {
+    width: 35px;position: relative;margin: 0;
+}
+.rSidebarItem .rsItemName .code-i {
+    background-position: -19px -186px;height: 16px;
+}
+.rSidebarItem .rsItemName .feedback-i {
+    background-position: 3px -186px;height: 16px;
+}
+.rSidebarItem .rsItemName .backTop-i {
+    background-position: -40px -186px;height: 16px;
+}
 /* header部分 */
 .header{width: 100%;height: 26px;background: #f2f2f2;border-bottom: 1px solid #e5e5e5;min-width: 1200px;}
 .header .header_con{width: 1200px;height: 26px;line-height: 26px;margin: 0 auto;}
@@ -344,19 +503,9 @@
 .mainBanner .smallBtn .smallUl li.active{
     background: #dd102e;
 }
-/* 两侧背景图 */
-.mainWrap{
-    width: 100%;background: #f9f9f9;padding: 10px 0;overflow: hidden;position: relative;
-}
-.mainWrap .mainBox{
-    width: 1200px;margin: 0 auto;background: #f9f9f9;position: relative;
-}
-.mainWrap .mainBox .bgLeft{
-    width: 100%;height: 1200px;position: absolute;left: -500px;top: 0;z-index: 0;
-}
 /* 疯狂抢购 */
 .contentFirst{
-    width: 1200px;position: relative;z-index: 1;margin: 0 auto;
+    width: 1200px;position: relative;z-index: 10;margin: 0 auto;
 }
 
 .contentFirst .indexTabBox{
@@ -513,7 +662,6 @@
 .newIndexIcon{
     background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
 }
-.comTitle i{}
 .loadFirst .Lay_4 .titlebox .title_2 i{
     background-position: 0 0;width: 20px;height: 20px;display: inline-block;vertical-align: middle;
 }
@@ -714,7 +862,7 @@
 .topTenNav a{
     font-size: 12px;height: 32px;padding: 0 10px;display: block;float: left;color: #666;
 }
-.topTenNav .on{
+.topTenNav a.on{
     color: #cc0000;
 }
 .topTenNav span{
@@ -1104,7 +1252,7 @@ a{color: #666;}
     display: inline-table;margin-right: 5px;
 }
 .footerBotLeft .copybot img{
-    border: 0;position: absolute;top: 0;left: 0;
+    border: 0;
 }
 .footerBotLeft .footerPro {
     color: #cc0000;padding: 11px 0 6px;
@@ -1123,4 +1271,12 @@ a{color: #666;}
 }
 .footerBotCode div .codeText {
     width: 80px; height: 24px;line-height: 24px; overflow: hidden; white-space: nowrap;padding-top: 5px;font-size: 12px;
+}
+.footerTopBox a{color: #ccc}
+.footerTopBox a:hover{text-decoration: underline}
+.jxMicroblogging a:hover{text-decoration: none;}  
+
+
+.footerBotBox a:hover{
+    color: #cc0000;text-decoration: underline;
 }
