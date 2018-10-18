@@ -48,7 +48,7 @@ gulp.task("js", ()=>{
 gulp.task("watch", ()=>{
     gulp.watch("*.html","!index.html"["html","css"]);
     gulp.watch("css/*.css",["html","css"]);
-    gulp.watch("index.html",["html","sass"]);
+    gulp.watch("*.html",["html","sass"]);
     gulp.watch("sass/*.scss",["html","sass"]);
 })
 
