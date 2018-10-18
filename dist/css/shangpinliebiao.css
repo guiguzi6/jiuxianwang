@@ -1515,7 +1515,8 @@
     line-height: 39px;
     color: #cf010e;
     float: left;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 12px; }
   .moreS .moreOption {
     height: 27px;
     border: 1px solid #e5e5e5;
