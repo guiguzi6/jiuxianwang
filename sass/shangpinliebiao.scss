@@ -965,5 +965,295 @@
                 }
             }
         }
+        a:hover{color:#8a0000;text-decoration: underline;}
     }
+    .proListSearch1 {
+        width: 988px;
+        height: auto;
+        margin: 0 auto 50px;
+        li{
+            width: 247px;
+            height: 420px;
+            position: relative;
+            top: 0;
+            left: 0;
+            float: left;
+            display: inline-block;
+            .content{
+                width: 247px;
+                height: 420px;
+                margin: 0 auto;
+                background: #fff;
+                overflow: hidden;
+                position: relative;
+                z-index: 10;
+                .img{
+                    display: block;
+                    width: 220px;
+                    height: 220px;
+                    margin: 10px auto;
+                    overflow: hidden;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    img{
+                        width: 220px;
+                        height: 220px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+                .priceArea{
+                    width: 220px;
+                    margin: 0 auto 3px;
+                    position: relative;
+                    overflow: hidden;
+                    height: 24px;
+                    .price{
+                        height: 24px;
+                        color: #e4393c;
+                        line-height: 24px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    } 
+                }
+                .proName{
+                    display: block;
+                    width: 220px;
+                    height: 36px;
+                    margin: 0 auto 3px;
+                    color: #000;
+                    overflow: hidden;
+                    font-size: 12px;
+                }
+                .judge{
+                    display: block;
+                    color: #005aa0;
+                    width: 220px;margin:  0 auto 5px;
+                    white-space: nowrap;
+                    font-size: 12px;
+                }
+                .projx{
+                    width: 220px;margin: 0 auto;height: 18px;
+                    i{
+                        background: url(http://misc.jiuxian.com/img/srpIcons.png) no-repeat 0 -201px;
+                        vertical-align: top;
+                        display: inline-block;
+                        width: 47px;
+                        height: 15px;
+                        background-position: 1px -467px;margin-top: 1px;
+                    }
+                }
+                .activity{
+                    height: 18px;
+                    width: 220px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    font-size: 12px;
+                    .yh {
+                        display: inline-block;
+                        height: 18px;
+                        color: #fff;
+                        background-color: #cf010e;
+                        line-height: 18px;
+                        text-align: center;
+                        padding: 0 5px;
+                        margin-right: 5px;
+                        float: left;
+                    }
+                }
+                .buyArea {
+                    width: 220px;
+                    margin: 0 auto;
+                    margin-top: 7px;
+                    .cart {
+                        font-size: 12px;
+                        width: 76px;
+                        height: 26px;
+                        padding-left: 32px;
+                        line-height: 26px;
+                        border: 1px solid #ddd;
+                        color: #cf010e;
+                        margin-left: 8px;
+                        float: left;
+                        display: inline-block;
+                        background: url(http://misc.jiuxian.com/img/srpIcons.png) no-repeat -252px -2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-srp{
+    #page-item{
+        text-align: center;
+        button{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-left: 5px;
+        }
+    }
+}
+// 底部
+.loadFifth{
+    height: 490px;margin-top: 20px
+}
+.footer{
+    width: 100%;background: #f9f9f9;min-width: 1200px;
+}
+.footer .footerTopBox{
+    width: 100%;background: #333;
+}
+.footerTop{
+    width: 1200px;margin: 0 auto;height: 84px;border-bottom: 1px solid #494949;
+}
+.footerTop .footerContact{
+    float: left;height: 40px;line-height: 40px;padding: 22px 0;
+}
+.publicIcon{
+    background: url(http://misc.jiuxian.com/img/newIndexImg/public-24.png) no-repeat;
+}
+.footerContact i{
+    width: 40px;height: 40px;background-position: -144px -22px;margin-right: 18px;display: inline-block;
+}
+.footerContact b{
+    font-size: 24px;color: #c00;margin-right: 25px
+}
+.footerContact span{
+    font-size: 14px;color: #fff;margin-right: 8px;
+}
+.footerTop .footerTopRight{
+    float: right;height: 32px;padding: 26px 0;
+}
+.footerTopRight .ftRight-tit{
+    float: left;line-height: 32px;color: #fff;padding-right: 10px;font-size: 12px;
+}
+.footerTopRight .ftRight-form{
+    float: left;width: 240px;height: 30px;border: 1px solid #494949;position: relative;z-index: 99;
+}
+.footerTopRight .ftRight-form input{
+    width: 190px;height: 30px;line-height: 30px;padding: 0 6px;background: 0;border: 0;float: left;color: #fff;outline: 0;
+}
+.footerTopRight .ftRight-form span{
+    display: inline-block;height: 30px;line-height: 30px;color: #999;font-size: 12px;position: absolute;left: 6px;top: 0;
+}
+.footerTopRight .ftRight-form i {
+    display: inline-block; width: 22px; height: 18px; background-position: -133px 0;margin: 6px 0 0 10px;cursor: pointer;float: left;
+}
+.footerServices {
+    width: 1200px;margin: 0 auto;overflow: hidden;padding: 30px 0 60px;
+}
+.footerServices ul li{
+    width: 130px;float: left;display: inline;margin-right: 15px;
+}
+.footerServices ul li h3{
+    font-weight: normal;height: 26px;line-height: 26px;padding: 5px 0;
+}
+.footerServices ul li h3 i {
+    background-position: 0 -131px; display: inline-block;width: 26px;height: 26px;margin-right: 9px;float: left;
+}
+.footerServices ul li h3 span {
+    display: inline-block;width: 95px;font-size: 14px; color: rgb(255, 255, 255);float: left;white-space: nowrap;overflow: hidden;
+}
+.footerServices ul li p {
+    width: 95px; height: 26px;line-height: 26px; padding-left: 35px; overflow: hidden;white-space: nowrap;
+}
+.footerServices ul li p a{font-size: 12px;}
+.footerServices ul li.jxMicroblogging {
+    margin-right: 0;
+}
+.jxMicroblogging .item{
+    width: 130px;height: 28px;line-height: 28px;padding: 5px 0 13px;position: relative;font-size: 12px
+}
+.jxMicroblogging .item a {
+    display: inline-block;color: rgb(255, 255, 255);float: left;
+}
+.jxMicroblogging .item i {
+    display: inline-block; width: 28px; height: 28px; margin-right: 9px;float: left;cursor: pointer;
+}
+.jxMicroblogging .sinaMb i {
+    background-position: -140px -74px;
+}
+.jxMicroblogging .item {
+    width: 130px; height: 28px;line-height: 28px; padding: 5px 0 13px;position: relative;
+}
+.jxMicroblogging .weixin i {
+    background-position: -103px -74px;
+}
+.jxMicroblogging .item a {
+    display: inline-block;color: rgb(255, 255, 255);float: left;
+}
+.jxMicroblogging .weixin .weixinCode {
+    width: 84px;height: 84px;position: absolute;left: 37px;top: 35px;display: none;
+}
+.footerBotBox {
+    width: 100%;
+}
+.footerBot {
+    width: 1200px;margin: 0 auto;padding: 20px 0 40px;
+}
+.footerBotLeft {
+    float: left;width: 845px;overflow: hidden;
+}
+.footerBotLeft .footerInfo {
+    height: 16px; padding: 4px 0; overflow: hidden; position: relative;left: -8px; margin-left: 0;
+}
+.footerBotLeft .footerInfo a {
+    display: inline-table; height: 16px; line-height: 16px; padding: 0 8px; overflow: hidden; position: relative;font-size: 12px;color: #666;
+}
+.footerBotLeft .footerInfo a i {
+    width: 1px; height: 12px; background: #999; font-size: 0; position: absolute; left: 0;top: 2px;overflow: hidden;display: block;
+}
+.footerBotLeft p {
+    line-height: 20px;text-align: left;font-size: 12px;color: #666;
+}
+.footerBotLeft .friendLink {
+    padding: 17px 0 3px 0;height: 20px; width: 740px;color: #999;
+}
+.footerBotLeft .friendLink a{
+    color: #999;
+}
+.footerBotLeft .copyright a{color: #666;}
+.footerBotLeft .footerAddr{
+    color: #999;line-height: 22px;
+}
+.footerBotLeft .copybot{
+    height: 47px;
+}
+.footerBotLeft .copybot span{
+    float: left;padding-right: 6px;height: 47px;width: 128px;position: relative;display: inline-block;
+}
+.footerBotLeft .copybot a {
+}
+.footerBotLeft .copybot img{
+    border: 0;
+}
+.footerBotLeft .footerPro {
+    color: #cc0000;padding: 11px 0 6px;
+}
+.footerBotCode {
+    width: 240px;float: left;text-align: center;padding-top: 20px;
+}
+.footerBotCode div {
+    float: left;width: 80px;display: inline;margin-left: 40px;
+}
+.footerBotCode div .codePic {
+    width: 80px;height: 80px;
+}
+.footerBotCode div img {
+    width: 80px;height: 80px;
+}
+.footerBotCode div .codeText {
+    width: 80px; height: 24px;line-height: 24px; overflow: hidden; white-space: nowrap;padding-top: 5px;font-size: 12px;
+}
+.footerTopBox a{color: #ccc}
+.footerTopBox a:hover{text-decoration: underline}
+.jxMicroblogging a:hover{text-decoration: none;}  
+
+
+.footerBotBox a:hover{
+    color: #cc0000;text-decoration: underline;
 }
