@@ -231,4 +231,16 @@ Pagination.prototype.renderPage =function(){
 var pagination = new Pagination();
 pagination.init();
 
-
+var aUl = document.querySelector(".proListSearch1 ul");
+aUl.onclick=function(evt){
+    var e = evt || window.event;
+    var img = document.querySelectorAll(".proListSearch1 img");
+    var imgArry = Array.from(img);
+    var title = document.querySelectorAll(".proListSearch1 .proName");
+    var titleArry = Array.from(title);
+    var target = e.target || e.srcElement;
+    if(imgArry.indexOf(target) != -1 ||  titleArry.indexOf(target) != -1){
+        cookie("goodsId",target.getAttribute("data-id"));
+        location.href= "http://www.baidu.com";
+    }
+}
