@@ -849,3 +849,121 @@
         }
     }
 }
+.main-srp{
+    .proListSearch {
+        width: 988px;
+        height: auto;
+        margin: 0 auto 50px;
+        li{
+            width: 247px;
+            height: 420px;
+            position: relative;
+            top: 0;
+            left: 0;
+            float: left;
+            display: inline-block;
+            .content{
+                width: 247px;
+                height: 420px;
+                margin: 0 auto;
+                background: #fff;
+                overflow: hidden;
+                position: relative;
+                z-index: 10;
+                .img{
+                    display: block;
+                    width: 220px;
+                    height: 220px;
+                    margin: 10px auto;
+                    overflow: hidden;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    img{
+                        width: 220px;
+                        height: 220px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+                .priceArea{
+                    width: 220px;
+                    margin: 0 auto 3px;
+                    position: relative;
+                    overflow: hidden;
+                    height: 24px;
+                    .price{
+                        height: 24px;
+                        color: #e4393c;
+                        line-height: 24px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    } 
+                }
+                .proName{
+                    display: block;
+                    width: 220px;
+                    height: 36px;
+                    margin: 0 auto 3px;
+                    color: #000;
+                    overflow: hidden;
+                    font-size: 12px;
+                }
+                .judge{
+                    display: block;
+                    color: #005aa0;
+                    width: 220px;margin:  0 auto 5px;
+                    white-space: nowrap;
+                    font-size: 12px;
+                }
+                .projx{
+                    width: 220px;margin: 0 auto;height: 18px;
+                    i{
+                        background: url(http://misc.jiuxian.com/img/srpIcons.png) no-repeat 0 -201px;
+                        vertical-align: top;
+                        display: inline-block;
+                        width: 47px;
+                        height: 15px;
+                        background-position: 1px -467px;margin-top: 1px;
+                    }
+                }
+                .activity{
+                    height: 18px;
+                    width: 220px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    font-size: 12px;
+                    .yh {
+                        display: inline-block;
+                        height: 18px;
+                        color: #fff;
+                        background-color: #cf010e;
+                        line-height: 18px;
+                        text-align: center;
+                        padding: 0 5px;
+                        margin-right: 5px;
+                        float: left;
+                    }
+                }
+                .buyArea {
+                    width: 220px;
+                    margin: 0 auto;
+                    margin-top: 7px;
+                    .cart {
+                        font-size: 12px;
+                        width: 76px;
+                        height: 26px;
+                        padding-left: 32px;
+                        line-height: 26px;
+                        border: 1px solid #ddd;
+                        color: #cf010e;
+                        margin-left: 8px;
+                        float: left;
+                        display: inline-block;
+                        background: url(http://misc.jiuxian.com/img/srpIcons.png) no-repeat -252px -2px;
+                    }
+                }
+            }
+        }
+    }
+}
