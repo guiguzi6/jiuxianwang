@@ -499,7 +499,8 @@
   border: 1px solid #e5e5e5;
   border-top: 0;
   width: 205px;
-  display: none; }
+  display: none;
+  z-index: 100; }
 
 .header .header_con .topHeaderRight .hd-n7 .subNavBox .subNav-item1 {
   width: 165px;
