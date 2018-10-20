@@ -244,3 +244,13 @@ aUl.onclick=function(evt){
         location.href= "http://www.baidu.com";
     }
 }
+
+
+// $.ajxa({
+//     type:"get",
+//     url:"js/data1.json",
+//     async:true,
+//     success:function(arr){
+//         console.log(arr)
+//     }
+// })

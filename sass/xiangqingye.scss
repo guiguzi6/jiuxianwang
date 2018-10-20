@@ -419,14 +419,374 @@
 .navWrap .nav .right{width: 120px;height: 34px;overflow: hidden;position: absolute;right: 0;top: 0;}
 .navWrap .nav .right a {display: block;width: 120px;height: 34px;}
 .navWrap .nav .right img{display: block;width: 120px;height: 34px;}
+// 内容区
+.w1200{
+    width: 1200px;margin:  0 auto;padding-bottom: 20px;
+    .dTop{
+        height: 70px;overflow: hidden;padding-top: 10px;
+        img{
+            width: 1200px;height: 70px;
+        }
+    }
+    .dGuide{
+        height: 40px;line-height: 40px;margin-bottom: 10px;
+        a{
+            color: #666;font-size: 12px;
+        }
+        i{
+            color: #888;padding: 0 8px;
+        }
+        span{
+            font-size: 12px;color: #cc3333;
+        }
+    }
+    .dIntro{
+        border: 1px solid #f2f2f2;
+        .instroShow{
+            width: 440px;float: left;padding-bottom: 18px;z-index: 2;position: relative;
+            .show-pic{
+                width: 420px;height: 420px;border: 0;padding: 10px;overflow: hidden;position: relative;line-height: 0;
+                img{
+                    width: 100%;height: auto;position: absolute;left: 0;top: 0;
+                }
+            }
+            .show-list{
+                height: 64px;padding-top: 5px;
+                .show-list-prev{
+                    display: block;width: 14px;text-align: center;float: left;height: 64px;padding-left: 14px;
+                    i{
+                        background-position: -177px -20px;
+                    }
+                }
+                .show-list-con{
+                    width: 380px;height: 64px;margin: 0 2px;float: left;overflow: hidden;
+                    ul{
+                        width: 1000px;
+                        li{
+                            margin: 0 6px;border: 2px solid #fff;width: 60px;height: 60px;float: left;cursor: pointer;
+                            a{
+                                display: inline-block;padding: 3px;
+                                img{
+                                    position: relative;z-index: 1;width: 54px;height: 54px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .show-list-next{
+                    display: block;width: 14px;height: 64px;float: right;text-align: center;
+                    i{
+                        background-position: -193px -20px;
+                    }
+                }
+                i{
+                    display: inline-block;width: 13px;height: 30px;margin-top: 17px;
+                }
+            }
+            .showOther{
+                height: 20px;line-height: 20px;padding: 22px 10px 0;font-size:12px;color:#666;
+                .goodsNo{
+                    float: left;
+                }
+                .sOtherRight{
+                    float: right;
+                    .showCollect{
+                        float: right;
+                        a{
+                            display: inline-block;
+                            color: #666;
+                            i{
+                                display: inline-block;  width: 13px;height: 12px;background-position: -148px -14px;margin: 4px 4px 0 0 ;overflow: hidden;float: left;
+                              }
+                        }
+                        
+                    }
+                    span{
+                        display: inline-block;float: left;
+                    }
+                }
+                .showShare {
+                    float: right;margin-right: 15px;position: relative;
+                     i {
+                         display: inline-block;float: left;
+                        width: 15px;
+                        height: 15px;
+                        background-position: -125px -1px;
+                        margin: 2px 5px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .dIcon{
+        background: url(http://misc.jiuxian.com/images/detail_v2.0/d-icon.png) no-repeat 0 0;
+    }
+}
+.introInfo {
+    width: 548px;
+    min-height: 533px;
+    padding: 20px 0 10px 10px;
+    border-right: 0;
+    float: left;
+    position: relative;
+    z-index: 1;
+    font-size: 12px ;color: #666;
+}
+.introInfo .comName {
+    padding: 0 10px 5px;
+}
+.introInfo .comName h1 {
+    width: 528px;
+    font-size: 16px;
+    min-height: 20px;
+    line-height: 20px;
+    color: #333;
+}
+.introInfo .infoWrap {
+    padding: 10px;
+}
+.introInfo .comSummary {
+    background: #fafafa;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+}
+.infoWrap .infoItems {
+    width: 528px;float: left;line-height: 30px;
+}
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.priceBox .infoPri span {
+    display: inline-block;
+    float: left;
+    height: 30px;
+}
+.priceBox .infoPri .pri {
+    color: #cc3333;
+}
+.infoWrap .infoItems {
+    float: left;
+    width: 528px;
+    line-height: 30px;
+}
+.infoWrap .promotionBox {
+    margin-top: 10px;
+}
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #666;
+    padding-right: 28px;
+}
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.promotionBox .infoProm {
+    vertical-align: middle;
+    line-height: 32px;
+}
+.promotionBox .infoProm ul li * {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.promotionBox .infoProm ul li .prom-h {
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    background: #ff0000;
+    padding: 0 3px;
+    display: inline-block;
+}
+.promotionBox .infoProm ul li .prom-n {
+    color: #c33;
+}
+.promotionBox .infoProm ul li .prom-n {
+    margin-left: 12px;
+    color: #333;
+    display: inline;
+}
+.salesScoreGold {
+    border-bottom: 1px dotted #d6d6d6;
+}
+.salesScoreGold ul {
+    padding-left: 70px;
+    height: 38px;
+    line-height: 38px;
+}
+.salesScoreGold ul li {
+    float: left;
+    width: 30%;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.introInfo .infoWrap {
+    padding: 10px;
+}
+.infoWrap .infoItems {
+    float: left;
+    width: 587px;
+    line-height: 30px;
+}
+.infoWrap .infoItems {
+    width: 528px;
+}
+.infoWrap .infoItems.couponsEntrance {
+    margin: 6px 0 5px 0;
+    height: 19px;
+    line-height: 19px;
+}
+.infoItems .infoTit {
+    color: #666;
+}
+.infoCoupons {
+    height: 19px;
+}
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.couponsLead {
+    height: 19px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.moreCoupons {
+    float: left;
+    color: #666;
+    text-decoration: none;
+    line-height: 20px;
+}
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.chooseBox {
+    margin-bottom: 8px;
+}
+.chooseBox .infoChoose, .chooseNumBox .infoChooseNum {
+    width: 464px;
+}
+.chooseBox .infoChoose ul, .chooseNumBox .infoChooseNum ul {
+    overflow: hidden;
+}
+.chooseBox .infoChoose .choItem {
+    float: left;
+    height: 32px;
+    padding: 0 10px 10px 0;
+    border: none;
+}
+.chooseBox .infoChoose a {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: auto !important;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+}
+.chooseBox .infoChoose .choItem.on a {
+    border: 1px solid #cc3333;
+    cursor: default;
+}
+.bayNumBox {
+    margin-bottom: 28px;
+}
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.bayNumBox .infoBuyNum .buyNum {
+    float: left;
+    width: 66px;
+    height: 30px;
+    position: relative;
+}
+input{
+    vertical-align: middle;
+    outline: 0;
+}
+.buyNum input {
+    float: left;
+    width: 26px;
+    height: 28px;
+    line-height: 28px;
+    color: #666;
+    font-family: "Microsoft YaHei";
+    padding: 0 8px;
+    border: 1px solid #ccc;
+}
+.buyNum input {
+    border: 1px solid #999;
+}
+.infoWrap .infoItems {
+    float: left;
+    width: 587px;
+    line-height: 30px;
+}
+.infoItems.bayBtnBox {
+    margin-bottom: 18px;
+    width: 587px;
+    overflow: hidden;
+    position: relative;
+}
+.infoWrap .infoItems {
+    width: 528px;
+}
+.bayBtnBox .infoBuy {
+    width: 550px;
+    padding-left: 64px;
+}
+.bayBtnBox .infoBuy .buyBtn {
+    display: inline-block;
+    width: 166px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 12px;
+}
+.bayBtnBox .infoBuy .buyBtn-cart {
+    border: 1px solid #ffcccc;
+    background: #cc3333;
+    color: #fff;
+}
+// .dIcon {
+//     background: url(/images/detail_v2.0/d-icon.png) no-repeat 0 0;}
+// .buyNum .buyNum-btn {
+//     width: 17px;
+//     height: 11px;
+//     position: absolute;
+//     right: 0;
+//     border: 1px solid #ccc;
+//     overflow: hidden;
+//     display: block;
+// }
+// .buyNum .buyNum-add {
+//     background-position: -70px -25px;
+//     top: 0;
+// }
+// .buyNum .buyNum-btn {
+//     border: 1px solid #999;
+// }
+// .buyNum .buyNum-reduce {
+//     background-position: -70px -41px;
+//     top: 17px;
+// }
 
-
-
-
-
-
-
-// 底部
 // 底部
 .loadFifth{
     height: 490px;margin-top: 20px
