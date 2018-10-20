@@ -1,5 +1,4 @@
-
-    $.ajax({
+$.ajax({
         type:"get",
         url:"js/data1.json",
         async:true,
@@ -9,17 +8,13 @@
             var oImg3 = document.querySelector(".show-pic .img3")
             var oImg4 = document.querySelector(".show-pic .img4")
             var oImg5 = document.querySelector(".show-pic .img5")
-
             var sImg1 = document.querySelector(".show-list-con .img1")
             var sImg2 = document.querySelector(".show-list-con .img2")
             var sImg3 = document.querySelector(".show-list-con .img3")
             var sImg4 = document.querySelector(".show-list-con .img4")
             var sImg5 = document.querySelector(".show-list-con .img5")
-
             var title = document.querySelector(".comName h1")
-
             var price = document.querySelector(".infoPri strong")
-
             var res ="";
             if(res = cookie("goodsId")){
                 oImg1.src= arr[res].img.one;
