@@ -532,16 +532,24 @@
                 position: absolute;
                 left: 0;
                 top: 0;
+                z-index: 1;
                 background: #fcabbb;
-                opacity: 0.3;
+                opacity: 0.5;
                 display: none;
+            }
+            .film{
+                width: 420px;
+                height: 420px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 999;cursor: none;
             }
             .Magnifier{
                width: 420px;
                height: 420px;
                position: absolute;
                box-shadow: 0 0 5px #fcdfcd;
-               background: #ff0000;
                right: -420px;
                top: 0;
                overflow: hidden;

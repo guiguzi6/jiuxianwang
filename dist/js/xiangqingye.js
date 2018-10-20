@@ -59,45 +59,46 @@ var oBig = document.querySelector(".instroShow .Magnifier");
 var oFrame = document.querySelector(".instroShow .frame");
 var oBig_img = oBig.children[0];
 oSmall.onmouseenter = function(){
+    //大小框都显示
     oBig.style.display = "block";
     oFrame.style.display = "block";
     // 让图片模糊;
     oSmall_img.style.opacity = "0.3";
 }
 oSmall.onmouseleave = function(){
+    //大小框都隐藏
     oBig.style.display = "none";
     oFrame.style.display = "none";
     oSmall_img.style.opacity = "1";
 }
 oSmall.onmousemove = function(event){
+    //获取定位的x，y值
     var e = event || window.event;
-    var nLeft = e.offsetX - 70;
-    var nTop = e.offsetY - 70;
-    if(nLeft <= 0){
-        nLeft = 0;
-    }
-    if(nTop <= 0){
-        nTop = 0;
-    }
+    var offsetX = e.offsetX;
+    var offsetY = e.offsetY;
+    //给元素设置的left值和top值
+    var nLeft = offsetX - 70;
+    var nTop = offsetY- 70;
+    //检测边界
+    //最小值
+    nLeft = nLeft < 0 ? 0 : nLeft;
+    nTop = nTop < 0 ? 0 : nTop;
+    //最大值
     var maxLeft = oSmall.offsetWidth - oFrame.offsetWidth;
-    if(nLeft >= maxLeft){
-        nLeft = maxLeft
-    }
     var maxTop = oSmall.offsetHeight - oFrame.offsetHeight;
-    if(nTop >= maxTop){
-        nTop = maxTop;
-    }
+
+    nLeft = nLeft > maxLeft ? maxLeft : nLeft;
+    nTop = nTop > maxTop ? maxTop : nTop;
+
     oFrame.style.left = nLeft + "px";
-    oFrame.style.top = nTop + "px";  
-    
-    // 计算比例;
+    oFrame.style.top = nTop + "px";
+
     var propX = oBig.offsetWidth / oFrame.offsetWidth;
-    // 根据比例算出位移值;
-    oBig_img.style.left = -nLeft * propX + "px";
     var propY = oBig.offsetHeight / oFrame.offsetHeight;
+
+    oBig_img.style.left = -nLeft * propX + "px";
     oBig_img.style.top = -nTop * propY + "px";
-    // 设置背景的位置;
-    // oFrame.style.backgroundPosition = `${-nLeft}px ${-nTop}px`
+
 }
     
    
