@@ -1791,8 +1791,11 @@
     }
     
 </script>
-<script>
-    $(".weixin .weixinCon").hover(function(){
-        $(".item .weixinCode").toggle();
+    <script>
+    $(function(){
+        $("#jxWeixin").mouseenter(function(){
+        $("#weixinCode").toggle();  
+        })
     })
 </script>
+
