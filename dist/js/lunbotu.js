@@ -223,82 +223,82 @@ banner.autoPlay();
 
 
 // logo墙轮播图
-function Banner(){}
-Object.assign(Banner.prototype , {
-    init(){
-        // 初始化;
-        // 当前显示的图片下标;
-        this.nowIndex = 0;
-        // 元素;
-        // this.btn_left = document.querySelector("#left");
-        // this.btn_right = document.querySelector("#right");
+// function Banner(){}
+// Object.assign(Banner.prototype , {
+//     init(){
+//         // 初始化;
+//         // 当前显示的图片下标;
+//         this.nowIndex = 0;
+//         // 元素;
+//         // this.btn_left = document.querySelector("#left");
+//         // this.btn_right = document.querySelector("#right");
         
-        this.show_list = document.querySelectorAll(".indexTuanList ul");
+//         this.show_list = document.querySelectorAll(".indexTuanList ul");
   
-        this.logo = document.querySelector(".logoFirstbd");
+//         this.logo = document.querySelector(".logoFirstbd");
 
-        this.btnLeft = document.querySelector(".prevPage")
+//         this.btnLeft = document.querySelector(".prevPage")
         
-        this.btnRight = document.querySelector(".nextPage")
+//         this.btnRight = document.querySelector(".nextPage")
 
-        this.wrap =document.querySelector(".logoBox")
+//         this.wrap =document.querySelector(".logoBox")
 
-        this.itmeNum = this.show_list.length;
-        this.bindEvent()
-    },  
-    bindEvent(){
-        this.btnLeft.onclick = this.prev.bind(this);
-        //点击右边显示下一个
-        this.btnRight.onclick = this.next.bind(this);
-        // this.btn_left.onclick = this.prev.bind(this);
-        // this.btn_right.onclick = this.next.bind(this);
-        for(var i = 0 ; i < this.show_list.length ; i ++){
-            this.btn_list[i].index = i;
-            this.btn_list[i].onclick = this.toIndex.bind(this);
-        }     
-         this.wrap.onmouseenter = this.xianshi().bind(this);
-         this.wrap.onmouseleave = this.yincang().bind(this);       
-    },
-    next(){
-        if(this.nowIndex == this.itmeNum - 1){
-            // 到了最后一张;
-            this.ul.style.left = 0;
-            this.nowIndex = 1;
-        }else{
-            this.nowIndex ++;
-        }
-        this.animate();
-    },
-    prev(){
-        if(this.nowIndex == 0){
-            // 到了第一张;
-            this.logo.style.left = -(this.itmeNum - 1) * 268 + "px";
-            this.nowIndex = this.itmeNum - 2;
-        }else{
-            this.nowIndex --;
-        }
-        this.animate();
-    },
-    toIndex(event){
-        var e = event || window.event
-        var target = e.target || e.srcElement;
-        this.nowIndex = target.index;
-        this.animate();
-    },
-    animate(){
-        $(this.ul).stop().animate({
-            left:- this.nowIndex * 268 
-        })
+//         this.itmeNum = this.show_list.length;
+//         this.bindEvent()
+//     },  
+//     bindEvent(){
+//         this.btnLeft.onclick = this.prev.bind(this);
+//         //点击右边显示下一个
+//         this.btnRight.onclick = this.next.bind(this);
+//         // this.btn_left.onclick = this.prev.bind(this);
+//         // this.btn_right.onclick = this.next.bind(this);
+//         for(var i = 0 ; i < this.show_list.length ; i ++){
+//             this.btn_list[i].index = i;
+//             this.btn_list[i].onclick = this.toIndex.bind(this);
+//         }     
+//          this.wrap.onmouseenter = this.xianshi().bind(this);
+//          this.wrap.onmouseleave = this.yincang().bind(this);       
+//     },
+//     next(){
+//         if(this.nowIndex == this.itmeNum - 1){
+//             // 到了最后一张;
+//             this.ul.style.left = 0;
+//             this.nowIndex = 1;
+//         }else{
+//             this.nowIndex ++;
+//         }
+//         this.animate();
+//     },
+//     prev(){
+//         if(this.nowIndex == 0){
+//             // 到了第一张;
+//             this.logo.style.left = -(this.itmeNum - 1) * 268 + "px";
+//             this.nowIndex = this.itmeNum - 2;
+//         }else{
+//             this.nowIndex --;
+//         }
+//         this.animate();
+//     },
+//     toIndex(event){
+//         var e = event || window.event
+//         var target = e.target || e.srcElement;
+//         this.nowIndex = target.index;
+//         this.animate();
+//     },
+//     animate(){
+//         $(this.ul).stop().animate({
+//             left:- this.nowIndex * 268 
+//         })
         
-    },
-    xianshi(){
-        this.btnLeft.style.display = "block"
-        this.btnRight.style.display = "block"
-    },
-    yincang(){
-        this.btnLeft.style.display = "none"
-        this.btnRight.style.display = "none"
-    }
-})
-var banner = new Banner();
-banner.init();
+//     },
+//     xianshi(){
+//         this.btnLeft.style.display = "block"
+//         this.btnRight.style.display = "block"
+//     },
+//     yincang(){
+//         this.btnLeft.style.display = "none"
+//         this.btnRight.style.display = "none"
+//     }
+// })
+// var banner = new Banner();
+// banner.init();

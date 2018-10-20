@@ -1127,8 +1127,35 @@ a{color: #666;}
     width: 1200px;margin: 0 auto;background: #f0f3ef;
 }
 .pubuliu .pubuliu-con .wrap{
-    position: relative;width: 230px;height: 305px;float: left;margin: 0 5px 20px 5px;
+    position: relative;width: 230px;height: 305px;float: left;margin: 0 5px 20px 5px;background: #fff;
 }
+.pubuliu .pubuliu-con .wrap a{
+    position: absolute;width: 230px;height: 305px;left: 0;top: 0;transform: 0.5s
+}
+.pubuliu .pubuliu-con .similarity{
+    position: absolute;
+    width: 60px;height: 60px;border-radius: 50%;background: #434343;
+    color: #fff;text-align: center;line-height: 60px;left: 85px;top: 229px;
+    transform: scale(0);transition: 0.5s
+}
+.pubuliu .pubuliu-con .wrap:hover .similarity{transform: scale(1)}
+.pubuliu .pubuliu-con .wrap img {
+height: 170px;
+width: 170px;
+margin: 30px 30px 20px;
+}
+.pubuliu .pubuliu-con .wrap a:hover{opacity: 0.8;}
+.pubuliu .pubuliu-con .wrap p {
+height: 36px;
+font-size: 14px;
+line-height: 18px;
+overflow: hidden;
+text-overflow: ellipsis;
+text-align: center;
+color: #333;
+}
+
+
 /* 页脚 */
 .loadFifth{
     height: 490px;margin-top: 20px
