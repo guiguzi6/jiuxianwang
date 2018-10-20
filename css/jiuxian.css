@@ -1120,6 +1120,15 @@ a{color: #666;}
 }
 .goods_menu a:hover{color: #666;text-decoration:none;}
 
+.pubuliu{
+    width: 100%;margin-top: 20px;
+}
+.pubuliu .pubuliu-con{
+    width: 1200px;margin: 0 auto;background: #f0f3ef;
+}
+.pubuliu .pubuliu-con .wrap{
+    position: relative;width: 230px;height: 305px;float: left;margin: 0 5px 20px 5px;
+}
 /* 页脚 */
 .loadFifth{
     height: 490px;margin-top: 20px
