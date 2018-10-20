@@ -4,34 +4,34 @@ $(document).ready(function(){
     // 克隆第一张图片，并且放到最后
     $(" bigUl1 li:first").clone().appendTo('.bigUl1')
     // 右按钮业务
-    $(".you").click(rightFunc)
-        function rightFunc(){
+    // $(".you").click(rightFunc)
+    //     function rightFunc(){
 
-        if(nowimg<5){
-            nowimg++
-            $(".bigUl1").animate({"left":nowimg*-730},1000)
-        }else{
-            nowimg=0
-            $(".bigUl1").animate({"left":6*-730},1000,function(){
-                $(".bigUl1").css("left",0)
+    //     if(nowimg<5){
+    //         nowimg++
+    //         $(".bigUl1").animate({"left":nowimg*-730},1000)
+    //     }else{
+    //         nowimg=0
+    //         $(".bigUl1").animate({"left":6*-730},1000,function(){
+    //             $(".bigUl1").css("left",0)
 
-            })
-        }
-        $(".btnBg1 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    //         })
+    //     }
+    //     $(".btnBg1 em").eq(nowimg).addClass('on').siblings().removeClass('on')
 
-    }
-    // 左按钮业务
-    $(".zuo").click(function(){
-        if(nowimg>0){
-            nowimg--
-            $(".box-in").animate({"left":nowimg*-730},1000)
-        }else{
-            nowimg=5
-            $(".box-in").css({"left":6*-730},1000)
-            $(".box-in").animate({"left":nowimg*-730},1000)
-        }
-        $(".circle span").eq(nowimg).addClass('current').siblings().removeClass('current')
-    })
+    // }
+    // // 左按钮业务
+    // $(".zuo").click(function(){
+    //     if(nowimg>0){
+    //         nowimg--
+    //         $(".box-in").animate({"left":nowimg*-730},1000)
+    //     }else{
+    //         nowimg=5
+    //         $(".box-in").css({"left":6*-730},1000)
+    //         $(".box-in").animate({"left":nowimg*-730},1000)
+    //     }
+    //     $(".circle span").eq(nowimg).addClass('current').siblings().removeClass('current')
+    // })
     // 小圆点业务
     $(".circle span").click(function(){
          nowimg=$(this).index()
