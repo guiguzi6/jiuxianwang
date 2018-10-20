@@ -522,6 +522,42 @@
         background: url(http://misc.jiuxian.com/images/detail_v2.0/d-icon.png) no-repeat 0 0;
     }
 }
+.w1200{
+    .dIntro{
+        .instroShow{
+            .frame{
+                height: 140px;
+                width: 140px;
+                box-shadow: 0 0 5px #9999af;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #fcabbb;
+                opacity: 0.3;
+                display: none;
+            }
+            .Magnifier{
+               width: 420px;
+               height: 420px;
+               position: absolute;
+               box-shadow: 0 0 5px #fcdfcd;
+               background: #ff0000;
+               right: -420px;
+               top: 0;
+               overflow: hidden;
+               display: none;
+               img{
+                   width: 1240px;
+                   height: 1240px;
+                   position: absolute;
+                   left: 0;
+                   top: 0;
+               }
+            }
+        }
+    }
+}
+
 .introInfo {
     width: 548px;
     min-height: 533px;
@@ -764,28 +800,7 @@ input{
     background: #cc3333;
     color: #fff;
 }
-// .dIcon {
-//     background: url(/images/detail_v2.0/d-icon.png) no-repeat 0 0;}
-// .buyNum .buyNum-btn {
-//     width: 17px;
-//     height: 11px;
-//     position: absolute;
-//     right: 0;
-//     border: 1px solid #ccc;
-//     overflow: hidden;
-//     display: block;
-// }
-// .buyNum .buyNum-add {
-//     background-position: -70px -25px;
-//     top: 0;
-// }
-// .buyNum .buyNum-btn {
-//     border: 1px solid #999;
-// }
-// .buyNum .buyNum-reduce {
-//     background-position: -70px -41px;
-//     top: 17px;
-// }
+
 
 // 底部
 .loadFifth{

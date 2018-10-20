@@ -122,7 +122,7 @@ oUl.onclick=function(evt){
     var target = e.target || e.srcElement;
     if(imgArry.indexOf(target) != -1 ||  titleArry.indexOf(target) != -1){
         cookie("goodsId",target.getAttribute("data-id"));
-        location.href= "http://www.baidu.com";
+        location.href= "xiangqingye.html";
     }
 }
 
@@ -241,14 +241,14 @@ aUl.onclick=function(evt){
     var target = e.target || e.srcElement;
     if(imgArry.indexOf(target) != -1 ||  titleArry.indexOf(target) != -1){
         cookie("goodsId",target.getAttribute("data-id"));
-        location.href= "http://www.baidu.com";
+        location.href= "xiangqingye.html";
     }
 }
 
 
-// $.ajxa({
+// $.ajax({
 //     type:"get",
-//     url:"js/data1.json",
+//     url:"data.json",
 //     async:true,
 //     success:function(arr){
 //         console.log(arr)
