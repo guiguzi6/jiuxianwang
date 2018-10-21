@@ -1,211 +1,464 @@
-// $(function () {
-//     //获取小按钮
-//     var $oLi = $(".btnBox span em");
-//     //获取图片的宽度
-//     var imgW = $(".bigUl li").width();
-
-//     $($oLi[0]).addClass("on");
-
-
-//     //点击小按钮，图片移动，并给小按钮设置背景颜色
-//     $oLi.on("click", function () {
-//         //将活动的小按钮添加一个类
-//         $(this).addClass("on").siblings().removeClass("on");
-//         //获取索引
-//         var num = $(this).index();
-//         $(".bigUl").animate({
-//             left: -num * imgW + "px"
-//         }, 300);
-//     });
-
-//     //循环播放
-//     var timeId = setInterval(function () {
-//         //判断小按钮中哪个按钮是活动的
-//         var num;
-//         $oLi.each(function () {
-//             //将ul向右移动
-//             if($(this).hasClass("on")) {
-//                 //得到活动的索引,然后加1
-//                 num = $(this).index() + 1;
-//                 //让图片移动
-//                 $(".bigUl").animate({
-//                     left: -num * imgW + "px"
-//                 }, 300);
-//                 //到达最后一张，让ul从头开始
-//                 if(num== $oLi.length) {
-//                     $(".bigUl").animate({
-//                         left: "0px"
-//                     }, 0);
-//                     num = 0;
-//                 }
-//             }
-//         });
-//         //小按钮的背景色相应的改变
-//         $($oLi[num]).addClass("on").siblings().removeClass("on");
-//     }, 1000);
-// })
-
-
 // 今日推荐轮播图
-function Banner(){}
-Object.assign(Banner.prototype , {
-    init(){
-        // 初始化;
-        // 当前显示的图片下标;
-        this.nowIndex = 0;
-        // 元素;
-        // this.btn_left = document.querySelector("#left");
-        // this.btn_right = document.querySelector("#right");
-        
-        this.btn_list = document.querySelectorAll(".btnBg em");
+$(document).ready(function(){
+    var nowimg=0;
+    var timer=null;
+    // 克隆第一张图片，并且放到最后
+    $(" bigUl1 li:first").clone().appendTo('.bigUl1')
+    //右按钮业务
+    $(".you").click(rightFunc)
+        function rightFunc(){
 
-        this.show_list = document.querySelectorAll(".indexTuanList .bigUl li");
-        this.ul = document.querySelector(".indexTuanList .bigUl");
+        if(nowimg<2){
+            nowimg++
+            $(".bigUl1").animate({"left":nowimg*-268},1000)
+        }else{
+            nowimg=0
+            $(".bigUl1").animate({"left":3*-268},1000,function(){
+                $(".bigUl1").css("left",0)
 
-        this.itmeNum = this.show_list.length;
-        this.bindEvent()
-    },  
-    bindEvent(){
-        // this.btn_left.onclick = this.prev.bind(this);
-        // this.btn_right.onclick = this.next.bind(this);
-        for(var i = 0 ; i < this.btn_list.length ; i ++){
-            this.btn_list[i].index = i;
-            this.btn_list[i].onclick = this.toIndex.bind(this);
-        }     
-                
-    },
-    next(){
-        if(this.nowIndex == this.itmeNum - 1){
-            // 到了最后一张;
-            this.ul.style.left = 0;
-            this.nowIndex = 1;
-        }else{
-            this.nowIndex ++;
+            })
         }
-        this.animate();
-    },
-    prev(){
-        if(this.nowIndex == 0){
-            // 到了第一张;
-            this.ul.style.left = -(this.itmeNum - 1) * 268 + "px";
-            this.nowIndex = this.itmeNum - 2;
-        }else{
-            this.nowIndex --;
-        }
-        this.animate();
-    },
-    toIndex(event){
-        var e = event || window.event
-        var target = e.target || e.srcElement;
-        this.nowIndex = target.index;
-        this.animate();
-    },
-    animate(){
-        // console.log(this.nowIndex);
-        // 1. li 的动画;
-        // 2. button 的动画;
-        // this.ul.style.left = - this.nowIndex * 100 + "px";
-        // jquery dom 调用 animate方法;
-        $(this.ul).stop().animate({
-            left:- this.nowIndex * 268 
-        })
-        
-        $(this.btn_list).removeClass("on");
+        $(".btnBg1 em").eq(nowimg).addClass('on').siblings().removeClass('on')
 
-        if(this.nowIndex == this.itmeNum - 1){
-            this.btn_list[0].className = "on"
-        }else{
-            this.btn_list[this.nowIndex].className = "on";
-        }
-    },
-    autoPlay(){
-        this.autoTimer = setInterval(function(){
-            this.next();
-        }.bind(this),1000)
     }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl1").animate({"left":nowimg*-268},1000)
+        }else{
+            nowimg=2
+            $(".bbigUl1").css({"left":3*-268},1000)
+            $(".bigUl1").animate({"left":nowimg*-268},1000)
+        }
+        $(".btnBg1 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg1 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg1 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl1").animate({"left":nowimg*-268}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".indexTuanList").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg1").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".indexTuanList").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
 })
-var banner = new Banner();
-banner.init();
-banner.autoPlay();
+
 
 // 大坛专区轮播图
-function Banner(){}
-Object.assign(Banner.prototype , {
-    init(){
-        // 初始化;
-        // 当前显示的图片下标;
-        this.nowIndex = 0;
-        // 元素;
-        // this.btn_left = document.querySelector("#left");
-        // this.btn_right = document.querySelector("#right");
-        
-        this.btn_list = document.querySelectorAll(".btnBg em");
+$(document).ready(function(){
+    var nowimg=0;
+    var timer=null;
+    // 克隆第一张图片，并且放到最后
+    $(" bigUl2 li:first").clone().appendTo('.bigUl2')
+    //右按钮业务
+    $(".you").click(rightFunc)
+        function rightFunc(){
 
-        this.show_list = document.querySelectorAll(".indexTuanList .bigUl li");
-        this.ul = document.querySelector(".indexTuanList .bigUl");
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl2").animate({"left":nowimg*-268},1000)
+        }else{
+            nowimg=0
+            $(".bigUl2").animate({"left":2*-268},1000,function(){
+                $(".bigUl2").css("left",0)
 
-        this.itmeNum = this.show_list.length;
-        this.bindEvent()
-    },  
-    bindEvent(){
-        // this.btn_left.onclick = this.prev.bind(this);
-        // this.btn_right.onclick = this.next.bind(this);
-        for(var i = 0 ; i < this.btn_list.length ; i ++){
-            this.btn_list[i].index = i;
-            this.btn_list[i].onclick = this.toIndex.bind(this);
-        }     
-                
-    },
-    next(){
-        if(this.nowIndex == this.itmeNum - 1){
-            // 到了最后一张;
-            this.ul.style.left = 0;
-            this.nowIndex = 1;
-        }else{
-            this.nowIndex ++;
+            })
         }
-        this.animate();
-    },
-    prev(){
-        if(this.nowIndex == 0){
-            // 到了第一张;
-            this.ul.style.left = -(this.itmeNum - 1) * 268 + "px";
-            this.nowIndex = this.itmeNum - 2;
-        }else{
-            this.nowIndex --;
-        }
-        this.animate();
-    },
-    toIndex(event){
-        var e = event || window.event
-        var target = e.target || e.srcElement;
-        this.nowIndex = target.index;
-        this.animate();
-    },
-    animate(){
-        // console.log(this.nowIndex);
-        // 1. li 的动画;
-        // 2. button 的动画;
-        // this.ul.style.left = - this.nowIndex * 100 + "px";
-        // jquery dom 调用 animate方法;
-        $(this.ul).stop().animate({
-            left:- this.nowIndex * 268 
-        })
-        
-        $(this.btn_list).removeClass("on");
+        $(".btnBg2 em").eq(nowimg).addClass('on').siblings().removeClass('on')
 
-        if(this.nowIndex == this.itmeNum - 1){
-            this.btn_list[0].className = "on"
-        }else{
-            this.btn_list[this.nowIndex].className = "on";
-        }
-    },
-    autoPlay(){
-        this.autoTimer = setInterval(function(){
-            this.next();
-        }.bind(this),1000)
     }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl2").animate({"left":nowimg*-268},1000)
+        }else{
+            nowimg=1
+            $(".bigUl2").css({"left":2*-268},1000)
+            $(".bigUl2").animate({"left":nowimg*-268},1000)
+        }
+        $(".btnBg2 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg2 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg2 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl2").animate({"left":nowimg*-268}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".indexAdFocusList1").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg2").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".indexAdFocusList1").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
 })
-var banner = new Banner();
-banner.init();
-banner.autoPlay();
+
+// 优惠推荐轮播图
+
+$(function(){
+    var nowing = 0;
+    var timer = null;
+    $(".receBoxs  .raceList:first").clone().appendTo(".receBoxs");
+
+    $(".raceListWrap .raceRight").click(function(){
+        if(nowing < 2){
+            nowing++
+            $(".raceListWrap .receBoxs").animate({"left":nowing*-1190},1000);    
+        }
+        $(".rightNavBox span").eq(nowing).addClass("on").siblings().removeClass("on")
+    })
+
+    $(".raceListWrap .raceLeft").click(function(){
+        if(nowing > 0){
+            nowing--
+            $(".raceListWrap .receBoxs").animate({"left":nowing*1190},1000);    
+        }
+        $(".rightNavBox span").eq(nowing).addClass("on").siblings().removeClass("on")
+    })
+
+
+    $(".rightNavBox span").click(function (){
+        nowimg=$(this).index()
+       $(".rightNavBox span").eq(nowimg).addClass("on").siblings().removeClass("on")
+        $(".raceListWrap .receBoxs").animate({"left":nowimg*-1190}, 1000)
+   });
+})
+
+
+//白酒馆轮播图
+$(function(){
+    var nowimg=0;
+    var timer=null;
+    // 克隆第一张图片，并且放到最后
+    $(" bigUl3 li:first").clone().appendTo('.bigUl3')
+    //右按钮业务
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<2){
+            nowimg++
+            $(".bigUl3").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl3").animate({"left":3*-210},1000,function(){
+                $(".bigUl3").css("left",0)
+
+            })
+        }
+        $(".btnBg3 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl3").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=2
+            $(".bigUl3").css({"left":3*-210},1000)
+            $(".bigUl3").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg3 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg3 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg3 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl3").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox1").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg3").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox1").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+})
+
+// 葡萄酒馆轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl4 li:first").clone().appendTo(".bigUl4")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl4").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl4").animate({"left":2*-210},1000,function(){
+                $(".bigUl4").css("left",0)
+
+            })
+        }
+        $(".btnBg4 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl4").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=1
+            $(".bigUl4").css({"left":2*-210},1000)
+            $(".bigUl4").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg4 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg4 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg4 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl4").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox2").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg4").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox2").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+
+})
+
+// 洋酒馆轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl5 li:first").clone().appendTo(".bigUl5")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl5").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl5").animate({"left":2*-210},1000,function(){
+                $(".bigUl5").css("left",0)
+
+            })
+        }
+        $(".btnBg5 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl5").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=1
+            $(".bigUl5").css({"left":2*-210},1000)
+            $(".bigUl5").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg5 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg5 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg5 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl5").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox3").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg5").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox3").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+
+})
+
+// 养生轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl6 li:first").clone().appendTo(".bigUl6")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<3){
+            nowimg++
+            $(".bigUl6").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl6").animate({"left":4*-210},1000,function(){
+                $(".bigUl6").css("left",0)
+
+            })
+        }
+        $(".btnBg6 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl6").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=3
+            $(".bigUl6").css({"left":4*-210},1000)
+            $(".bigUl6").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg6 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg6 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg6 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl6").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox4").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg6").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox4").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+
+})
+
+// 食品轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl7 li:first").clone().appendTo(".bigUl7")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl7").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl7").animate({"left":2*-210},1000,function(){
+                $(".bigUl7").css("left",0)
+
+            })
+        }
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl7").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=1
+            $(".bigUl7").css({"left":2*-210},1000)
+            $(".bigUl7").animate({"left":nowimg*-210},1000)
+        }
+    }) 
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox5").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox5").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+})
+
+
+// logo墙轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".logoFirstbd ul:first").clone().appendTo(".logoFirstbd")
+
+    $(".nextPage").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".logoFirstbd").animate({"left":nowimg*-1168},1000)
+        }else{
+            nowimg=0
+            $(".logoFirstbd").animate({"left":2*-1168},1000,function(){
+                $(".logoFirstbd").css("left",0)
+
+            })
+        }
+    }
+    // 左按钮业务
+    $(".prevPage").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".logoFirstbd").animate({"left":nowimg*-1168},1000)
+        }else{
+            nowimg=1
+            $(".logoFirstbd").css({"left":2*-1168},1000)
+            $(".logoFirstbd").animate({"left":nowimg*-1168},1000)
+        }
+    }) 
+})

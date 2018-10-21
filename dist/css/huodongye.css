@@ -370,6 +370,17 @@
   color: #c00;
   padding-left: 5px; }
 
+/* 头部活动入口 */
+.foucsBox {
+  width: 100%;
+  height: 80px; }
+
+.foucsBox a {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: url(http://img09.jiuxian.com/bill/2018/1012/4d2d6a5d1d114ad9bab6f76b704d8c8a.jpg) no-repeat top center scroll; }
+
 /* 搜索部分 */
 .search {
   width: 100%;
@@ -412,7 +423,7 @@
   height: 65px; }
 
 .search .headerSearch {
-  width: 540px;
+  width: 340px;
   float: left;
   display: inline-block;
   margin: 42px 0 0 20px; }
@@ -423,7 +434,7 @@
   position: relative; }
 
 .search .headerSearch .form .txt {
-  width: 437px;
+  width: 239px;
   height: 32px;
   border: 0 none;
   float: left;
@@ -434,7 +445,7 @@
   outline: none; }
 
 .search .headerSearch .form .btn {
-  width: 85px;
+  width: 83px;
   height: 32px;
   float: left;
   border: 0 none;
@@ -547,11 +558,14 @@
   width: 190px;
   height: 470px;
   border: none;
-  display: block;
+  display: none;
   position: absolute;
   text-outline: 34px;
   left: 0;
   z-index: 99; }
+
+.navWrap .nav .left:hover .categoryBox {
+  display: block; }
 
 .navWrap .nav .left .categoryBox li {
   width: 190px;
@@ -857,7 +871,7 @@
   width: 495px; }
 
 .navWrap .nav .navList {
-  width: 820px;
+  width: 690px;
   height: 34px;
   float: left; }
 
@@ -919,3 +933,365 @@
   display: block;
   width: 120px;
   height: 34px; }
+
+.shopIcon {
+  background: url(http://misc.jiuxian.com/images/shop/shopDecoration/template/temDefault-24.png) no-repeat; }
+
+.layyouContain {
+  min-width: 990px;
+  background: #f8f7f2; }
+  .layyouContain .noMargin {
+    margin-bottom: 0px; }
+    .layyouContain .noMargin .layoutWidAuto {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      width: 100%;
+      height: 130px;
+      margin: auto;
+      overflow: hidden;
+      background: url(http://img07.jiuxian.com/brandlogo/2018/1017/78b2d911d4604c94a9754abfea158c69.jpg) no-repeat #fff;
+      background-position: 50% 0; }
+      .layyouContain .noMargin .layoutWidAuto .shopCountdownbd {
+        width: 999px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%; }
+        .layyouContain .noMargin .layoutWidAuto .shopCountdownbd p {
+          height: 70px;
+          padding-top: 30px;
+          text-align: center;
+          position: absolute;
+          left: 390px;
+          top: -20px; }
+          .layyouContain .noMargin .layoutWidAuto .shopCountdownbd p b {
+            width: 63px;
+            height: 63px;
+            line-height: 63px;
+            color: #f6f6f6;
+            font-size: 46px;
+            margin: 0 33px 0 0;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            background-position: -72px 0; }
+
+/* 页脚 */
+.loadFifth {
+  height: 490px;
+  margin-top: 20px; }
+
+.footer {
+  width: 100%;
+  background: #f9f9f9;
+  min-width: 1000px; }
+
+.footer .footerTopBox {
+  width: 100%;
+  background: #333; }
+
+.footerTop {
+  width: 1000px;
+  margin: 0 auto;
+  height: 84px;
+  border-bottom: 1px solid #494949; }
+
+.footerTop .footerContact {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 22px 0; }
+
+.publicIcon {
+  background: url(http://misc.jiuxian.com/img/newIndexImg/public-24.png) no-repeat; }
+
+.footerContact i {
+  width: 40px;
+  height: 40px;
+  background-position: -144px -22px;
+  margin-right: 18px;
+  display: inline-block; }
+
+.footerContact b {
+  font-size: 24px;
+  color: #c00;
+  margin-right: 25px; }
+
+.footerContact span {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 8px; }
+
+.footerTop .footerTopRight {
+  float: right;
+  height: 32px;
+  padding: 26px 0; }
+
+.footerTopRight .ftRight-tit {
+  float: left;
+  line-height: 32px;
+  color: #fff;
+  padding-right: 10px;
+  font-size: 12px; }
+
+.footerTopRight .ftRight-form {
+  float: left;
+  width: 240px;
+  height: 30px;
+  border: 1px solid #494949;
+  position: relative;
+  z-index: 99; }
+
+.footerTopRight .ftRight-form input {
+  width: 190px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 6px;
+  background: 0;
+  border: 0;
+  float: left;
+  color: #fff;
+  outline: 0; }
+
+.footerTopRight .ftRight-form span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  font-size: 12px;
+  position: absolute;
+  left: 6px;
+  top: 0; }
+
+.footerTopRight .ftRight-form i {
+  display: inline-block;
+  width: 22px;
+  height: 18px;
+  background-position: -133px 0;
+  margin: 6px 0 0 10px;
+  cursor: pointer;
+  float: left; }
+
+.footerServices {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 60px; }
+
+.footerServices ul li {
+  width: 130px;
+  float: left;
+  display: inline;
+  margin-right: 15px; }
+
+.footerServices ul li h3 {
+  font-weight: normal;
+  height: 26px;
+  line-height: 26px;
+  padding: 5px 0; }
+
+.footerServices ul li h3 i {
+  background-position: 0 -131px;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  float: left; }
+
+.footerServices ul li h3 span {
+  display: inline-block;
+  width: 95px;
+  font-size: 14px;
+  color: white;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.footerServices ul li p {
+  width: 95px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 35px;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.footerServices ul li p a {
+  font-size: 12px; }
+
+.footerServices ul li.jxMicroblogging {
+  margin-right: 0; }
+
+.jxMicroblogging .item {
+  width: 130px;
+  height: 28px;
+  line-height: 28px;
+  padding: 5px 0 13px;
+  position: relative;
+  font-size: 12px; }
+
+.jxMicroblogging .item a {
+  display: inline-block;
+  color: white;
+  float: left; }
+
+.jxMicroblogging .item i {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 9px;
+  float: left;
+  cursor: pointer; }
+
+.jxMicroblogging .sinaMb i {
+  background-position: -140px -74px; }
+
+.jxMicroblogging .item {
+  width: 130px;
+  height: 28px;
+  line-height: 28px;
+  padding: 5px 0 13px;
+  position: relative; }
+
+.jxMicroblogging .weixin i {
+  background-position: -103px -74px; }
+
+.jxMicroblogging .item a {
+  display: inline-block;
+  color: white;
+  float: left; }
+
+.jxMicroblogging .weixin .weixinCode {
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  left: 37px;
+  top: 35px;
+  display: none; }
+
+.footerBotBox {
+  width: 100%; }
+
+.footerBot {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 40px; }
+
+.footerBotLeft {
+  float: left;
+  width: 760px;
+  overflow: hidden; }
+
+.footerBotLeft .copyright a {
+  color: #666; }
+
+.footerBotLeft .footerInfo {
+  height: 16px;
+  padding: 4px 0;
+  overflow: hidden;
+  position: relative;
+  left: -8px;
+  margin-left: 0; }
+
+.footerBotLeft .footerInfo a {
+  display: inline-table;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+  color: #666; }
+
+.footerBotLeft .footerInfo a i {
+  width: 1px;
+  height: 12px;
+  background: #999;
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  overflow: hidden;
+  display: block; }
+
+.footerBotLeft p {
+  line-height: 20px;
+  text-align: left;
+  font-size: 12px;
+  color: #666; }
+
+.footerBotLeft .friendLink {
+  padding: 17px 0 3px 0;
+  height: 20px;
+  width: 740px;
+  color: #999; }
+
+.footerBotLeft .friendLink a {
+  color: #999; }
+
+.footerBotLeft .footerAddr {
+  color: #999;
+  line-height: 22px; }
+
+.footerBotLeft .copybot {
+  height: 47px; }
+
+.footerBotLeft .copybot span {
+  float: left;
+  padding-right: 6px;
+  height: 47px;
+  width: 128px;
+  position: relative;
+  display: inline-block; }
+
+.footerBotLeft .copybot a {
+  display: inline-table;
+  margin-right: 5px; }
+
+.footerBotLeft .copybot img {
+  border: 0; }
+
+.footerBotLeft .footerPro {
+  color: #cc0000;
+  padding: 11px 0 6px; }
+
+.footerBotCode {
+  width: 240px;
+  float: right;
+  text-align: center;
+  padding-top: 20px; }
+
+.footerBotCode div {
+  float: left;
+  width: 80px;
+  display: inline;
+  margin-left: 40px; }
+
+.footerBotCode div .codePic {
+  width: 80px;
+  height: 80px; }
+
+.footerBotCode div img {
+  width: 80px;
+  height: 80px; }
+
+.footerBotCode div .codeText {
+  width: 80px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 5px;
+  font-size: 12px; }
+
+.footerTopBox a {
+  color: #ccc; }
+
+.footerTopBox a:hover {
+  text-decoration: underline; }
+
+.jxMicroblogging a:hover {
+  text-decoration: none; }
+
+.footerBotBox a:hover {
+  color: #cc0000;
+  text-decoration: underline; }
