@@ -947,7 +947,7 @@
       margin: 0 auto;
       overflow: hidden;
       width: 100%;
-      height: 130px;
+      height: 70px;
       margin: auto;
       overflow: hidden;
       background: url(http://img07.jiuxian.com/brandlogo/2018/1017/78b2d911d4604c94a9754abfea158c69.jpg) no-repeat #fff;
@@ -975,6 +975,110 @@
             display: inline-block;
             vertical-align: middle;
             background-position: -72px 0; }
+  .layyouContain .layoutBox .layoutCon1 {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; }
+    .layyouContain .layoutBox .layoutCon1 .userDefinedBox {
+      width: 1920px;
+      margin-left: -285.5px; }
+      .layyouContain .layoutBox .layoutCon1 .userDefinedBox img {
+        display: block; }
+
+.layoutBox_01 .layoutCon2 {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+  .layoutBox_01 .layoutCon2 .userDefinedBox1 {
+    width: 192px;
+    margin-left: -285.5px; }
+    .layoutBox_01 .layoutCon2 .userDefinedBox1 img {
+      display: block; }
+
+.layoutBox_02 .layoutCon3 {
+  width: 990px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .layoutBox_02 .layoutCon3 .activityImg {
+    text-align: center; }
+    .layoutBox_02 .layoutCon3 .activityImg img {
+      display: block; }
+  .layoutBox_02 .layoutCon3 .activityWarp {
+    display: none;
+    width: 580px;
+    height: 380px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: scroll; }
+    .layoutBox_02 .layoutCon3 .activityWarp span {
+      display: block;
+      font-size: 20px;
+      color: #000;
+      text-align: right;
+      float: right;
+      cursor: pointer; }
+    .layoutBox_02 .layoutCon3 .activityWarp h4 {
+      font-size: 16px;
+      text-align: center;
+      line-height: 50px;
+      margin-bottom: 10px;
+      color: #000; }
+    .layoutBox_02 .layoutCon3 .activityWarp p {
+      line-height: 20px;
+      font-size: 14px;
+      color: #555; }
+
+.layoutBox_03 .layoutCon4 {
+  width: 990px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .layoutBox_03 .layoutCon4 .layoutThree-left {
+    width: 490px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .layoutBox_03 .layoutCon4 .layoutThree-left a {
+      display: inline; }
+      .layoutBox_03 .layoutCon4 .layoutThree-left a img {
+        display: block; }
+  .layoutBox_03 .layoutCon4 .layoutThree-middle {
+    width: 240px;
+    float: left;
+    margin-left: 10px; }
+    .layoutBox_03 .layoutCon4 .layoutThree-middle a {
+      display: inline; }
+      .layoutBox_03 .layoutCon4 .layoutThree-middle a img {
+        display: block; }
+  .layoutBox_03 .layoutCon4 .layoutThree-right {
+    width: 240px;
+    float: left;
+    margin-left: 10px; }
+    .layoutBox_03 .layoutCon4 .layoutThree-right a {
+      display: inline; }
+      .layoutBox_03 .layoutCon4 .layoutThree-right a img {
+        display: block; }
+
+area {
+  display: inline;
+  cursor: pointer; }
+
+.layoutBox_04 .layoutCon5 {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+  .layoutBox_04 .layoutCon5 .userDefinedBox {
+    width: 1920px;
+    margin-left: -285.5px; }
+    .layoutBox_04 .layoutCon5 .userDefinedBox img {
+      display: inline; }
 
 /* 页脚 */
 .loadFifth {
