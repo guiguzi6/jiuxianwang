@@ -5,11 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/huodongye.css">
+    <link rel="stylesheet" href="css/shangpinliebiao.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-    <!-- header头部 -->
+    <!-- 右侧栏-->
+    <div class="rightSidebar">
+        <div class="rightSidebarCon">
+            <div class="rSidebarItem user">
+                <div class="rsItemName">
+                    <i class="publicIcon user-i"></i>
+                    <span>我</span>
+                </div>
+                <div class="rsItemCon sidebarUser">
+                    <div class="sidebarClose"></div>
+                    <div class="sidebarUserPho clearfix">
+                        <div class="sidUser-pho">
+                            <img src="images/jiuxianwang_04.jpg" alt="">
+                        </div>
+                        <div class="sidUser-name suLoginNot" id="sidUserLoginNot">
+                            <p>
+                                您好！请<a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html">登录</a>
+                            </p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="sidebarUserOpe">
+                        <div class="userOpe frist clearfix">
+                            <div class="ope-con opeOrder">
+                                <p class="ope-icon">
+                                    <i class="publicIcon"></i>
+                                </p>
+                                <p class="ope-name">我的订单</p>
+                            </div>
+                            <div class="ope-con opeNews">
+                                <p class="ope-icon">
+                                    <i class="publicIcon" id="myCounpon"></i>
+                                </p>
+                                <p class="ope-name">我的优惠券</p>
+                            </div>
+                        </div>
+                        <div class="userOpe clearfix">
+                            <div class="ope-con opeTrack">
+                                <p class="ope-icon">
+                                    <i class="publicIcon"></i>
+                                </p>
+                                <p class="ope-name">订单跟踪</p>
+                            </div>
+                            <div class="ope-con opeMember">
+                                <p class="ope-icon">
+                                    <i class="publicIcon"></i>
+                                </p>
+                                <p class="ope-name">会员俱乐部</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rSidebarItem collectSidebar">
+                <div class="rsItemName">
+                    <i class="publicIcon collect-i"></i>
+                    <span>收藏</span>
+                </div>
+                <div class="sidebarUserPho shoucang clearfix">
+                    <div class="sidUser-pho">
+                        <img src="images/jiuxianwang_04.jpg" alt="">
+                    </div>
+                    <div class="sidUser-name suLoginNot" id="sidUserLoginNot">
+                        <p>
+                            您好！请<a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html">登录</a>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="rSidebarItem cart" id="rSidebarCart">
+                <div class="rsItemName">
+                    <i class="publicIcon cart-i" id="cartNnd"></i>
+                    <span class="cart-n">购物车</span>
+                    <u class="rsItemPointer"></u>
+                </div>
+            </div>
+            <div id="kefusidebar" class="rSidebarItem onlineService">
+                <div class="rsItemName">
+                    <i class="publicIcon online-i"></i>
+                    <span class="online-n">客服</span>
+                </div>
+            </div>
+        </div>
+        <div class="rightSidebarBot">
+            <div class="rSidebarItem feedback">
+                <div class="rsItemName">
+                    <i class="publicIcon feedback-i"></i>
+                </div>
+                <div class="rsItemCon feedbackBox">用户反馈</div>
+            </div>
+            <div class="rSidebarItem code">
+                <div class="rsItemName">
+                    <i class="publicIcon code-i"></i>
+                </div>
+                <div class="rsItemCon codeBox">
+                    <img src="http://misc.jiuxian.com/img/newIndexImg/jxPho-code.jpg">
+                </div>
+            </div>
+            <div class="rSidebarItem backTop">
+                <div class="rsItemName">
+                    <a class="nameLink gotoTop" href="javascript:;">
+                        <i class="publicIcon backTop-i"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- 头部 -->
     <div class="header">
         <div class="header_con">
             <div class="topHeaderLeft">
@@ -129,7 +237,7 @@
         </div>
     </div>
     <!-- 搜索部分 -->
-    <div class="search">
+    <div class="oSearch">
         <div class="search_con">
             <div class="logo">
                 <p class="jxwLogo">
@@ -175,6 +283,22 @@
                     </li>
                     <li>
                         <a href="#">水井坊</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">董酒</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">拉菲</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">黄尾袋鼠</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="#">奔富</a>
                     </li>
                 </ul>
             </div>
@@ -1055,153 +1179,383 @@
                 </a>
             </div>
         </div>
-    </div> 
-    <!-- 内容区 -->
-    <div class="layyouContain">
-        <div class="layoutBox noMargin">
-            <div class="layoutCon layoutWidAuto">
-                <div class="shopCountdownbd">
-                    <p class="shopCountdownCon shopCuntDownT">
-                        <b class="shopIcon day"></b>
-                        <b class="shopIcon hour"></b>
-                        <b class="shopIcon minute"></b>
-                        <b class="shopIcon second"></b>
-                    </p>
+    </div>
+    <!-- 正文 -->
+    <div class="srpWrap">
+        <div class="srp clearfix">
+            <!-- 左侧推荐 -->
+            <div class="reco">
+                <div class="hot">
+                    <h3>热卖推荐</h3>
+                    <div class="list">
+                        <ul class="hots">
+                            <li>
+                                <a class="img" href="#" title="52°五粮液100ml" target="_blank">
+                                    <img src="http://img07.jiuxian.com/2018/0517/b17f73f5277e4a16962ef55e640a2e022.png" alt="52°五粮液100ml">
+                                </a>
+                                <p class="price">￥198.00</p>
+                                <a class="name" href="#" title="52°五粮液100ml">52°五粮液100ml</a>
+                                <p class="sppl">评论<a href="#" title="52°五粮液100ml">576条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="【五粮液特卖】53°五粮液15酱 酱香白酒 十五酱单瓶500ml" target="_blank">
+                                    <img src="http://img07.jiuxian.com/2018/0415/5b2d9d602a2c47ff8df9a8c55a656f872.jpg" alt="【五粮液特卖】53°五粮液15酱 酱香白酒 十五酱单瓶500ml">
+                                </a>
+                                <p class="price">￥450.00</p>
+                                <a class="name" href="#" title="【五粮液特卖】53°五粮液15酱 酱香白酒 十五酱单瓶500ml">【五粮液特卖】53°五粮液15酱 酱香白酒 十五酱单瓶500ml</a>
+                                <p class="sppl">评论<a href="#" title="【五粮液特卖】53°五粮液15酱 酱香白酒 十五酱单瓶500ml">64条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="52°五粮国宾酒（珍藏）500ml(双瓶装)" target="_blank">
+                                    <img src="http://img08.jiuxian.com/2018/0613/7cbaa17b4ba441ec83cb0e2aa2b75c462.jpg" alt="52°五粮国宾酒（珍藏）500ml(双瓶装)">
+                                </a>
+                                <p class="price">￥198.00</p>
+                                <a class="name" href="#" title="52°五粮国宾酒（珍藏）500ml(双瓶装)">52°五粮国宾酒（珍藏）500ml(双瓶装)</a>
+                                <p class="sppl">评论<a href="#" title="52°五粮国宾酒（珍藏）500ml(双瓶装)">576条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="52°五粮液股份百年传奇佳品500ml（双瓶装）" target="_blank">
+                                    <img src="http://img07.jiuxian.com/2018/0907/bc06ac686f9a4607a1668302846edea72.jpg" alt="52°五粮液股份百年传奇佳品500ml（双瓶装）">
+                                </a>
+                                <p class="price">￥198.00</p>
+                                <a class="name" href="#" title="52°五粮液股份百年传奇佳品500ml（双瓶装）">52°五粮液股份百年传奇佳品500ml（双瓶装）</a>
+                                <p class="sppl">评论<a href="#" title="52°五粮液股份百年传奇佳品500ml（双瓶装）">576条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="52°五粮液100ml" target="_blank">
+                                    <img src="http://img07.jiuxian.com/2018/0517/b17f73f5277e4a16962ef55e640a2e022.png" alt="52°五粮液100ml">
+                                </a>
+                                <p class="price">￥198.00</p>
+                                <a class="name" href="#" title="52°五粮液100ml">52°五粮液100ml</a>
+                                <p class="sppl">评论<a href="#" title="52°五粮液100ml">18条</a></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="layoutBox noMargin">
-            <div class="layoutCon1">
-                <div class="layoutOne">
-                    <div class="userDefinedBox">
-                        <img src="http://img08.jiuxian.com/brandlogo/2018/1016/55bf97d5468342ea95e164597b823a04.jpg" alt="">
-                        <img src="http://img10.jiuxian.com/brandlogo/2018/1016/787382a31ae5459c885859a40e8f12e5.jpg" alt="">
-                        <img src="http://img09.jiuxian.com/brandlogo/2018/1016/639f2c13e5a14da5960720e342fdf57c.jpg" alt="">
-                        <img src="http://img07.jiuxian.com/brandlogo/2018/1016/ac44efe1e76b420a80305802158a51a7.jpg" alt="">
+                <div class="hot">
+                    <h3>看过此页面用户最终购买</h3>
+                    <div class="list">
+                        <ul class="hots">
+                            <li>
+                                <a class="img" href="#" title="白酒节神秘福袋必含五粮液" target="_blank">
+                                    <img src="http://img06.jiuxian.com/2018/0929/2258f7e4cf78495a9d8e295820b53a9c2.jpg" alt="52°五粮液100ml">
+                                </a>
+                                <p class="price">￥999.00</p>
+                                <a class="name" href="#" title="白酒节神秘福袋必含五粮液">白酒节神秘福袋必含五粮液</a>
+                                <p class="sppl">评论<a href="#" title="白酒节神秘福袋必含五粮液">34423条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="53°郎酒·红花郎十（10）500ml *6+西班牙红酒西班牙歌帕天堂·爱丽丝干红葡萄酒750ml *6" target="_blank">
+                                    <img src="http://img08.jiuxian.com/2018/0903/d95fb6b9dd8d4e19908dac1be2486de12.jpg" alt="【五粮液特卖】53°五粮液15酱 酱香白酒 十五酱单瓶500ml">
+                                </a>
+                                <p class="price">￥2188.00</p>
+                                <a class="name" href="#" title="53°郎酒·红花郎十（10）500ml *6+西班牙红酒西班牙歌帕天堂·爱丽丝干红葡萄酒750ml *6">53°郎酒·红花郎十（10）500ml *6+西班牙红酒西班牙歌帕天堂·爱丽丝干红葡萄酒750ml *6</a>
+                                <p class="sppl">评论<a href="#" title="53°郎酒·红花郎十（10）500ml *6+西班牙红酒西班牙歌帕天堂·爱丽丝干红葡萄酒750ml *6">9941条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="53° 红花郎 10 郎酒 500ml (6瓶装）" target="_blank">
+                                    <img src="http://img06.jiuxian.com/2017/0818/ce59b29f0217409f9383757086c268c52.jpg" alt="53° 红花郎 10 郎酒 500ml （6瓶装）">
+                                </a>
+                                <p class="price">￥2088.00</p>
+                                <a class="name" href="#" title="53° 红花郎 10 郎酒 500ml (6瓶装）">53° 红花郎 10 郎酒 500ml (6瓶装）</a>
+                                <p class="sppl">评论<a href="#" title="53° 红花郎 10 郎酒 500ml (6瓶装）">60条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="52°五粮液股份百年传奇佳品500ml（双瓶装）" target="_blank">
+                                    <img src="http://img07.jiuxian.com/2018/0907/bc06ac686f9a4607a1668302846edea72.jpg" alt="52°五粮液股份百年传奇佳品500ml（双瓶装）">
+                                </a>
+                                <p class="price">￥198.00</p>
+                                <a class="name" href="#" title="52°五粮液股份百年传奇佳品500ml（双瓶装）">52°五粮液股份百年传奇佳品500ml（双瓶装）</a>
+                                <p class="sppl">评论<a href="#" title="52°五粮液股份百年传奇佳品500ml（双瓶装）">576条</a></p>
+                            </li>
+                            <li>
+                                <a class="img" href="#" title="52°五粮液100ml" target="_blank">
+                                    <img src="http://img07.jiuxian.com/2018/0517/b17f73f5277e4a16962ef55e640a2e022.png" alt="52°五粮液100ml">
+                                </a>
+                                <p class="price">￥198.00</p>
+                                <a class="name" href="#" title="52°五粮液100ml">52°五粮液100ml</a>
+                                <p class="sppl">评论<a href="#" title="52°五粮液100ml">18条</a></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="layoutBox_01">
-            <div class="layoutCon2">
-                <div class="userDefinedBox1">
-                    <img src="http://img07.jiuxian.com/brandlogo/2018/1016/1deabdb0362a45669a3b0d72fca96b0f.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="layoutBox_01">
-            <div class="layoutCon2">
-                <div class="userDefinedBox1">
-                    <img src="http://img08.jiuxian.com/brandlogo/2018/1018/ca1c567107464257ba689f8fe1b167cf.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="layoutBox_01">
-            <div class="layoutCon2">
-                <div class="userDefinedBox1">
-                    <img src="http://img08.jiuxian.com/brandlogo/2018/1017/8c27b876225948f0be42ce160a7ee47b.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="layoutBox_02">
-            <div class="layoutCon3">
-                <div class="modulesBox">
-                    <div class="activityImg">
-                        <img src="http://img10.jiuxian.com/brandlogo/2018/1018/bc858b34b4a04685aa4566a5516081ec.jpg" alt="">
-                    </div>
-                    <div class="activityWarp">
-                        <span>×</span>
-                        <h4>活动规则</h4>
-                        <p>
-                            第2件8折活动规则：<br>
-                            <br>1.活动时间：10.17 10:00-10.24 10:00<br>
-                            <br>2.活动期间购买本会场商品第2件及第2件以上享受8折优惠；<br>
-                            <br>3.部分特价商品和已经参加满赠、满减的商品不重复参与本活动；<br>
-                            <br>4.如消费者参与本活动，则视为同意以上所有规则，如有疑问，请联系在线客服咨询。<br>
-                            <br>1999元送世界名酒小酒版活动规则<br>
-                            <br>1.活动时间：10.17 10:00-10.24 10:00<br>
-                            <br>2.活动期间订单实付金额大于1999元的送价值599元世界名酒小酒版（限量10套，送完即止）；<br>
-                            <br>3.奖品会在活动结束10个工作日内发出，同一客户（同一ID、收货地址、收货人、手机号默认为一个客户）限享受优惠1次；<br>
-                            <br>4.本活动中享受满赠的订单如有拒收退货等情况，导致订单实付金额低于满赠条件的，需将赠送的商品一并退回，如订单退货后，赠品未退回，会按照赠品实际销售金额在原订单商品中扣除对应赠品金额<br>
-                            <br>5.如消费者参与本活动，则视为同意以上所有规则，如有疑问，请联系在线客服咨询。<br>
-                        </p>
+            <div class="main-srp">
+                <div class="breadcrumb">
+                    <div class="line"></div>
+                    <div class="crumb clearfix">
+                        <div class="new_topNum">
+                            <em>相关产品</em>
+                            <span>1881</span>
+                            <em>件</em>
+                        </div>
+                        <i class="square"></i>
+                        <a class="level level1" href="#" title="全部">全部</a>
+                        <i class="arrow"></i>
+                        <a class="level level2" href="#" title="白酒">白酒</a>
+                        <i class="arrow"></i>
+                        <div class="search clearfix">
+                             <input type="text" name="" id="extKey" value="在结果中查找">
+                             <a href="javascript:extSearch()"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="layoutBox_02">
-            <div class="layoutCon3">
-                <div class="modulesBox">
-                    <div class="activityImg">
-                        <a href="javascript:;">
-                            <img src="http://img06.jiuxian.com/brandlogo/2018/1017/0e41d93fdf1c47e8874ffdd79e5a49cc.jpg" alt="">
+                <div class="searchShop">
+                    <div class="pic">
+                        <a href="#" target="_blank">
+                            <img src="http://img10.jiuxian.com/brandlogo/2017/0526/e25eabfda9cd4324a0a2bd33ad29e00f.jpg" alt="">
                         </a>
                     </div>
+                    <div class="info">
+                        <a href="#" target="_blank">酒仙自营五粮液官方旗舰店</a>
+                        <p>主营品牌：五粮液</p>
+                        <p>店铺介绍：酒仙自营 正品保证</p>
+                    </div>
+                    <a class="btn" href="#" target="_blank">进入店铺</a>
                 </div>
-            </div>
-        </div>
-        <div class="layoutBox_03">
-            <div class="layoutCon4">
-                <div class="layoutThree-left wid490">
-                    <a href="javascript:;">
-                        <img src="http://img10.jiuxian.com/brandlogo/2018/1020/bc1dd16e8248432babdd183b5319bc2c.jpg" alt="">
+                <div class="alreadyS clearfix">
+                    <p class="title">你已选择</p>
+                    <div class="options clearfix">
+                        <a href="#">
+                            <span class="type">品牌：五粮液</span>
+                            <span class="remove"></span>
+                        </a>
+                    </div>
+                    <a class="trash clearfix" href="#">
+                        <i></i>
+                        <span>清除条件</span>
                     </a>
                 </div>
-                <div class="layoutThree-middle wid240">
-                    <a href="javascript:;">
-                        <img src="http://img10.jiuxian.com/brandlogo/2018/1020/77e8733aa1ca48888dd50e666fb75906.jpg" alt="">
-                    </a>
+                <div class="select">
+                    <div class="selectLine2 clearfix">
+                        <div class="proLeft">
+                            产区
+                        </div>
+                        <div class="proRight">
+                            <ul class="clearfix">
+                                <li><a href="#" title="四川">四川</a></li>
+                                <li><a href="#" title="河北">河北</a></li>
+                                <li><a href="#" title="河南">河南</a></li>
+                                <li><a href="#" title="贵州">贵州</a></li>
+                                <li><a href="#" title="江苏">江苏</a></li>
+                                <li><a href="#" title="福建">福建</a></li>
+                                <li><a href="#" title="内蒙古">内蒙古</a></li>
+                                <li><a href="#" title="西藏">西藏</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cqS yjStyle clearfix">
+                        <p class="title colRed">类型</p>
+                        <div class="list yjstyleD">
+                            <ul class="clearfix">
+                                <li class="first ">
+                                    <a href="#" title="浓香型">浓香型</a>
+                                </li>
+                                <li class="first ">
+                                    <a href="#" title="其他">其他</a>
+                                </li>
+                                <li class="first ">
+                                    <a href="#" title="酱香型">酱香型</a>
+                                </li>
+                                <li class="first ">
+                                    <a href="#" title="无">无</a>
+                                </li>
+                                <li class="first ">
+                                    <a href="#" title="清香型">清香型</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="layoutThree-right wid240">
-                    <a href="javascript:;">
-                        <img src="http://img08.jiuxian.com/brandlogo/2018/1020/5c7a0fc83e12404bb2f1ea56b8220d9d.jpg" alt="">
-                    </a>
+                <div class="moreS clearfix">
+                    <p class="title">更多选项</p>
+                    <div class="moreOption wine clearfix">
+                        <a class="choose" href="javascript:void(0)">酒精度
+                            <i></i>
+                        </a>
+                        <div class="box jj">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">35度以下</a>
+                                </li>
+                                <li>
+                                    <a href="#">35-39度</a>
+                                </li>
+                                <li>
+                                    <a href="#">40-49度</a>
+                                </li>
+                                <li>
+                                    <a href="#">50度以上</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="choose" href="javascript:void(0)">净含量<i></i>
+                        </a>
+                        <div class="box rl">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">375ml以下</a>
+                                </li>
+                                <li>
+                                    <a href="#">375ml-500ml</a>
+                                </li>
+                                <li>
+                                    <a href="#">500ml-750ml</a>
+                                </li>
+                                <li>
+                                    <a href="#">750ml-1L</a>
+                                </li>
+                                <li>
+                                    <a href="#">1L-1.5L</a>
+                                </li>
+                                <li>
+                                    <a href="#">1.5L以上</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="choose clearfix" href="javascript:void(0)">价格<i></i>
+                        </a>
+                        <div class="box price">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">1-99元</a>
+                                </li>
+                                <li>
+                                    <a href="#">100-299元</a>
+                                </li>
+                                <li>
+                                    <a href="#">300-599元</a>
+                                </li>
+                                <li>
+                                    <a href="#">600-999元</a>
+                                </li>
+                                <li>
+                                    <a href="#">1000-1999元</a>
+                                </li>
+                                <li>
+                                    <a href="#">2000元以上</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="layoutBox_03">
-            <div class="layoutCon4">
-                <div class="layoutThree-left wid490">
-                    <a href="javascript:;">
-                        <img src="http://img09.jiuxian.com/brandlogo/2018/1020/eeef43282d8c4621b9f1bc0fb8bb53c9.jpg" alt="">
-                    </a>
+                <div class="order" id="order">
+                    <ul class="clearfix">
+                        <li class="tab  first ">
+                            <a rel="nofollow" href="#" title="默认排序">默认排序</a></li>
+                        <li class="tab">
+                            <a rel="nofollow" href="#" title=" 默认 ">销量 <i></i> </a></li>
+                        <li class="tab jg">
+                            <a rel="nofollow" href="#" title=" 默认 ">价格 <i></i> </a></li>
+                        <li class="tab">
+                            <a rel="nofollow" href="#" title=" 默认 ">评价 <i></i> </a></li>
+                        <li class="tab sjsj">
+                            <a rel="nofollow" href="#" title=" 默认 ">上架时间 <i></i> </a></li>
+                        <li class="priceArea clearfix" pricearea="0">
+                            <span class="left clearfix"><i>¥</i>
+                                <input type="text" value="" id="minPrice">
+                            </span>
+                            <span class="zhi"></span>
+                            <span class="right clearfix">
+                                <i>¥</i>
+                                <input type="text" value="" id="maxPrice">
+                            </span>
+                            <span class="sure">
+                                <a class="ok" href="javascript:;" rel="nofollow">确定</a>
+                            </span>
+                        </li>
+                        <li class="page clearfix">
+                            <p>
+                                <span class="cur">1</span>
+                                <span>/</span>
+                                <span class="total">48</span>
+                            </p>                                                                            
+                                <a class="btn prev" href="javascript:;"></a>
+                                <a class="btn next" href="#"></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="proListSearch">
+                    <ul class="clearfix">
+                        <!-- <li>
+                            <div class="content clearfix">
+                                <div class="collect_box">
+                                    <a class="img clearfix" href="#">
+                                        <img src="http://img10.jiuxian.com/2013/1109/217f5c4647c6463081c99ab36707eb074.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="priceArea clearfix">
+                                    <p class="price">
+                                        ￥86.00  
+                                    </p>
+                                </div>
+                                <a class="proName" href="#">
+                                    五粮液
+                                </a>
+                                <a class="judge" href="#">
+                                    已有888人评价
+                                </a>
+                                <div class="projx">
+                                    <i class="sIcon"></i>
+                                </div>
+                                <div class="activity">
+                                    <span class="yh">单品加价购</span>
+                                    <span class="yh">限时抢购</span>
+                                </div>
+                                <div class="buyArea clearfix">
+                                    <a class="cart clearfix prtlt_btn2" href="#">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
-                <div class="layoutThree-middle wid240">
-                    <a href="javascript:;">
-                        <img src="http://img09.jiuxian.com/brandlogo/2018/1020/1cef2f3704744e2ea337bea0aacdc43a.jpg" alt="">
-                    </a>
-                </div>
-                <div class="layoutThree-right wid240">
-                    <a href="javascript:;">
-                        <img src="http://img06.jiuxian.com/brandlogo/2018/1020/7c747aae8b934e3590bedf34a6405dbb.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="layoutBox_01">
-            <div class="layoutCon2">
-                <div class="userDefinedBox1">
-                    <img src="http://img07.jiuxian.com/brandlogo/2018/1016/4e751cba32574adeb2fdbc2dd79d7187.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="layoutBox_04">
-            <div class="layoutCon5">
-                <div class="userDefinedBox">
-                    <img src="http://img09.jiuxian.com/brandlogo/2018/1016/a16ac974f7b949c7baceb2583374caa9.jpg" alt="">
-                    <map name="Map3">
-                        <area shape="rect" coords="486,19,718,334" href="#" target=" _blank">
-                        <area shape="rect" coords="727,21,955,332" href="#"  target=" _blank">
-                        <area shape="rect" coords="961,18,1193,333" href="#"  target=" _blank">
-                        <area shape="rect" coords="1204,20,1431,331" href="#"  target=" _blank">
-                    </map>
-                </div>
+                <div class="proListSearch1">
+                    <ul class="clearfix">
+                        <!-- <li>
+                            <div class="content clearfix">
+                                <div class="collect_box">
+                                    <a class="img clearfix" href="#">
+                                        <img src="http://img10.jiuxian.com/2013/1109/217f5c4647c6463081c99ab36707eb074.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="priceArea clearfix">
+                                    <p class="price">
+                                        ￥86.00  
+                                    </p>
+                                </div>
+                                <a class="proName" href="#">
+                                    五粮液
+                                </a>
+                                <a class="judge" href="#">
+                                    已有888人评价
+                                </a>
+                                <div class="projx">
+                                    <i class="sIcon"></i>
+                                </div>
+                                <div class="activity">
+                                    <span class="yh">单品加价购</span>
+                                    <span class="yh">限时抢购</span>
+                                </div>
+                                <div class="buyArea clearfix">
+                                    <a class="cart clearfix prtlt_btn2" href="#">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div> 
+                
+                <div id="page-item">
+
+                </div>       
             </div>
         </div>
     </div>
-
-  <!-- 页脚 -->
-  <div class="loadFifth">
+    <!-- 底部 -->
+    <div class="loadFifth">
         <div class="footer">
             <div class="footerTopBox">
                 <div class="footerTop">
@@ -1411,26 +1765,34 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div> 
 </body>
 </html>
-<script src="js/dingshiqi.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/ajax.js"></script>
+<script src="common.js"></script>
+<script src="js/data.js"></script>
+<!-- <script src="js/fenye/js"></script> -->
 <script>
-    $(function(){
-        $("#jxWeixin").mouseenter(function(){
-        $("#weixinCode").toggle();  
-        })
-    })
+    var choose = document.querySelectorAll(".moreOption .choose")
+    var box =document.querySelectorAll(".moreOption .box")
+    function tab(index){
+        
+        for( var i = 0; i <choose.length;i++){
+            box.style.display = "none";
+        }
+        box[index].style.display = "block"
+    }
+    for(var i = 0; i < choose.length;i++){
+        choose[i].index = i
+        choose[i].onnouseover=function(){
+            tab(this.index)
+        }
+    }
+    
 </script>
 <script>
-    $(function(){
-        $(".activityImg img").click(function(){
-             $(".modulesBox .activityWarp").show();
-         })
-         $(".modulesBox span").click(function(){
-            $(".modulesBox .activityWarp").hide();
-         })
+    $(".weixin .weixinCon").hover(function(){
+        $(".item .weixinCode").toggle();
     })
-    
 </script>

@@ -80,12 +80,3 @@ $(function(){
         $(".ftRight-form span").show()
     })
 })
-
-
-// logo墙图片移动
-
-// $(".logoFirstbd ul li").hover(function(){
-//     $(".logoFirstbd ul li img").css({
-//         left:"-100"
-//     })
-// })
