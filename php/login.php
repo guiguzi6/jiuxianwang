@@ -2,8 +2,8 @@
 
     header("Content-Type:text/html;charset=utf-8;");
     #1. 从前端拿来数据;
-    $username = @$_POST["username"];
-    $password = @$_POST["password"];
+    $username = @$_GET["username"];
+    $password = @$_GET["password"];
     // $username = "yanghuaizhi";
     // $password = "123456";
     if($username == "" || $password == ""){

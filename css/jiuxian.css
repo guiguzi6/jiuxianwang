@@ -11,7 +11,7 @@
 .rSidebarItem .rsItemName{
     width: 35px;padding: 10px 0;position: relative;z-index: 350;
 }
-
+  
 .publicIcon {
     background: url(../../img/newIndexImg/public-24.png) no-repeat;
 }
@@ -1306,8 +1306,8 @@ color: #333;
     float: left;width: 80px;display: inline;margin-left: 40px;
 }
 .footerBotCode div .codePic {
-    width: 80px;height: 80px;
-}
+    width: 80px;height: 80px;  
+}  
 .footerBotCode div img {
     width: 80px;height: 80px;
 }

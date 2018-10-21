@@ -44,7 +44,7 @@
                 </div>
                 <div class="reg">
                     欢迎来到酒仙网
-                    <a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/gerenregister.html" id="regReg">免费注册</a>
+                    <a href="gerenregister.html" id="regReg">免费注册</a>
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
                                     <div class="sCanErroLink">
                                         <span>
                                             <a href>账户密码登录</a>
-                                            <a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/gerenregister.html">免费注册</a>
+                                            <a href="gerenregister.html">免费注册</a>
                                         </span>
                                     </div>
                                 </div>
@@ -322,13 +322,17 @@
         var oUser = $("#username");
         var oPwd = $("#password");
         oSave.click(function(){
-            var url = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/php/login.php";
-            ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
-            .then(function(res){
-                if(res == "登录成功"){
-                    location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/jiuxian.html"
-                }else{
-                    location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html#"
+            $.ajax({
+                url:"http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/php/login.php",
+                type:"GET",
+                data:`username=${oUser.value}&password=${oPwd.value}`,
+                success:function(res){
+                    if(res == "注册成功"){
+                        location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxian.html"
+                    }else{
+                        location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/jiuxianlogin.html"
+                    }
+                    // console.log(res)
                 }
             })
         })

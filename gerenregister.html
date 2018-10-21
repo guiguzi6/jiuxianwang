@@ -43,7 +43,7 @@
             </div>
             <div class="reg">
                 欢迎来到酒仙网
-                <a href="http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html" id="redOrLogin">请登录</a>
+                <a href="jiuxianlogin.html" id="redOrLogin">请登录</a>
             </div>
         </div>
     </div>
@@ -273,13 +273,17 @@
     var oPwd1 = $("#password1");
     var oBtn = $("#phoneSubit")
     oBtn.click(function(){
-        var url = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/php/register.php";
-        ajaxPost(url,`username=${oUser.val()}&password=${oPwd.val()}&password1=${oPwd1.val()}`)
-        .then((res)=>{
-            if(res == "注册成功"){
-                location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html"
-            }else{
-                location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/gerenregister.html"
+        $.ajax({
+            url:"http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/php/register.php",
+            type:"GET",
+            data:`username=${oUser.value}&password=${oPwd.value}&password1=${oPwd1.value}`,
+            success:function(res){
+                if(res == "注册成功"){
+                    location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/dist/jiuxianlogin.html"
+                }else{
+                    location.href = "http://localhost:8888/proxy/localhost/1815phpnow/jiuxain/gerenregister.html"
+                }
+                // console.log(res)
             }
         })
     })

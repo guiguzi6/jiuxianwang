@@ -2,9 +2,9 @@
 
     header("Content-Type:text/html;charset=utf-8;");
     #1. 从前端拿来数据
-    $username = @$_POST["username"];
-    $password = @$_POST["password"];
-    $password1 = @$_POST["password1"];
+    $username = @$_GET["username"];
+    $password = @$_GET["password"];
+    $password1 = @$_GET["password1"];
     # 判断是否为空
     if ($username == "" || $password == "" || $password1 == ""){
         die("参数不全");
@@ -42,7 +42,7 @@
     $password = md5($password);
     $password1 = md5($password1);
     mysql_query("INSERT INTO detaillist (password,password1,username)
-     VALUES('$password','$password1',,'$username')");
+     VALUES('$password','$password1','$username')");
      #检测数据类型
      #echo mysql_error();
      if(mysql_error()){
