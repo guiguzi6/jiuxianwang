@@ -438,13 +438,11 @@
     position: relative;height: 470px;text-align: center;width: 100%;
 }
 .mainBanner .bigImg .bigUl li{
-    opacity: 0;transition: all 0.8s;
+    display: none; transition: all 0.8s;
 }
-.mainBanner .bigImg .bigUl li.active{
-    opacity: 1;
-}
+
 .mainBanner .bigImg .bigUl .bigImg_con1{
-    position: absolute;left: 0;top: 0;height: 470px;text-align: center;width: 100% !important;overflow: hidden;background: url(http://img08.jiuxian.com/bill/2018/1013/6b33dffef1a048b0853149401b7611dc.jpg) no-repeat center 0;
+    position: absolute;left: 0;top: 0;height: 470px;text-align: center;width: 100% !important;overflow: hidden;background: url(http://img08.jiuxian.com/bill/2018/1013/6b33dffef1a048b0853149401b7611dc.jpg) no-repeat center 0;display: block;
 }
 .mainBanner .bigImg .bigUl .bigImg_con2{
     position: absolute;left: 0;top: 0;height: 470px;text-align: center;width: 100% !important;overflow: hidden;background: url(http://img06.jiuxian.com/bill/2018/1010/8163b7ab228e4f39bc166b66ecaf4fb4.jpg) no-repeat center 0;
@@ -479,18 +477,14 @@
 .mainBanner .bigImg .bigUl .ban_cter  .mav .smallImg{
     display: block;margin-bottom:1px;height: 156px;position: relative;z-index: 8;  
 }
-.mainBanner .bigImg .bigUl .ban_cter  .mav .smallImg{
-    opacity: 0;transition: all 0.8s;
-}
-.mainBanner .bigImg .bigUl .ban_cter  .mav .smallImg.active{
-    opacity: 1;
-}
+
 .mainBanner .bigImg .bigUl .ban_cter  .mav .smallImg img{
-    display: block;height: 156px;z-index: 10;  position: absolute;left: 0;top: 0;
+    display: block;height: 156px;z-index: 10;  position: absolute;left: 0;top: 0;z-index: 8;
 }
  .mainBanner .bigImg .bigUl .ban_cter .mav .smallImg span{
-    height: 156px;width: 190px;position: absolute;background: #fff;opacity: 0.75;left: 0;top: 0;z-index: 8;
+    height: 156px;width: 190px;position: absolute;background: #fff;opacity: 0.75;left: 0;top: 0;z-index: 7;display: none
 }
+.mainBanner .bigImg .bigUl .ban_cter  .mav .smallImg:hover span{display: block;}
 .mainBanner .smallBtn{
     height: 20px;position: absolute;left: 0;top: 435px;text-align: center;width: 100%;z-index: 20;
 }
@@ -779,6 +773,15 @@
 .bannerSlier .btnBg3 .on{
     background: #fc5422;
 }
+.bannerSlier .btnBg4 .on{
+    background: #bd7833;
+}
+.bannerSlier .btnBg5 .on{
+    background: #296693;
+}      
+.bannerSlier .btnBg6 .on{
+    background: #73a216;
+} 
 .spiritList{
     width: 988px;float: right;height: 485px;overflow: hidden;position: relative;
 }
@@ -1048,7 +1051,7 @@ a{color: #666;}
     background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat;
 }
 .Lay_2 .logoBox .arrow {
-    position: absolute;top: 130px;width: 50px; height: 50px;z-index: 1;cursor: pointer;display: block;
+    position: absolute;top: 130px;width: 50px; height: 50px;z-index: 1;cursor: pointer;display: none;
 }
 .Lay_2 .logoBox .prevPage {
     background-position: 0 -130px;left: 8px;
@@ -1122,7 +1125,7 @@ a{color: #666;}
     background: #fff; display: inline-block; height: 25px;vertical-align: middle;line-height: 25px;padding: 0 3px;color: #666;text-decoration: none;
 }
 .goods_menu a:hover{color: #666;text-decoration:none;}
-
+/* 瀑布流*/
 .pubuliu{
     width: 100%;margin-top: 20px;
 }

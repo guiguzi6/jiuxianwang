@@ -186,7 +186,7 @@ $(function(){
     $(".btnBg3 em").click(function (){
          nowimg=$(this).index()
         $(".btnBg3 em").eq(nowimg).addClass("on").siblings().removeClass("on")
-         $(".bigUl3").animate({"left":nowimg*-268}, 1000)
+         $(".bigUl3").animate({"left":nowimg*-210}, 1000)
     });
 
     // 自动轮播
@@ -210,5 +210,255 @@ $(function(){
     var nowimg = 0;
     var timer = 0;
 
-    $(".")
+    $(".bigUl4 li:first").clone().appendTo(".bigUl4")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl4").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl4").animate({"left":2*-210},1000,function(){
+                $(".bigUl4").css("left",0)
+
+            })
+        }
+        $(".btnBg4 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl4").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=1
+            $(".bigUl4").css({"left":2*-210},1000)
+            $(".bigUl4").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg4 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg4 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg4 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl4").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox2").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg4").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox2").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+
+})
+
+// 洋酒馆轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl5 li:first").clone().appendTo(".bigUl5")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl5").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl5").animate({"left":2*-210},1000,function(){
+                $(".bigUl5").css("left",0)
+
+            })
+        }
+        $(".btnBg5 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl5").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=1
+            $(".bigUl5").css({"left":2*-210},1000)
+            $(".bigUl5").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg5 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg5 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg5 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl5").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox3").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg5").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox3").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+
+})
+
+// 养生轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl6 li:first").clone().appendTo(".bigUl6")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<3){
+            nowimg++
+            $(".bigUl6").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl6").animate({"left":4*-210},1000,function(){
+                $(".bigUl6").css("left",0)
+
+            })
+        }
+        $(".btnBg6 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl6").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=3
+            $(".bigUl6").css({"left":4*-210},1000)
+            $(".bigUl6").animate({"left":nowimg*-210},1000)
+        }
+        $(".btnBg6 em").eq(nowimg).addClass('on').siblings().removeClass('on')
+    })
+    // 小圆点业务
+    $(".btnBg6 em").click(function (){
+         nowimg=$(this).index()
+        $(".btnBg6 em").eq(nowimg).addClass("on").siblings().removeClass("on")
+         $(".bigUl6").animate({"left":nowimg*-210}, 1000)
+    });
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox4").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".btnBox .btnBg6").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox4").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+
+})
+
+// 食品轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".bigUl7 li:first").clone().appendTo(".bigUl7")
+
+    $(".you").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".bigUl7").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=0
+            $(".bigUl7").animate({"left":2*-210},1000,function(){
+                $(".bigUl7").css("left",0)
+
+            })
+        }
+    }
+    // 左按钮业务
+    $(".zuo").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".bigUl7").animate({"left":nowimg*-210},1000)
+        }else{
+            nowimg=1
+            $(".bigUl7").css({"left":2*-210},1000)
+            $(".bigUl7").animate({"left":nowimg*-210},1000)
+        }
+    }) 
+
+    // 自动轮播
+
+    timer=setInterval(rightFunc,2000)
+
+    $(".bannerSlier .imgBox5").mouseenter(function(){
+        clearInterval(timer)
+    })
+    $(".bannerSlier .imgBox5").mouseout(function(){
+        clearInterval(timer)
+        timer=setInterval(rightFunc,2000)
+    })
+})
+
+
+// logo墙轮播图
+$(function(){
+    var nowimg = 0;
+    var timer = 0;
+
+    $(".logoFirstbd ul:first").clone().appendTo(".logoFirstbd")
+
+    $(".nextPage").click(rightFunc)
+        function rightFunc(){
+
+        if(nowimg<1){
+            nowimg++
+            $(".logoFirstbd").animate({"left":nowimg*-1168},1000)
+        }else{
+            nowimg=0
+            $(".logoFirstbd").animate({"left":2*-1168},1000,function(){
+                $(".logoFirstbd").css("left",0)
+
+            })
+        }
+    }
+    // 左按钮业务
+    $(".prevPage").click(function(){
+        if(nowimg>0){
+            nowimg--
+            $(".logoFirstbd").animate({"left":nowimg*-1168},1000)
+        }else{
+            nowimg=1
+            $(".logoFirstbd").css({"left":2*-1168},1000)
+            $(".logoFirstbd").animate({"left":nowimg*-1168},1000)
+        }
+    }) 
 })

@@ -52,7 +52,7 @@ WaterFull.prototype.loadJson = function () {
 WaterFull.prototype.renderPage = function () {
     var html = "";
     var list = this.json.subjects;
-    console.log(list)
+    // console.log(list)
     for (var i = this.page_num * 20; i <= this.page_num * 20 + 19; i++) {
         html += `<li class="wrap">
                     <a href="#">
